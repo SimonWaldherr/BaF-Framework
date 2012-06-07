@@ -10,7 +10,7 @@ This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 ## Demo ##
 
-https://github.com/SimonWaldherr/buttons-and-forms/
+<http://simonwaldherr.github.com/buttons-and-forms/>
 
 
 ## License ##
