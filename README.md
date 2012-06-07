@@ -10,7 +10,7 @@ This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 ## Demo ##
 
-http://todc.github.com/css3-google-buttons
+https://github.com/SimonWaldherr/buttons-and-forms/
 
 
 ## License ##
