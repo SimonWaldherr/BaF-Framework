@@ -60,22 +60,22 @@
 <body onload="prettyPrint()">
 
 <div class="container">
-    <a class="ribbon" href="http://github.com/todc/css3-google-buttons" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
     <div class="header">
         <h1>CSS3 Google Buttons</h1>
         <p>
-          <b><a href="http://github.com/todc/css3-google-buttons" title="GitHub repository">CSS3 Google Buttons</a>
+          <b><a href="https://github.com/SimonWaldherr/buttons-and-forms" title="GitHub repository">CSS3 Google Buttons</a>
           helps you easily create Google-style buttons.</b>
         </p>
         <p>
-          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=todc&repo=css3-google-buttons&type=watch&count=true"
+          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=SimonWaldherr&repo=buttons-and-forms&type=watch&count=true"
             allowtransparency="true" frameborder="0" scrolling="0" width="108px" height="30px"></iframe>
             
-          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=todc&repo=css3-google-buttons&type=fork&count=true"
+          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=SimonWaldherr&repo=buttons-and-forms&type=fork&count=true"
             allowtransparency="true" frameborder="0" scrolling="0" width="93px" height="30px"></iframe>
           
-          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=todc&repo=css3-google-buttons&type=follow"
+          <iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=SimonWaldherr&repo=buttons-and-forms&type=follow"
             allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="30px"></iframe>
         </p>
     </div>
@@ -266,8 +266,8 @@
         
         <div class="example">
 <pre class="prettyprint"><code>
-&lt;a href="#" class="g-button no-text">&lt;i class="icon-refresh">&lt;i>&lt;/a>
-&lt;a href="#" class="g-button no-text">&lt;i class="icon-trash icon-white">&lt;i>&lt;/a>
+&lt;a href="#" class="g-button no-text">&lt;i class="icon-refresh">&lt;/i>&lt;/a>
+&lt;a href="#" class="g-button no-text">&lt;i class="icon-trash icon-white">&lt;/i>&lt;/a>
 </code></pre>
 
             <a class="g-button no-text"><i class="icon-refresh"></i></a>
@@ -278,8 +278,8 @@
         
         <div class="example">
 <pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-left">&lt;i>&lt;/a>
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;i>&lt;/a>
+    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
+    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
 
@@ -293,8 +293,8 @@
         
         <div class="example">
 <pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button no-text disabled2">&lt;i class="icon-chevron-left">&lt;i>&lt;/a>
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;i>&lt;/a>
+    &lt;a href="#" class="g-button no-text disabled2">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
+    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
 
@@ -316,8 +316,8 @@
         
         <div class="example">
 <pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-bw">&lt;i>&lt;/a>
-    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-fw">&lt;i>&lt;/a>
+    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-bw">&lt;/i>&lt;/a>
+    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-fw">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
 
@@ -422,7 +422,7 @@
         </p>
         
         <div class="example" style="position:relative">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
+        <pre class="prettyprint"><code>&lt;div class="g-button-group">
   &lt;a class="g-button blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
   &lt;a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
     &lt;span class="caret">&lt;/span>
@@ -452,6 +452,32 @@
             </div>
         </div>
         
+        <p>
+          in i form you need more than buttons, you need textfields
+        </p>
+        
+        <div class="example" style="position:relative">
+        <pre class="prettyprint"><code>&lt;div class="g-button-group">
+          &lt;a class="g-button blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
+          &lt;a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+            &lt;span class="caret">&lt;/span>
+          &lt;/a>
+          &lt;ul class="dropdown-menu">
+              &lt;li>&lt;a href="#">&lt;i class="icon-ok">&lt;/i> Action&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">&lt;i class="icon-remove">&lt;/i> Another Action&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">&lt;i class="icon-star">&lt;/i> Something else here&lt;/a>&lt;/li>
+              &lt;li class="divider">&lt;/li>
+              &lt;li>&lt;a href="#">&lt;i class="icon-print">&lt;/i> Separated link&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+        </code></pre>
+        
+                    <div class="input-prepend">
+                        <span class="add-on" id="email"><i class="icon-envelope"></i> email </span><input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup="">
+                        </div>
+                    
+                </div>
+        
     </div>
     
     <div class="section">
@@ -467,6 +493,11 @@
     <div class="section">
         <h2>Acknowledgements</h2>
         <p>
+          fork from 
+          <a href="https://github.com/todc">tdoc</a>s, GitHub Repo 
+          <a href="https://github.com/todc/css3-google-buttons">css3-google-buttons</a>.
+        </p>
+        <p>
           Inspired by Michael Henriksen's 
           <a href="http://github.com/michenriksen/css3buttons">CSS3 Buttons</a>, 
           <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>, 
@@ -477,11 +508,11 @@
 </div>
 
 <div class="footer">
-    <a href="http://github.com/todc/css3-google-buttons">CSS3 Google Buttons</a> by 
+    <a href="https://github.com/SimonWaldherr/buttons-and-forms">CSS3 Google Buttons</a> by 
     <a href="http://timodonnell.com">Tim O'Donnell</a>.
 </div>
 
-<script src="js/bootstrap-dropdown.js"></script>
+<script src="../js/bootstrap-dropdown.js"></script>
 <script type="text/javascript">
 // Implement checkbox-like buttons
 $(".toggle-buttons > .g-button").click(function() {
