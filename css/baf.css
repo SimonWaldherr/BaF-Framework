@@ -100,7 +100,7 @@ textarea {
   width: 14px;
   height: 14px;
   vertical-align: top;
-  background-image: url(./img/glyphicons-halflings.png);
+  background-image: url(../img/glyphicons-halflings.png);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   *margin-right: .3em;
@@ -109,7 +109,7 @@ textarea {
   *margin-left: 0;
 }
 .icon-white {
-  background-image: url(./img/glyphicons-halflings-white.png);
+  background-image: url(../img/glyphicons-halflings-white.png);
 }
 .disabled > [class^="icon-"], .disabled2 > [class^="icon-"] {
   opacity: 0.5;
@@ -481,7 +481,7 @@ textarea {
   height: 12px;
   margin-top: 1px;
   vertical-align: text-top;
-  background-image: url(./img/xs-icons.png);
+  background-image: url(../img/xs-icons.png);
   background-position: 12px 12px;
   background-repeat: no-repeat;
   *margin-right: .3em;
@@ -631,7 +631,7 @@ textarea {
   z-index: 1;
   *display: inline;
   font: bold 12px Helvetica, Arial, sans-serif;
-  line-height: 12px;
+  line-height: 13px;
   color: #444444;
   min-width: 42px;
   text-align: center;
@@ -996,7 +996,7 @@ height: 18px;
 padding: 4px;
 margin-bottom: 9px;
 margin-left: -2px;
-font-size: 13px;
+font-size: 12px;
 line-height: 18px;
 color: 
 #555;
