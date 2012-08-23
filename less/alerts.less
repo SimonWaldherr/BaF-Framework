@@ -1,21 +1,14 @@
-// ALERT STYLES
-// ------------
+// alerts.less
+// -----------------------------------------------------
 
 .alert {
-  padding: 8px 35px 8px 10px;
-  text-shadow: none;
-  .border-radius(2px);
-  .box-shadow(0 2px 4px rgba(0,0,0,0.2));
-}
-
-.alert-success,
-.alert-danger,
-.alert-error,
-.alert-info {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-.alert-danger,
-.alert-error {
-  border-color: darken(@errorBackground, 20%);
-  color: #b94a48;
+    color: #222;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    line-height: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #f9edbe;
+    border: 1px solid #f0c36d;
+    .border-radius(4px);
+    display: none;
 }
