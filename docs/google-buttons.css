@@ -631,7 +631,7 @@ textarea {
   z-index: 1;
   *display: inline;
   font: bold 12px Helvetica, Arial, sans-serif;
-  line-height: 12px;
+  line-height: 13px;
   color: #444444;
   min-width: 42px;
   text-align: center;
@@ -996,7 +996,7 @@ height: 18px;
 padding: 4px;
 margin-bottom: 9px;
 margin-left: -2px;
-font-size: 13px;
+font-size: 12px;
 line-height: 18px;
 color: 
 #555;
