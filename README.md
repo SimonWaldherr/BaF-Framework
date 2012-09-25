@@ -17,6 +17,10 @@ This is being tested in the latest versions of Chrome, Firefox, and IE8+.
 
 Public domain: [http://unlicense.org](http://unlicense.org)
 
+## Version ##
+
+baf v. 1.0.1  
+09.2012
 
 ## Acknowledgements ##
 

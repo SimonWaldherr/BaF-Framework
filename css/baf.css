@@ -663,6 +663,14 @@ textarea {
   margin-top: -15px;
 }
 
+.smallarrow::after{
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #F1F1F1;
+  border-width: 11px;
+  top: 50%;
+  margin-top: -11px;
+}
+
 .arrow.blue::after{
   border-left-color: #4B8CF7;
 }
@@ -671,6 +679,9 @@ textarea {
 }
 .arrow.darkh::after{
   border-left-color: #232323;
+}
+.arrow.black::after{
+  border-left-color: #4F4F4F;
 }
 .arrow.Greyh::after{
   border-left-color: #ededed;
