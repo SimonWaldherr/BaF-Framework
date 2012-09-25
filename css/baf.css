@@ -666,6 +666,15 @@ textarea {
 .arrow.blue::after{
   border-left-color: #4B8CF7;
 }
+.arrow.blueh::after{
+  border-left-color: #207ce5;
+}
+.arrow.darkh::after{
+  border-left-color: #232323;
+}
+.arrow.Greyh::after{
+  border-left-color: #ededed;
+}
 
 .g-button:hover,
 .g-button:focus,
@@ -729,6 +738,40 @@ textarea {
 .g-button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+/* .................................................................... Grey-Horizontal */
+.g-button.greyh {
+  color: #111111;
+  text-shadow: 0 1px rgba(55, 55, 55, 0.1);
+  border: 1px solid #ededed;
+  background: #c9c9c9; /* Old browsers */
+  background: -moz-linear-gradient(left, #c9c9c9 0%, #ededed 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c9c9c9), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #c9c9c9 0%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #c9c9c9 0%,#ededed 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #c9c9c9 0%,#ededed 100%); /* IE10+ */
+  background: linear-gradient(to right, #c9c9c9 0%,#ededed 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+}
+.g-button.greyh:hover, .g-button.greyh:focus, .g-button.greyh:active {
+  border: 1px solid #ededed;
+  text-shadow: 0 1px rgba(55, 55, 55, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #c9c9c9; /* Old browsers */
+  background: -moz-linear-gradient(left, #c9c9c9 0%, #f9f9f9 60%, #ededed 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c9c9c9), color-stop(60%,#f9f9f9), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #c9c9c9 0%,#f9f9f9 60%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #c9c9c9 0%,#f9f9f9 60%,#ededed 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #c9c9c9 0%,#f9f9f9 60%,#ededed 100%); /* IE10+ */
+  background: linear-gradient(to right, #c9c9c9 0%,#f9f9f9 60%,#ededed 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#ededed',GradientType=1 ); /* IE6-9 */
+}
+.g-button.greyh:active, .g-button.greyh.active {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 /* ..................................................................... Red */
 .g-button.red {
@@ -811,6 +854,40 @@ textarea {
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+/* .................................................................... Blue-Horizontal */
+.g-button.blueh {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #3079ED;
+  background: #499bea; /* Old browsers */
+  background: -moz-linear-gradient(left, #499bea 0%, #207ce5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #499bea 0%,#207ce5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #499bea 0%,#207ce5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #499bea 0%,#207ce5 100%); /* IE10+ */
+  background: linear-gradient(to right, #499bea 0%,#207ce5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 */
+}
+.g-button.blueh:hover, .g-button.blueh:focus, .g-button.blueh:active {
+  border: 1px solid #2F5BB7;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #499bea; /* Old browsers */
+  background: -moz-linear-gradient(left, #499bea 0%, #499bea 51%, #207ce5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#499bea), color-stop(51%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #499bea 0%,#499bea 51%,#207ce5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #499bea 0%,#499bea 51%,#207ce5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #499bea 0%,#499bea 51%,#207ce5 100%); /* IE10+ */
+  background: linear-gradient(to right, #499bea 0%,#499bea 51%,#207ce5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=1 ); /* IE6-9 */
+}
+.g-button.blueh:active, .g-button.blueh.active {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
 /* .................................................................... Dark */
 .g-button.dark {
   color: white;
@@ -841,6 +918,40 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */
 }
 .g-button.dark:active, .g-button.dark.active {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+/* .................................................................... Dark-Horizontal */
+.g-button.darkh {
+  color: white;
+  text-shadow: 0 1px rgba(55, 55, 55, 0.1);
+  border: 1px solid #383838;
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(left, #45484d 0%, #070707 38%, #232323 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#45484d), color-stop(38%,#070707), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #45484d 0%,#070707 38%,#232323 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #45484d 0%,#070707 38%,#232323 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #45484d 0%,#070707 38%,#232323 100%); /* IE10+ */
+  background: linear-gradient(to right, #45484d 0%,#070707 38%,#232323 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#232323',GradientType=1 ); /* IE6-9 */
+}
+.g-button.darkh:hover, .g-button.darkh:focus, .g-button.darkh:active {
+  border: 1px solid #232323;
+  text-shadow: 0 1px rgba(55, 55, 55, 0.3);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(left, #45484d 0%, #232323 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#45484d), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #45484d 0%,#232323 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #45484d 0%,#232323 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #45484d 0%,#232323 100%); /* IE10+ */
+  background: linear-gradient(to right, #45484d 0%,#232323 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#232323',GradientType=1 ); /* IE6-9 */
+}
+.g-button.darkh:active, .g-button.darkh.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
