@@ -2,55 +2,11 @@
 <html lang="en"> 
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-    <title>CSS3 Google UI Demo</title>
+    <title>CSS3 Buttons and Forms Demo</title>
     <meta name="description" content="Using CSS3 to create Google-style UI elements">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    
-    <style>
-    /* ------------------------------------------------------------------------------------------------------------- RESET */
-
-    html, body, div, form, p,
-    code, pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: sans-serif; }
-
-    /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
-
-    body { font: 14px/18px sans-serif; color: #444; background: #eee; }
-
-    a { color: #980905; }
-    a:hover, a:focus, a:active { text-decoration: none; }
-
-    h1 { margin: 0 0 0.5em; font-size: 36px; font-weight: bold; }
-    h2 { margin: 0 0 0.75em; font-size: 21px; font-weight: bold; }
-    h3 { margin: 0 0 0.333em; font-size: 16px; font-weight: normal; }
-    p { margin: 0 0 1.333em; line-height: 18px; }
-    em { font-style: italic; }
-    table { border-collapse: separate; border-spacing: 0; margin: 0; vertical-align: middle; }
-    th { font-weight: bold; }
-    th, td { padding: 5px 25px 5px 5px; text-align: left; vertical-align: middle; }
-    pre, code { font-family: monospace, sans-serif; font-size: 1em; color:#080; }
-
-    /* ------------------------------------------------------------------------------------------------------------- TEMPLATE */
-
-    .container { position:relative; overflow:hidden; width: 700px; padding: 40px 60px; border: 1px solid #ccc; margin: 40px auto 20px; background: #fff; -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.1); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.1); box-shadow: 0 0 15px rgba(0,0,0,0.1); }
-
-    .container pre,
-    .container .prettyprint { padding: 0; border: 0; margin: 0 0 20px; font-size: 13px; background: #fff; }
-
-    .ribbon { position: absolute; top: -1px; right: -1px; opacity: 0.9; }
-    .ribbon:hover, .ribbon:focus, .ribbon:active { opacity: 1; }
-    .ribbon img { display: block; border: 0; }
-
-    .header { padding-right:80px; }
-
-    .section { margin: 40px 0 20px; }
-
-    .example { padding: 20px; border: 1px solid #ccc; margin: 10px -20px 20px; }
-
-    .footer { margin: 20px 0 50px; font-size: 11px; color: #666; text-align: center; }
-    .footer a { color: #666; }
-    </style>
-    
+    <link rel="stylesheet" href="./css/style.css" type="text/css"  media="screen" />
     <link rel="stylesheet" href="./css/baf.css" type="text/css"  media="screen" />
     
     <!-- prettyify -->
@@ -63,27 +19,27 @@
     <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
     <div class="header">
-        <h1>CSS3 Google Buttons</h1>
+        <h1>CSS3 Buttons and Forms</h1>
         <p>
-          <b><a href="https://github.com/SimonWaldherr/buttons-and-forms" title="GitHub repository">CSS3 Google Buttons</a>
-          helps you easily create Google-style buttons.</b>
+          <b><a href="https://github.com/SimonWaldherr/buttons-and-forms" title="GitHub repository">CSS3 Buttons and Forms</a>
+          helps you easily create beautiful buttons.</b>
         </p>
     </div>
 
     <div class="section">
         <h2>Buttons</h2>
         <p>
-          The "buttons" can be created by adding <code>class="g-button"</code> to
+          The "buttons" can be created by adding <code>class="baf"</code> to
           any appropriate <code>&lt;a></code>, <code>&lt;button></code>, or 
           <code>&lt;input></code> element.
         </p>
 
         <div class="example">
-            <pre class="code prettyprint"><code>&lt;a href="#" class="g-button">Post comment&lt;/a></code></pre>
+            <pre class="code prettyprint"><code>&lt;a href="#" class="baf">Post comment&lt;/a></code></pre>
             <form>
-                <a class="g-button">New Comment (link)</a>
-                <input class="g-button" type="submit" value="New Comment (submit)" />
-                <button class="g-button">New Comment (button)</button>
+                <a class="baf">New Comment (link)</a>
+                <input class="baf" type="submit" value="New Comment (submit)" />
+                <button class="baf">New Comment (button)</button>
             </form>
         </div>
     </div>
@@ -95,10 +51,28 @@
           <code>red</code>, <code>blue</code>, or <code>green</code> class to your button.
         </p>
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button red">Compose Mail&lt;/a></code></pre>
-            <a href="#button" class="g-button red">Compose Mail</a>
-            <a href="#button" class="g-button blue">Search Mail</a>
-            <a href="#button" class="g-button green">Add Contact</a>
+            <pre class="prettyprint"><code>
+&lt;a href="#" class="baf">Info&lt;/a>
+&lt;a href="#" class="baf blue">Search&lt;/a>
+&lt;a href="#" class="baf cyan">Send&lt;/a>
+&lt;a href="#" class="baf black">Abort&lt;/a>
+
+&lt;a href="#" class="baf dark">Open Menu&lt;/a>
+&lt;a href="#" class="baf green">Success&lt;/a>
+&lt;a href="#" class="baf yellow">Warning&lt;/a>
+&lt;a href="#" class="baf red">Error&lt;/a>
+            </code></pre>
+            <a href="#button" class="baf">Info</a>
+            <a href="#button" class="baf blue">Search</a>
+            <a href="#button" class="baf cyan">Send</a>
+            <a href="#button" class="baf black">Abort</a>
+            
+            <br><br>
+            
+            <a href="#button" class="baf dark">Open Menu</a>
+            <a href="#button" class="baf green">Success</a>
+            <a href="#button" class="baf yellow">Warning</a>
+            <a href="#button" class="baf red">Error</a>
         </div>
     </div>
     
@@ -113,10 +87,10 @@
         </p>
     
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button disabled">Today&lt;/a>
-&lt;a href="#" class="g-button disabled2">Today&lt;/a></code></pre>
-            <a href="#button" class="g-button disabled">Today</a>
-            <a href="#button" class="g-button disabled2">Today</a>
+            <pre class="prettyprint"><code>&lt;a href="#" class="baf disabled">Today&lt;/a>
+&lt;a href="#" class="baf disabled2">Today&lt;/a></code></pre>
+            <a href="#button" class="baf disabled">Today</a>
+            <a href="#button" class="baf disabled2">Today</a>
         </div>
     </div>
     
@@ -129,10 +103,10 @@
         </p>
     
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button sm">Month&lt;/a>
-&lt;a href="#" class="g-button mini">Month&lt;/a></code></pre>
-            <a href="#button" class="g-button sm">Month</a>
-            <a href="#button" class="g-button mini">Month</a>
+            <pre class="prettyprint"><code>&lt;a href="#" class="baf sm">Month&lt;/a>
+&lt;a href="#" class="baf mini">Month&lt;/a></code></pre>
+            <a href="#button" class="baf sm">Month</a>
+            <a href="#button" class="baf mini">Month</a>
         </div>
     </div>
     
@@ -140,19 +114,19 @@
         <h2>Grouped buttons</h2>
         <p>
           Groups of buttons can be created by wrapping them in an element given 
-          a class of <code>g-button-group</code>.
+          a class of <code>baf-group</code>.
         </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button">Archive&lt;/a>
-    &lt;a href="#" class="g-button">Spam&lt;/a>
-    &lt;a href="#" class="g-button">Delete&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group">
+    &lt;a href="#" class="baf">Archive&lt;/a>
+    &lt;a href="#" class="baf">Spam&lt;/a>
+    &lt;a href="#" class="baf">Delete&lt;/a>
 &lt;/div></code></pre>
-        <div class="g-button-group">
-            <a href="#button" class="g-button">Archive</a>
-            <a href="#button" class="g-button">Spam</a>
-            <a href="#button" class="g-button">Delete</a>
+        <div class="baf-group">
+            <a href="#button" class="baf">Archive</a>
+            <a href="#button" class="baf">Spam</a>
+            <a href="#button" class="baf">Delete</a>
         </div>
     </div>
 
@@ -161,41 +135,41 @@
         <p>
           Displaying a mixture of grouped and standalone buttons, as might be 
           seen in a toolbar, can be done by adding another wrapping element 
-          with the class <code>g-button-container</code>.
+          with the class <code>baf-container</code>.
         </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="actions <b>g-button-container</b>">
-    &lt;a href="#" class="g-button">Compose New&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="actions <b>baf-container</b>">
+    &lt;a href="#" class="baf">Compose New&lt;/a>
     
-    &lt;div class="g-button-group">
-        &lt;a href="#" class="g-button">Archive&lt;/a>
-        &lt;a href="#" class="g-button">Spam&lt;/a>
-        &lt;a href="#" class="g-button">Delete&lt;/a>
+    &lt;div class="baf-group">
+        &lt;a href="#" class="baf">Archive&lt;/a>
+        &lt;a href="#" class="baf">Spam&lt;/a>
+        &lt;a href="#" class="baf">Delete&lt;/a>
     &lt;/div>
                         
-    &lt;div class="g-button-group minor-group">
-        &lt;a href="#" class="g-button">Move to&lt;/a>
-        &lt;a href="#" class="g-button">Labels&lt;/a>
+    &lt;div class="baf-group minor-group">
+        &lt;a href="#" class="baf">Move to&lt;/a>
+        &lt;a href="#" class="baf">Labels&lt;/a>
     &lt;/div>
 
-    &lt;a href="#" class="g-button">More&lt;/a>
+    &lt;a href="#" class="baf">More&lt;/a>
 &lt;/div></code></pre>
-            <div class="actions g-button-container">
-                <a href="#button" class="g-button">Compose New</a>
+            <div class="actions baf-container">
+                <a href="#button" class="baf">Compose New</a>
                 
-                <div class="g-button-group">
-                    <a href="#button" class="g-button">Archive</a>
-                    <a href="#button" class="g-button">Spam</a>
-                    <a href="#button" class="g-button">Delete</a>
+                <div class="baf-group">
+                    <a href="#button" class="baf">Archive</a>
+                    <a href="#button" class="baf">Spam</a>
+                    <a href="#button" class="baf">Delete</a>
                 </div>
                                     
-                <div class="g-button-group minor-group">
-                    <a href="#button" class="g-button">Move to</a>
-                    <a href="#button" class="g-button">Labels</a>
+                <div class="baf-group minor-group">
+                    <a href="#button" class="baf">Move to</a>
+                    <a href="#button" class="baf">Labels</a>
                 </div>
 
-                <a href="#button" class="g-button">More</a>
+                <a href="#button" class="baf">More</a>
             </div>
         </div>
     </div>
@@ -211,40 +185,80 @@
         </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
-    &lt;a href="#" class="g-button">Day&lt;/a>
-    &lt;a href="#" class="g-button">Week&lt;/a>
-    &lt;a href="#" class="g-button checked">Month&lt;/a>
-    &lt;a href="#" class="g-button">4 Days&lt;/a>
-    &lt;a href="#" class="g-button">Agenda&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group toggle-buttons">
+    &lt;a href="#" class="baf">Day&lt;/a>
+    &lt;a href="#" class="baf">Week&lt;/a>
+    &lt;a href="#" class="baf checked">Month&lt;/a>
+    &lt;a href="#" class="baf">4 Days&lt;/a>
+    &lt;a href="#" class="baf">Agenda&lt;/a>
 &lt;/div></code></pre>
-            <div class="g-button-group toggle-buttons">
-                <a class="g-button">Day</a>
-                <a class="g-button">Week</a>
-                <a class="g-button checked">Month</a>
-                <a class="g-button">4 Days</a>
-                <a class="g-button">Agenda</a>
+            <div class="baf-group toggle-buttons">
+                <a class="baf">Day</a>
+                <a class="baf">Week</a>
+                <a class="baf checked">Month</a>
+                <a class="baf">4 Days</a>
+                <a class="baf">Agenda</a>
             </div>
         </div>
 
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
-    &lt;a href="#" class="g-button mini">Day&lt;/a>
-    &lt;a href="#" class="g-button mini">Week&lt;/a>
-    &lt;a href="#" class="g-button mini checked">Month&lt;/a>
-    &lt;a href="#" class="g-button mini">4 Days&lt;/a>
-    &lt;a href="#" class="g-button mini">Agenda&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group toggle-buttons">
+    &lt;a href="#" class="baf mini">Day&lt;/a>
+    &lt;a href="#" class="baf mini">Week&lt;/a>
+    &lt;a href="#" class="baf mini checked">Month&lt;/a>
+    &lt;a href="#" class="baf mini">4 Days&lt;/a>
+    &lt;a href="#" class="baf mini">Agenda&lt;/a>
 &lt;/div></code></pre>
 
-            <div class="g-button-group toggle-buttons">
-                <a class="g-button mini">Day</a>
-                <a class="g-button mini">Week</a>
-                <a class="g-button mini checked">Month</a>
-                <a class="g-button mini">4 Days</a>
-                <a class="g-button mini">Agenda</a>
+            <div class="baf-group toggle-buttons">
+                <a class="baf mini">Day</a>
+                <a class="baf mini">Week</a>
+                <a class="baf mini checked">Month</a>
+                <a class="baf mini">4 Days</a>
+                <a class="baf mini">Agenda</a>
             </div>
         </div>
     </div>
+    
+    <div class="section">
+            <h2>Radio Button Groups with Arrows</h2>
+            <p>
+              If you need to show progress steps, you can use the <code>arrow</code> class.
+            </p>
+    
+            <div class="example">
+    <pre class="prettyprint"><code>&lt;div class="baf-group toggle-buttons">
+    &lt;a class="baf arrow" style="z-index:8">one&lt;/a>
+    &lt;a class="baf arrow" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blue checked arrow" style="z-index:6">three&lt;/a>
+    &lt;a class="baf arrow" style="z-index:5">four&lt;/a>
+    &lt;a class="baf">five&lt;/a>
+&lt;/div>
+&lt;div class="baf-group toggle-buttons">
+    &lt;a class="baf darkh arrow" style="z-index:8">one&lt;/a>
+    &lt;a class="baf darkh arrow" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blueh checked arrow" style="z-index:6">three&lt;/a>
+    &lt;a class="baf greyh arrow" style="z-index:5">four&lt;/a>
+    &lt;a class="baf greyh">five&lt;/a>
+&lt;/div>
+    </code></pre>
+                <div class="baf-group toggle-buttons">
+                    <a class="baf arrow" style="z-index:8">one</a>
+                    <a class="baf arrow" style="z-index:7">two</a>
+                    <a class="baf blue checked arrow" style="z-index:6">three</a>
+                    <a class="baf arrow" style="z-index:5">four</a>
+                    <a class="baf" style="z-index:4">five</a>
+                </div>
+                <br><br><hr><br>
+                <div class="baf-group toggle-buttons">
+                    <a class="baf darkh arrow" style="z-index:8">one</a>
+                    <a class="baf darkh arrow" style="z-index:7">two</a>
+                    <a class="baf blueh checked arrow" style="z-index:6">three</a>
+                    <a class="baf greyh arrow" style="z-index:5">four</a>
+                    <a class="baf greyh" style="z-index:4">five</a>
+                </div>
+            </div>
+        </div>
     
     <div class="section">
         <h2>Buttons with icons only</h2>
@@ -256,41 +270,41 @@
         
         <div class="example">
 <pre class="prettyprint"><code>
-&lt;a href="#" class="g-button no-text">&lt;i class="icon-refresh">&lt;/i>&lt;/a>
-&lt;a href="#" class="g-button no-text">&lt;i class="icon-trash icon-white">&lt;/i>&lt;/a>
+&lt;a href="#" class="baf no-text">&lt;i class="icon-refresh">&lt;/i>&lt;/a>
+&lt;a href="#" class="baf no-text">&lt;i class="icon-trash icon-white">&lt;/i>&lt;/a>
 </code></pre>
 
-            <a class="g-button no-text"><i class="icon-refresh"></i></a>
-            <a class="g-button red no-text"><i class="icon-trash icon-white"></i></a>
+            <a class="baf no-text"><i class="icon-refresh"></i></a>
+            <a class="baf red no-text"><i class="icon-trash icon-white"></i></a>
         </div>
         
         <p>Or group them together, just like Gmail's paginator.</p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group">
+    &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
+    &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
 
-            <div class="g-button-group">
-                <a class="g-button no-text"><i class="icon-chevron-left"></i></a>
-                <a class="g-button no-text"><i class="icon-chevron-right"></i></a>
+            <div class="baf-group">
+                <a class="baf no-text"><i class="icon-chevron-left"></i></a>
+                <a class="baf no-text"><i class="icon-chevron-right"></i></a>
             </div>
         </div>
         
         <p>You can even mix and match with the disabled state.</p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button no-text disabled2">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
-    &lt;a href="#" class="g-button no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group">
+    &lt;a href="#" class="baf no-text disabled2">&lt;i class="icon-chevron-left">&lt;/i>&lt;/a>
+    &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
 
-            <div class="g-button-group">
-                <a class="g-button no-text disabled2"><i class="icon-chevron-left"></i></a>
-                <a class="g-button no-text"><i class="icon-chevron-right"></i></a>
+            <div class="baf-group">
+                <a class="baf no-text disabled2"><i class="icon-chevron-left"></i></a>
+                <a class="baf no-text"><i class="icon-chevron-right"></i></a>
             </div>
         </div>
     </div>
@@ -305,15 +319,15 @@
         </p>
         
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-bw">&lt;/i>&lt;/a>
-    &lt;a href="#" class="g-button xs-no-text">&lt;i class="xs-icon-fw">&lt;/i>&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group">
+    &lt;a href="#" class="baf xs-no-text">&lt;i class="xs-icon-bw">&lt;/i>&lt;/a>
+    &lt;a href="#" class="baf xs-no-text">&lt;i class="xs-icon-fw">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
 
-            <div class="g-button-group">
-                <a class="g-button xs-no-text"><i class="xs-icon-bw"></i></a>
-                <a class="g-button xs-no-text"><i class="xs-icon-fw"></i></a>
+            <div class="baf-group">
+                <a class="baf xs-no-text"><i class="xs-icon-bw"></i></a>
+                <a class="baf xs-no-text"><i class="xs-icon-fw"></i></a>
             </div>
         </div>
     </div>
@@ -327,12 +341,12 @@
         </p>
 
         <div class="example">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-    &lt;a href="#" class="g-button">&lt;i class="icon-search">&lt;i>Search&lt;/a>
+<pre class="prettyprint"><code>&lt;div class="baf-group">
+    &lt;a href="#" class="baf">&lt;i class="icon-search">&lt;i>Search&lt;/a>
 &lt;div>
 </code></pre>
 
-          <a class="g-button"><i class="icon-search"></i> Search</a>
+          <a class="baf"><i class="icon-search"></i> Search</a>
         </div>
         
         <div class="example">
@@ -345,27 +359,27 @@
                 </thead>
                 <tr>
                     <td scope="row"><code>.icon-plus</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-plus"></i> Add Item</a></td>
+                    <td><a href="#button" class="baf"><i class="icon-plus"></i> Add Item</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.icon-arrow-left</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-arrow-left"></i> Back</a></td>
+                    <td><a href="#button" class="baf"><i class="icon-arrow-left"></i> Back</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.icon-arrow-right</code></td>
-                    <td><a href="#button" class="g-button">Forward <i class="icon-arrow-right"></i></a></td>
+                    <td><a href="#button" class="baf">Forward <i class="icon-arrow-right"></i></a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.icon-remove</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-remove"></i> Remove Item</a></td>
+                    <td><a href="#button" class="baf"><i class="icon-remove"></i> Remove Item</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.icon-search</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-search"></i> Search</a></td>
+                    <td><a href="#button" class="baf"><i class="icon-search"></i> Search</a></td>
                 </tr>
                 <tr>
                     <td scope="row"><code>.icon-cog</code></td>
-                    <td><a href="#button" class="g-button"><i class="icon-cog"></i> Settings</a></td>
+                    <td><a href="#button" class="baf"><i class="icon-cog"></i> Settings</a></td>
                 </tr>
             </table>
         </div>
@@ -379,8 +393,8 @@
         </p>
 
         <div class="example" style="position:relative">
-<pre class="prettyprint"><code>&lt;div class="g-button-group">
-  &lt;a class="g-button dropdown-toggle" data-toggle="dropdown" href="#">
+<pre class="prettyprint"><code>&lt;div class="baf-group">
+  &lt;a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
     Dropdown Menu &lt;span class="caret">&lt;/span>
   &lt;/a>
   &lt;ul class="dropdown-menu">
@@ -392,9 +406,9 @@
 &lt;/div>
 </code></pre>
 
-            <div class="g-button-container">
-              <div class="g-button-group">
-                <a class="g-button dropdown-toggle" data-toggle="dropdown" href="#">
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
                   Dropdown Menu <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -406,9 +420,9 @@
               </div>
             </div>
             <hr>
-            <div class="g-button-container">
-              <div class="g-button-group">
-                <a class="g-button red dropdown-toggle" data-toggle="dropdown" href="#">
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf red dropdown-toggle" data-toggle="dropdown" href="#">
                   Dropdown Menu red <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -420,9 +434,9 @@
               </div>
             </div>
             <hr>
-            <div class="g-button-container">
-              <div class="g-button-group">
-                <a class="g-button green dropdown-toggle" data-toggle="dropdown" href="#">
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf green dropdown-toggle" data-toggle="dropdown" href="#">
                   Dropdown Menu green <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -434,9 +448,9 @@
               </div>
             </div>
             <hr>
-            <div class="g-button-container">
-              <div class="g-button-group">
-                <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
                   Dropdown Menu blue <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -457,10 +471,10 @@
                 </p>
         
                 <div class="example" style="position:relative">
-                    <div class="g-button-container">
-                      <div class="g-button-group">
-                        <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
-                          All Images 1/4 <span class="caret"></span>
+                    <div class="baf-container">
+                      <div class="baf-group">
+                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                          <i class="icon-list-alt icon-white"></i> All Images 1/4 <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><i class="icon-glass"></i> icon-glass</a></li>
@@ -503,8 +517,8 @@
                             <li><a href="#"><i class="icon-volume-up"></i> icon-volume-up</a></li>
                         </ul>
                       </div>
-                      <div class="g-button-group">
-                        <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+                      <div class="baf-group">
+                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
                           All Images 2/4 <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -548,8 +562,8 @@
                             <li><a href="#"><i class="icon-fast-forward"></i> icon-fast-forward</a></li>
                         </ul>
                       </div>
-                      <div class="g-button-group">
-                        <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+                      <div class="baf-group">
+                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
                           All Images 3/4 <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -593,8 +607,8 @@
                             <li><a href="#"><i class="icon-chevron-down"></i> icon-chevron-down</a></li>
                         </ul>
                       </div>
-                      <div class="g-button-group">
-                        <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+                      <div class="baf-group">
+                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
                           All Images 4/4 <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -615,9 +629,9 @@
         </p>
         
         <div class="example" style="position:relative">
-        <pre class="prettyprint"><code>&lt;div class="g-button-group">
-  &lt;a class="g-button blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
-  &lt;a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+        <pre class="prettyprint"><code>&lt;div class="baf-group">
+  &lt;a class="baf blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
+  &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
     &lt;span class="caret">&lt;/span>
   &lt;/a>
   &lt;ul class="dropdown-menu">
@@ -630,9 +644,9 @@
 &lt;/div>
 </code></pre>
           
-            <div class="g-button-group">
-              <a class="g-button blue"><i class="icon-user icon-white"></i> Add User</a>
-              <a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+            <div class="baf-group">
+              <a class="baf blue"><i class="icon-user icon-white"></i> Add User</a>
+              <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -650,9 +664,9 @@
         </p>
         
         <div class="example" style="position:relative">
-        <pre class="prettyprint"><code>&lt;div class="g-button-group">
-          &lt;a class="g-button blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
-          &lt;a class="g-button blue dropdown-toggle" data-toggle="dropdown" href="#">
+        <pre class="prettyprint"><code>&lt;div class="baf-group">
+          &lt;a class="baf blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
+          &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
             &lt;span class="caret">&lt;/span>
           &lt;/a>
           &lt;ul class="dropdown-menu">
@@ -684,6 +698,12 @@
     </div>
 
     <div class="section">
+        <h2>Version</h2>
+        <p>baf v. 1.0<br>
+        09.2012</p>
+    </div>
+
+    <div class="section">
         <h2>Acknowledgements</h2>
         <p>
           fork from 
@@ -706,8 +726,8 @@
 <script src="./js/bootstrap-dropdown.js"></script>
 <script type="text/javascript">
 // Implement checkbox-like buttons
-$(".toggle-buttons > .g-button").click(function() {
-    $(this).siblings(".g-button").removeClass("checked");
+$(".toggle-buttons > .baf").click(function() {
+    $(this).siblings(".baf").removeClass("checked");
     $(this).addClass("checked");
 });
 </script>
