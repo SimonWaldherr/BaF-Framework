@@ -1001,6 +1001,188 @@ textarea {
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
+/* ................................................................... Yellow */
+.g-button.yellow {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #faa328;
+  background-color: #faa937;
+  background-color: #fbb046;
+  background-image: -moz-linear-gradient(top, #fbb450, #faa937);
+  background-image: -ms-linear-gradient(top, #fbb450, #faa937);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#faa937));
+  background-image: -webkit-linear-gradient(top, #fbb450, #faa937);
+  background-image: -o-linear-gradient(top, #fbb450, #faa937);
+  background-image: linear-gradient(top, #fbb450, #faa937);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#faa937', GradientType=0);
+}
+.g-button.yellow:hover,
+.g-button.yellow:focus,
+.g-button.yellow:active {
+  border: 1px solid #df8505;
+  background-color: #faa937;
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -ms-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(top, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89406', GradientType=0);
+}
+.g-button.yellow:active,
+.g-button.yellow.active {
+  background-color: #faa937;
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -ms-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(top, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89406', GradientType=0);
+}
+.g-button.yellow.active {
+  border-color: #df8505;
+  background-color: #f89406;
+}
+.g-button.yellow.disabled,
+.g-button.yellow.disabled:hover,
+.g-button.yellow.disabled:active,
+.g-button.yellow.disabled.active,
+.g-button.yellow.disabled:focus,
+.g-button.yellow[disabled],
+.g-button.yellow[disabled]:hover,
+.g-button.yellow[disabled]:active,
+.g-button.yellow[disabled].active,
+.g-button.yellow[disabled]:focus {
+  color: #e6e6e6;
+  border-color: #fbb450;
+  background-color: #fbbf69;
+}
+/* ................................................................... Cyan */
+.g-button.cyan {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #46b8da;
+  background-color: #5bc0de;
+  background-color: #5bc0de;
+  background-image: -moz-linear-gradient(top, #5bc0de, #5bc0de);
+  background-image: -ms-linear-gradient(top, #5bc0de, #5bc0de);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#5bc0de));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #5bc0de);
+  background-image: -o-linear-gradient(top, #5bc0de, #5bc0de);
+  background-image: linear-gradient(top, #5bc0de, #5bc0de);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#5bc0de', GradientType=0);
+}
+.g-button.cyan:hover,
+.g-button.cyan:focus,
+.g-button.cyan:active {
+  border: 1px solid #31b0d5;
+  background-color: #5bc0de;
+  background-color: #5ec1df;
+  background-image: -moz-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: -ms-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#68c5e1), to(#4ebbdb));
+  background-image: -webkit-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: -o-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: linear-gradient(top, #68c5e1, #4ebbdb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68c5e1', endColorstr='#4ebbdb', GradientType=0);
+}
+.g-button.cyan:active,
+.g-button.cyan.active {
+  background-color: #39b3d7;
+  background-color: #5ec1df;
+  background-image: -moz-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: -ms-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#68c5e1), to(#4ebbdb));
+  background-image: -webkit-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: -o-linear-gradient(top, #68c5e1, #4ebbdb);
+  background-image: linear-gradient(top, #68c5e1, #4ebbdb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#68c5e1', endColorstr='#4ebbdb', GradientType=0);
+}
+.g-button.cyan.active {
+  border-color: #28a1c5;
+  background: #31b0d5;
+}
+.g-button.cyan.disabled,
+.g-button.cyan.disabled:hover,
+.g-button.cyan.disabled:active,
+.g-button.cyan.disabled.active,
+.g-button.cyan.disabled:focus,
+.g-button.cyan[disabled],
+.g-button.cyan[disabled]:hover,
+.g-button.cyan[disabled]:active,
+.g-button.cyan[disabled].active,
+.g-button.cyan[disabled]:focus {
+  color: #e6e6e6;
+  border-color: #70c8e2;
+  background-color: #85d0e7;
+}
+/* ................................................................... Black */
+.g-button.black {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #464646;
+  background-color: #4e4e4e;
+  background-color: #4f4f4f;
+  background-image: -moz-linear-gradient(top, #515151, #4b4b4b);
+  background-image: -ms-linear-gradient(top, #515151, #4b4b4b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#515151), to(#4b4b4b));
+  background-image: -webkit-linear-gradient(top, #515151, #4b4b4b);
+  background-image: -o-linear-gradient(top, #515151, #4b4b4b);
+  background-image: linear-gradient(top, #515151, #4b4b4b);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#515151', endColorstr='#4b4b4b', GradientType=0);
+}
+.g-button.black:hover,
+.g-button.black:focus,
+.g-button.black:active {
+  border: 1px solid #373737;
+  background-color: #4e4e4e;
+  background-color: #4c4c4c;
+  background-image: -moz-linear-gradient(top, #565656, #3f3f3f);
+  background-image: -ms-linear-gradient(top, #565656, #3f3f3f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#565656), to(#3f3f3f));
+  background-image: -webkit-linear-gradient(top, #565656, #3f3f3f);
+  background-image: -o-linear-gradient(top, #565656, #3f3f3f);
+  background-image: linear-gradient(top, #565656, #3f3f3f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#565656', endColorstr='#3f3f3f', GradientType=0);
+}
+.g-button.black:active,
+.g-button.black.active {
+  background-color: #191919;
+  background-color: #464646;
+  background-image: -moz-linear-gradient(top, #515151, #373737);
+  background-image: -ms-linear-gradient(top, #515151, #373737);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#515151), to(#373737));
+  background-image: -webkit-linear-gradient(top, #515151, #373737);
+  background-image: -o-linear-gradient(top, #515151, #373737);
+  background-image: linear-gradient(top, #515151, #373737);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#515151', endColorstr='#373737', GradientType=0);
+}
+.g-button.black.disabled,
+.g-button.black.disabled:hover,
+.g-button.black.disabled:active,
+.g-button.black.disabled.active,
+.g-button.black.disabled:focus,
+.g-button.black[disabled],
+.g-button.black[disabled]:hover,
+.g-button.black[disabled]:active,
+.g-button.black[disabled].active,
+.g-button.black[disabled]:focus {
+  color: #e6e6e6;
+  border-color: #686868;
+  background-color: #747474;
+}
 /* .............................................................. Minibutton */
 .sm {
   font-size: 11px;
