@@ -95,10 +95,17 @@
           <code>red</code>, <code>blue</code>, or <code>green</code> class to your button.
         </p>
         <div class="example">
-            <pre class="prettyprint"><code>&lt;a href="#" class="g-button red">Compose Mail&lt;/a></code></pre>
+            <pre class="prettyprint"><code>&lt;a href="#" class="g-button">Info&lt;/a>
+&lt;a href="#" class="g-button red">Compose Mail&lt;/a>
+&lt;a href="#" class="g-button blue">Search Mail&lt;/a>
+&lt;a href="#" class="g-button green">Add Contact&lt;/a>
+&lt;a href="#" class="g-button dark">Open Menu&lt;/a>
+            </code></pre>
+            <a href="#button" class="g-button">Info</a>
             <a href="#button" class="g-button red">Compose Mail</a>
             <a href="#button" class="g-button blue">Search Mail</a>
             <a href="#button" class="g-button green">Add Contact</a>
+            <a href="#button" class="g-button dark">Open Menu</a>
         </div>
     </div>
     
@@ -245,6 +252,30 @@
             </div>
         </div>
     </div>
+    
+    <div class="section">
+            <h2>Radio Button Groups with Arrows</h2>
+            <p>
+              If you need to show progress steps, you can use the <code>arrow</code> class.
+            </p>
+    
+            <div class="example">
+    <pre class="prettyprint"><code>&lt;div class="g-button-group toggle-buttons">
+        &lt;a class="g-button arrow" style="z-index:8">Day&lt;/a>
+        &lt;a class="g-button arrow" style="z-index:7">Week&lt;/a>
+        &lt;a class="g-button blue checked arrow" style="z-index:6">Month&lt;/a>
+        &lt;a class="g-button arrow" style="z-index:5">4 Days&lt;/a>
+        &lt;a class="g-button">Agenda&lt;/a>
+    &lt;/div></code></pre>
+                <div class="g-button-group toggle-buttons">
+                    <a class="g-button arrow" style="z-index:8">Day</a>
+                    <a class="g-button arrow" style="z-index:7">Week</a>
+                    <a class="g-button blue checked arrow" style="z-index:6">Month</a>
+                    <a class="g-button arrow" style="z-index:5">4 Days</a>
+                    <a class="g-button">Agenda</a>
+                </div>
+            </div>
+        </div>
     
     <div class="section">
         <h2>Buttons with icons only</h2>
