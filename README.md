@@ -16,7 +16,7 @@ Public domain: [http://unlicense.org](http://unlicense.org)
 
 ## Version ##
 
-baf v. 1.0.2  
+baf v. 1.0.3  
 09.2012
 
 ## Acknowledgements ##
