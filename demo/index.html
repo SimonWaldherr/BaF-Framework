@@ -3,17 +3,17 @@
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <title>CSS3 Buttons and Forms Demo</title>
-    <meta name="description" content="Using CSS3 to create Google-style UI elements">
+    <meta name="description" content="Using CSS3 to create beautiful UI elements">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css" type="text/css"  media="screen" />
-    <link rel="stylesheet" href="./css/baf.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="./../css/style.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="./../css/baf.css" type="text/css"  media="screen" />
     
     <!-- prettyify -->
     <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./../js/script.js"></script>
 </head>
 <body onload="prettyPrint()">
 
@@ -21,11 +21,9 @@
     <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
     <div class="header">
-        <h1>CSS3 Buttons and Forms</h1>
-        <p>
-          <b><a href="https://github.com/SimonWaldherr/buttons-and-forms" title="GitHub repository">CSS3 Buttons and Forms</a>
-          helps you easily create beautiful buttons.</b>
-        </p>
+        <h1 id="buttonsandforms"><a href="http://simonwaldherr.github.com/buttons-and-forms/">Buttons and Forms</a></h1>
+        
+        <p>the <a href="https://github.com/SimonWaldherr/buttons-and-forms">buttons and forms</a> <strong>CSS3</strong> styles collection is the easiest way, to make <strong>buttons</strong> and <strong>forms</strong> on webpages look great. It&#8217;s based on the wonderfull code from <a href="http://timodonnell.com/">Tim O&#8217;Donnell</a> and improved by <a href="http://simon.waldherr.eu/">Simon Waldherr</a>. The complete code is licensed under the terms of the <strong>MIT-License</strong>, which allows you to use and to change everything for <strong>free</strong>.</p>
     </div>
 
     <div class="section">
@@ -252,14 +250,14 @@
     <pre class="prettyprint"><code>&lt;div class="baf-group toggle-buttons">
     &lt;a class="baf arrow" style="z-index:8">one&lt;/a>
     &lt;a class="baf arrow" style="z-index:7">two&lt;/a>
-    &lt;a class="baf blue checked arrow" style="z-index:6">three&lt;/a>
+    &lt;a class="baf blue arrow" style="z-index:6">three&lt;/a>
     &lt;a class="baf arrow" style="z-index:5">four&lt;/a>
     &lt;a class="baf">five&lt;/a>
 &lt;/div>
 &lt;div class="baf-group toggle-buttons">
     &lt;a class="baf darkh arrow" style="z-index:8">one&lt;/a>
     &lt;a class="baf darkh arrow" style="z-index:7">two&lt;/a>
-    &lt;a class="baf blueh checked arrow" style="z-index:6">three&lt;/a>
+    &lt;a class="baf blueh arrow" style="z-index:6">three&lt;/a>
     &lt;a class="baf greyh arrow" style="z-index:5">four&lt;/a>
     &lt;a class="baf greyh">five&lt;/a>
 &lt;/div>
@@ -274,7 +272,7 @@
                 <div class="baf-group toggle-buttons">
                     <a class="baf arrow" style="z-index:8">one</a>
                     <a class="baf arrow" style="z-index:7">two</a>
-                    <a class="baf blue checked arrow" style="z-index:6">three</a>
+                    <a class="baf blue arrow" style="z-index:6">three</a>
                     <a class="baf arrow" style="z-index:5">four</a>
                     <a class="baf" style="z-index:4">five</a>
                 </div>
@@ -282,7 +280,7 @@
                 <div class="baf-group toggle-buttons">
                     <a class="baf darkh arrow" style="z-index:8">one</a>
                     <a class="baf darkh arrow" style="z-index:7">two</a>
-                    <a class="baf blueh checked arrow" style="z-index:6">three</a>
+                    <a class="baf blueh arrow" style="z-index:6">three</a>
                     <a class="baf greyh arrow" style="z-index:5">four</a>
                     <a class="baf greyh" style="z-index:4">five</a>
                 </div>
@@ -661,9 +659,7 @@
         
                 </div>
         
-        <p>
-          We can even create fancy split-button dropdowns in color with icons and dividers!
-        </p>
+        <p>We can even create fancy split-button dropdowns in color with icons and dividers!</p>
         
         <div class="example" style="position:relative">
         <pre class="prettyprint"><code>&lt;div class="baf-group">
@@ -696,71 +692,110 @@
             </div>
         </div>
         
+        <p>With the same style, we can make cool number input forms<br>try arrow keys to increase/decrease the value</p>
+        
+                <div class="example" style="position:relative">
+                <pre class="prettyprint"><code>&lt;div class="baf-group">
+          &lt;a class="baf blue" href="javascript:id('intinput').value++;">
+            &lt;i class="icon-plus icon-white">&lt;/i>
+          &lt;/a>
+          &lt;a class="baf blue" href="javascript:id('intinput').value--;">
+            &lt;i class="icon-minus icon-white">&lt;/i>
+          &lt;/a>
+          &lt;input id="intinput"
+          onkeydown="javascript:changeValues(document.getElementById('intinput'));"
+          type="number" name="quantity" value="42" min="0" max="100">
+          &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+          
+            &lt;span class="caret">&lt;/span>
+          &lt;/a>
+          &lt;ul class="dropdown-menu">
+              &lt;li>&lt;a href="javascript:id('intinput').value=0;">0&lt;/a>&lt;/li>
+              &lt;li class="divider">&lt;/li>
+              &lt;li>&lt;a href="javascript:id('intinput').value=25;">25&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="javascript:id('intinput').value=50;">50&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="javascript:id('intinput').value=75;">75&lt;/a>&lt;/li>
+              &lt;li class="divider">&lt;/li>
+              &lt;li>&lt;a href="javascript:id('intinput').value=100;">100&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+        </code></pre>
+        
+                    <div class="baf-group">
+                        <a class="baf blue" href="javascript:id('intinput').value++;"><i class="icon-plus icon-white"></i></a>
+                        <a class="baf blue" href="javascript:id('intinput').value--;"><i class="icon-minus icon-white"></i></a>
+                        <input id="intinput" onkeydown="javascript:changeValues(document.getElementById('intinput'));" type="number" name="quantity" value="42" min="0" max="100">
+                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:id('intinput').value=0;">0</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:id('intinput').value=25;">25</a></li>
+                            <li><a href="javascript:id('intinput').value=50;">50</a></li>
+                            <li><a href="javascript:id('intinput').value=75;">75</a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:id('intinput').value=100;">100</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
         <p>
           in a form you need more than buttons, you need textfields
         </p>
         
         <div class="example" style="position:relative">
-        <pre class="prettyprint"><code>&lt;div class="baf-group">
-          &lt;a class="baf blue">&lt;i class="icon-user icon-white">&lt;/i> Add User&lt;/a>
-          &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
-            &lt;span class="caret">&lt;/span>
-          &lt;/a>
-          &lt;ul class="dropdown-menu">
-              &lt;li>&lt;a href="#">&lt;i class="icon-ok">&lt;/i> Action&lt;/a>&lt;/li>
-              &lt;li>&lt;a href="#">&lt;i class="icon-remove">&lt;/i> Another Action&lt;/a>&lt;/li>
-              &lt;li>&lt;a href="#">&lt;i class="icon-star">&lt;/i> Something else here&lt;/a>&lt;/li>
-              &lt;li class="divider">&lt;/li>
-              &lt;li>&lt;a href="#">&lt;i class="icon-print">&lt;/i> Separated link&lt;/a>&lt;/li>
-          &lt;/ul>
-        &lt;/div>
+            <pre class="prettyprint"><code>&lt;div class="input-prepend">
+    &lt;span class="baf blue add-on" id="email">&lt;i class="icon-envelope icon-white">&lt;/i> email &lt;/span>&lt;input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup="">
+&lt;/div>
         </code></pre>
-        
-                    <div class="input-prepend">
-                        <span class="add-on" id="email"><i class="icon-envelope"></i> email </span><input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup="">
-                        </div>
-                    
-                </div>
+            <div class="input-prepend">
+                <label class="baf blue add-on" id="email" for="inputemail"><i class="icon-envelope icon-white"></i> email </label><input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup="">
+            </div>
+        </div>
         
     </div>
     
     <div class="section">
-        <h2>Browser compatibility</h2>
-        <p>Latest version of Safari, Chrome, Firefox, and IE8+</p>
+        <h2 id="browsercompatibility">Browser compatibility</h2>
+        
+        <p>This is being tested in the latest versions of <strong>Chrome</strong>, <strong>Safari</strong>, <strong>Firefox</strong> and <strong>Opera</strong>.</p>
     </div>
 
     <div class="section">
         <h2>License</h2>
-        <p>Public domain: <a href="http://unlicense.org/">http://unlicense.org/</a></p>
+        <p><strong>The MIT License (MIT)</strong></p>
+        
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        
+        <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        
+        <p><strong><em>previous versions are public domain (until v.1.0.3)</em></strong> </p>
     </div>
 
     <div class="section">
         <h2>Version</h2>
-        <p>baf v. 1.0.3<br>
+        <p>baf v. 1.1b<br>
         09.2012</p>
     </div>
 
     <div class="section">
-        <h2>Acknowledgements</h2>
-        <p>
-          fork from 
-          <a href="https://github.com/todc">tdoc</a>s, GitHub Repo 
-          <a href="https://github.com/todc/css3-google-buttons">css3-google-buttons</a>.
-        </p>
-        <p>
-          Icons from <a href="http://glyphicons.com/">glyphicons.com</a>.<br>
-          JavaScript from <a href="http://twitter.github.com/bootstrap/javascript.html">Twitter Bootstrap</a>.
-        </p>
+        <h2 id="acknowledgements">Acknowledgements</h2>
+        
+        <p>This is a fork of <a href="https://github.com/todc/">todc</a>s <a href="https://github.com/todc/css3-google-buttons">css3-google-buttons</a>.<br/>
+        Inspired by Michael Henriksen&#8217;s
+        <a href="http://github.com/michenriksen/css3buttons">CSS3 Buttons</a>,
+        <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>,
+        and of course, Google.<br/>
+        Icons from <a href="http://glyphicons.com/">glyphicons.com</a>.<br/>
+        <a href="https://github.com/">GitHub</a>, for this great service, on which the code and this demo page is hosted.</p>
     </div>
 
 </div>
 
-<div class="footer">
-    <a href="https://github.com/SimonWaldherr/buttons-and-forms">CSS3 Google Buttons</a> by 
-    <a href="http://timodonnell.com">Tim O'Donnell</a>.
-</div>
-
-<script src="./js/bootstrap-dropdown.js"></script>
+<script src="./../js/bootstrap-dropdown.js"></script>
 <script type="text/javascript">
 // Implement checkbox-like buttons
 $(".toggle-buttons > .baf").click(function() {

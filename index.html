@@ -1,0 +1,75 @@
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>Buttons and Forms</title>
+    <meta name="description" content="Using CSS3 to create beautiful UI elements">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="./css/baf.css" type="text/css"  media="screen" />
+    
+    <!-- prettyify -->
+    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body onload="prettyPrint()">
+
+<div class="container">
+    <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <div class="header">
+        <h1 id="buttonsandforms"><a href="http://simonwaldherr.github.com/buttons-and-forms/">Buttons and Forms</a></h1>
+        
+        <p><a href="https://github.com/SimonWaldherr/buttons-and-forms">CSS3 Buttons and Forms</a> helps you easily create beautiful buttons.</p>
+        
+        <h2 id="demo">Demo</h2>
+        
+        <p>a little demo, how buttons can beautified is available <a href="http://simonwaldherr.github.com/buttons-and-forms/demo/">here</a></p>
+        
+        <h2 id="editor">Editor</h2>
+        
+        <p>to create your own buttons with <a href="https://github.com/SimonWaldherr/buttons-and-forms">baf</a>, you can use <a href="http://simonwaldherr.github.com/buttons-and-forms/editor/">this Button Editor</a>. <em>of course for free</em></p>
+        
+        <h2 id="code">Code</h2>
+        
+        <p>the complete code is available in the <a href="https://github.com/SimonWaldherr/buttons-and-forms">CSS3 Buttons and Forms</a> repo on <a href="https://github.com/">GitHub</a>.</p>
+        
+        <h2 id="license">License</h2>
+        
+        <p>The complete code is licensed under the terms of the <a href="https://github.com/SimonWaldherr/buttons-and-forms/LICENSE.md">MIT-License</a>.</p>
+        
+        <h2 id="version">Version</h2>
+        
+        <p>This is Version 1.1b of <a href="https://github.com/SimonWaldherr/buttons-and-forms">Buttons and Forms</a></p>
+    </div>
+
+
+
+</div>
+
+<script src="./js/bootstrap-dropdown.js"></script>
+<script type="text/javascript">
+// Implement checkbox-like buttons
+$(".toggle-buttons > .baf").click(function() {
+    $(this).siblings(".baf").removeClass("checked");
+    $(this).addClass("checked");
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33526676-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

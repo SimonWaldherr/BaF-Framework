@@ -1,1 +1,190 @@
- 
+<!DOCTYPE HTML> 
+<html lang="en"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>CSS3 Buttons and Forms Demo</title>
+    <meta name="description" content="Using CSS3 to create beautiful UI elements">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./../css/style.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="./../css/baf.css" type="text/css"  media="screen" />
+
+    <!-- prettyify -->
+    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="./../js/script.js"></script>
+    <script>
+      function addTableRow()
+        {
+          var code = '<td><input name="text" type="text" placeholder="text"></td>';
+          code += '<td><select name="color" size="1"><option>grey</option><option>dark</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select></td>';
+          code += '<td><select name="icon" size="1"><option></option><option>plus</option><option>minus</option><option>search</option><option>envelope</option><option>heart</option><option>star</option><option>user</option><option>ok</option><option>remove</option><option>off</option><option>cog</option><option>trash</option><option>home</option><option>download</option><option>upload</option><option>refresh</option><option>pencil</option><option>picture</option><option>share</option></select></td>';
+          code += '<td><input name="link" type="text"></td>';
+          
+          var node=document.createElement("tr");
+          node.innerHTML = code;
+          document.getElementById("table").appendChild(node);
+        }
+        
+        function showContent()
+          {
+            var TBL = document.getElementById('realtable');
+            for(var x = 1; x < TBL.rows.length; x++)
+              {
+                for (var y = 0; y < TBL.rows[x].cells.length; y++)
+                  {
+                    alert(TBL.rows[x].cells[y].firstChild.value);
+                  }
+              }
+          }
+          function generateButton()
+            {
+              var TBL = document.getElementById('realtable');
+              var ButtonCode = '';
+              for(var x = 1; x < TBL.rows.length; x++)
+                {
+                  ButtonCode += '<a href="'+TBL.rows[x].cells[3].firstChild.value+'" class="baf '+TBL.rows[x].cells[1].firstChild.value+'">'
+                  if((TBL.rows[x].cells[2].firstChild.value != '')&&(TBL.rows[x].cells[1].firstChild.value == 'grey'))
+                    {
+                      ButtonCode += '<i class="icon-'+TBL.rows[x].cells[2].firstChild.value+'"></i>  ';
+                    }
+                  else if(TBL.rows[x].cells[2].firstChild.value != '')
+                    {
+                      ButtonCode += '<i class="icon-'+TBL.rows[x].cells[2].firstChild.value+' icon-white"></i>  ';
+                    }
+                  ButtonCode += TBL.rows[x].cells[0].firstChild.value+'</a>';
+                  //for (var y = 0; y < TBL.rows[x].cells.length; y++){alert(TBL.rows[x].cells[y].firstChild.value);}
+                }
+              
+              id('demobox').innerHTML = ButtonCode;
+              id('code').value = ButtonCode;
+            }
+          
+    </script>
+    <style>
+      #table select, #table input, #table b {
+        width: 145px;
+        border-radius: 4px;
+        font-size: 13px;
+        height: 25px;
+        padding: 1px;
+        margin: 1px;
+        display: inline-table;
+        text-align: center;
+      }
+      #code{
+        margin: 5px;
+        width: 680px;
+        height: 175px;
+        border-radius: 0px;
+      }
+      #demobox{
+        margin: 25px;
+        text-align: center;
+      }
+      #editor {
+        margin: auto;
+        text-align: center;
+        margin-top: 25px;
+      }
+      #tablediv{
+        margin: 15px 0 15px 0;
+      }
+    </style>
+</head>
+<body onload="prettyPrint()">
+
+<div class="container">
+    <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <div class="header">
+        <h1 id="buttonsandforms"><a href="http://simonwaldherr.github.com/buttons-and-forms/">Buttons and Forms</a></h1>
+
+        <p>the <a href="https://github.com/SimonWaldherr/buttons-and-forms">buttons and forms</a> <strong>CSS3</strong> styles collection is the easiest way, to make <strong>buttons</strong> and <strong>forms</strong> on webpages look great. It&#8217;s based on the wonderfull code from <a href="http://timodonnell.com/">Tim O&#8217;Donnell</a> and improved by <a href="http://simon.waldherr.eu/">Simon Waldherr</a>. The complete code is licensed under the terms of the <strong>MIT-License</strong>, which allows you to use and to change everything for <strong>free</strong>.</p>
+    </div>
+    <hr>
+    <div id="editor">
+      <!--<p><a href="javascript:addTableRow();">add button</a>, <a href="javascript:showContent();">show content</a>, <a href="javascript:generateButton();">generate Code</a>, </p>-->
+      <a href="javascript:addTableRow();" class="baf blue"><i class="icon-plus icon-white"></i>  add Button</a><a href="javascript:generateButton();" class="baf green"><i class="icon-ok icon-white"></i>  generate Buttons</a>
+      <div id="tablediv">
+        <table id="realtable"><tbody id="table">
+          
+          <tr><td><b>text</b></td><td><b>color</b></td><td><b>img</b></td><td><b>link</b></td></tr>
+          
+          
+        </tbody></table>
+      </div>
+    </div>
+    <hr>
+    <div id="demo">
+      <div id="demobox">
+        
+      </div>
+      <div id="codebox">
+        <textarea id="code"></textarea>
+      </div>
+    </div>
+    <hr>
+    <div class="section">
+        <h2 id="browsercompatibility">Browser compatibility</h2>
+
+        <p>This is being tested in the latest versions of <strong>Chrome</strong>, <strong>Safari</strong>, <strong>Firefox</strong> and <strong>Opera</strong>.</p>
+    </div>
+
+    <div class="section">
+        <h2>License</h2>
+        <p><strong>The MIT License (MIT)</strong></p>
+
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+        <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+        <p><strong><em>previous versions are public domain (until v.1.0.3)</em></strong> </p>
+    </div>
+
+    <div class="section">
+        <h2>Version</h2>
+        <p>baf v. 1.1b<br>
+        09.2012</p>
+    </div>
+
+    <div class="section">
+        <h2 id="acknowledgements">Acknowledgements</h2>
+
+        <p>This is a fork of <a href="https://github.com/todc/">todc</a>s <a href="https://github.com/todc/css3-google-buttons">css3-google-buttons</a>.<br/>
+        Inspired by Michael Henriksen&#8217;s
+        <a href="http://github.com/michenriksen/css3buttons">CSS3 Buttons</a>,
+        <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>,
+        and of course, Google.<br/>
+        Icons from <a href="http://glyphicons.com/">glyphicons.com</a>.<br/>
+        <a href="https://github.com/">GitHub</a>, for this great service, on which the code and this demo page is hosted.</p>
+    </div>
+
+</div>
+
+<script src="./../js/bootstrap-dropdown.js"></script>
+<script type="text/javascript">
+// Implement checkbox-like buttons
+$(".toggle-buttons > .baf").click(function() {
+    $(this).siblings(".baf").removeClass("checked");
+    $(this).addClass("checked");
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33526676-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

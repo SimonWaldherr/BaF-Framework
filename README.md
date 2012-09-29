@@ -28,7 +28,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ##Version
 
-baf v. 1.1  
+baf v. 1.1b  
 09.2012
 
 
