@@ -1,9 +1,33 @@
+/*
+ *
+ * Buttons and Forms
+ *
+ * Repo: https://github.com/SimonWaldherr/buttons-and-forms
+ * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
+ * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
+ * License: MIT
+ * Version: 1.2b
+ *
+ */
+
 html, body, div, form, p, code, pre { 
   margin: 0; 
   padding: 0; 
   border: 0; 
   vertical-align: baseline; 
   font-family: sans-serif; 
+}
+
+h1, h2, h3, p{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+}
+
+h1 a{
+  color: #09254e;
+}
+
+h1 a:hover{
+  color: #207dff;
 }
 
 body { 
@@ -13,11 +37,13 @@ body {
 }
 
 a { 
-  color: #980905; 
+  color: #207dff; 
+  text-decoration: none;
 }
 
 a:hover, a:focus, a:active { 
-  text-decoration: none; 
+  color: #1e77de;
+  text-decoration: underline; 
 }
 
 h1 { 
@@ -77,11 +103,11 @@ pre, code {
   padding: 40px 60px; 
   border: 1px solid #ccc; 
   margin: 40px auto 20px; 
-  background: #F8F8F8; 
-  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.1); 
-  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.1); 
-  box-shadow: 0 0 15px rgba(0,0,0,0.1); 
-  border-radius: 70px; 
+  background: #FCFCFC; 
+  -webkit-box-shadow: 0 0 25px 5px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0 0 25px 5px rgba(0,0,0,0.1); 
+  border-radius: 9px; 
 }
 
 .container pre,
