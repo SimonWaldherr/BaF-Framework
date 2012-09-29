@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.2b
+ * Version: 1.2c
  *
  */
 
@@ -725,6 +725,12 @@ input, textarea, select, .uneditable-input {
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
   background-clip: padding;
+  
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -o-user-select: none; 
+  user-select: none; 
   /* IE hacks */
   zoom: 1;
   z-index: 1;

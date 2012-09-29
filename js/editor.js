@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.2b
+ * Version: 1.2c
  *
  */
 
@@ -15,7 +15,7 @@ function addTableRow()
     var code = '<td><input name="text" type="text" placeholder="text" onkeyup="javascript:generateButton();"></td>';
     code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>grey</option><option>dark</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select></td>';
     code += '<td><select name="icon" size="1" onchange="javascript:generateButton();"><option></option><option>plus</option><option>minus</option><option>search</option><option>envelope</option><option>heart</option><option>star</option><option>user</option><option>ok</option><option>remove</option><option>off</option><option>cog</option><option>trash</option><option>home</option><option>download</option><option>upload</option><option>refresh</option><option>pencil</option><option>picture</option><option>share</option></select></td>';
-    code += '<td><input name="link" type="text" onkeyup="javascript:generateButton();"></td>';
+    code += '<td><input name="link" type="text" onkeyup="javascript:generateButton();"></td><td><input name="text" type="text" placeholder="group" onkeyup="javascript:generateButton();"></td>';
     
     var node=document.createElement("tr");
     node.innerHTML = code;
@@ -37,23 +37,46 @@ function showContent()
 function generateButton()
   {
     var TBL = document.getElementById('realtable');
-    var ButtonCode = '';
+    //var ButtonCode = '';
+    var ButtonCode = new Array();
+    var group = '';
     for(var x = 1; x < TBL.rows.length; x++)
       {
-        ButtonCode += '<a href="'+TBL.rows[x].cells[3].firstChild.value+'" class="baf '+TBL.rows[x].cells[1].firstChild.value+'">'
+        group = TBL.rows[x].cells[4].firstChild.value;
+        if(ButtonCode[group] == undefined)
+          {
+            ButtonCode[group] = '';
+          }
+        if(TBL.rows[x].cells[3].firstChild.value != '')
+          {
+            ButtonCode[group] += '<a href="'+TBL.rows[x].cells[3].firstChild.value+'"';
+          }
+        else
+          {
+            ButtonCode[group] += '<a href="#"';
+          }
+        ButtonCode[group] += ' class="baf '+TBL.rows[x].cells[1].firstChild.value+'">';
         if((TBL.rows[x].cells[2].firstChild.value != '')&&(TBL.rows[x].cells[1].firstChild.value == 'grey'))
           {
-            ButtonCode += '<i class="icon-'+TBL.rows[x].cells[2].firstChild.value+'"></i>  ';
+            ButtonCode[group] += '<i class="icon-'+TBL.rows[x].cells[2].firstChild.value+'"></i>  ';
           }
         else if(TBL.rows[x].cells[2].firstChild.value != '')
           {
-            ButtonCode += '<i class="icon-'+TBL.rows[x].cells[2].firstChild.value+' icon-white"></i>  ';
+            ButtonCode[group] += '<i class="icon-'+TBL.rows[x].cells[2].firstChild.value+' icon-white"></i>  ';
           }
-        ButtonCode += TBL.rows[x].cells[0].firstChild.value+'</a>';
+        ButtonCode[group] += TBL.rows[x].cells[0].firstChild.value+'</a>';
       }
     
-    id('demobox').innerHTML = ButtonCode;
-    id('code').value = ButtonCode;
+    var output = '';
+    
+    for (x in ButtonCode)
+      {
+        output += '<div class="baf-group baf-group-x'+x+'">'+ButtonCode[x]+'</div>';
+      }
+    
+    
+    id('demobox').innerHTML = output;
+    id('code').value = output;
   }
 
 function clearTable()
