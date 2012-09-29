@@ -6,14 +6,14 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.2c
+ * Version: 1.3
  *
  */
 
 function addTableRow()
   {
     var code = '<td><input name="text" type="text" placeholder="text" onkeyup="javascript:generateButton();"></td>';
-    code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>grey</option><option>dark</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select></td>';
+    code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select></td>';
     code += '<td><select name="icon" size="1" onchange="javascript:generateButton();"><option></option><option>plus</option><option>minus</option><option>search</option><option>envelope</option><option>heart</option><option>star</option><option>user</option><option>ok</option><option>remove</option><option>off</option><option>cog</option><option>trash</option><option>home</option><option>download</option><option>upload</option><option>refresh</option><option>pencil</option><option>picture</option><option>share</option></select></td>';
     code += '<td><input name="link" type="text" onkeyup="javascript:generateButton();"></td><td><input name="text" type="text" placeholder="group" onkeyup="javascript:generateButton();"></td>';
     
