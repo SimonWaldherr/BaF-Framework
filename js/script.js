@@ -1,3 +1,15 @@
+/*
+ *
+ * Buttons and Forms
+ *
+ * Repo: https://github.com/SimonWaldherr/buttons-and-forms
+ * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
+ * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
+ * License: MIT
+ * Version: 1.2
+ *
+ */
+
 function id(id)
   {
     return document.getElementById(id);
