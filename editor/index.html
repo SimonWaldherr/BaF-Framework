@@ -6,7 +6,7 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.2
+ Version: 1.2b
 
 --><!DOCTYPE html> 
 <html lang="en"> 
@@ -30,9 +30,9 @@
 
         <p>the <a href="https://github.com/SimonWaldherr/buttons-and-forms">buttons and forms</a> <strong>CSS3</strong> styles collection is the easiest way, to make <strong>buttons</strong> and <strong>forms</strong> on webpages look great. It&#8217;s based on the wonderfull code from <a href="http://timodonnell.com/">Tim O&#8217;Donnell</a> and improved by <a href="http://simon.waldherr.eu/">Simon Waldherr</a>. The complete code is licensed under the terms of the <strong>MIT-License</strong>, which allows you to use and to change everything for <strong>free</strong>.</p>
     </div>
-    <hr>
+</div>
+<div class="container">
     <div id="editor">
-      <!--<p><a href="javascript:addTableRow();">add button</a>, <a href="javascript:showContent();">show content</a>, <a href="javascript:generateButton();">generate Code</a>, </p>-->
       <a href="javascript:addTableRow();" class="baf blue"><i class="icon-plus icon-white"></i>  add </a><a href="javascript:generateButton();" class="baf green"><i class="icon-refresh icon-white"></i>  refresh</a><a href="javascript:clearTable();" class="baf red"><i class="icon-trash icon-white"></i>  clear</a>
       <div id="tablediv">
         <table id="realtable"><tbody id="table">
@@ -43,16 +43,18 @@
         </tbody></table>
       </div>
     </div>
-    <hr>
     <div id="demo">
+      <hr>
       <div id="demobox">
         
       </div>
+      <hr>
       <div id="codebox">
         <textarea id="code"></textarea>
       </div>
     </div>
-    <hr>
+</div>
+<div class="container">
     <div class="section">
         <h2 id="browsercompatibility">Browser compatibility</h2>
 
@@ -62,7 +64,8 @@
     <div class="section">
         <h2>License</h2>
         <p><strong>The MIT License (MIT)</strong></p>
-
+        <p><a href="https://github.com/todc/">Tim O'Donnell</a>, <a href="https://github.com/SimonWaldherr">Simon Waldherr</a></p>
+        
         <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
         <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
@@ -74,7 +77,7 @@
 
     <div class="section">
         <h2>Version</h2>
-        <p>baf v. 1.2<br>
+        <p>baf v. 1.2b<br>
         09.2012</p>
     </div>
 
@@ -93,13 +96,6 @@
 </div>
 
 <script src="./../js/bootstrap-dropdown.js"></script>
-<script type="text/javascript">
-// Implement checkbox-like buttons
-$(".toggle-buttons > .baf").click(function() {
-    $(this).siblings(".baf").removeClass("checked");
-    $(this).addClass("checked");
-});
-</script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

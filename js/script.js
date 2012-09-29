@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.2
+ * Version: 1.2b
  *
  */
 
@@ -55,3 +55,8 @@ function changeloadingmode(element)
           }
       }
   }
+
+$(".toggle-buttons > .baf").click(function() {
+    $(this).siblings(".baf").removeClass("checked");
+    $(this).addClass("checked");
+});
