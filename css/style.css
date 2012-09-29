@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.2b
+ * Version: 1.2c
  *
  */
 
@@ -162,7 +162,7 @@ pre, code {
 }
 
 #table select, #table input, #table b {
-  width: 145px;
+  width: 110px;
   border-radius: 4px;
   font-size: 13px;
   height: 25px;
