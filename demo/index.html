@@ -7,7 +7,7 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.3.1
+ Version: 1.3.2
 
 --><html lang="en"> 
 <head> 
@@ -47,7 +47,7 @@
             <pre class="code prettyprint"><code>&lt;a class="baf">New Comment (link)&lt;/a>
 &lt;input class="baf" type="submit" value="New Comment (submit)" />
 &lt;button class="baf">New Comment (button)&lt;/button></code></pre>
-            <form>
+            <form class="cente">
                 <a class="baf">New Comment (link)</a>
                 <input class="baf" type="submit" value="New Comment (submit)" />
                 <button class="baf">New Comment (button)</button>
@@ -73,17 +73,19 @@
 &lt;a href="#" class="baf yellow">Warning&lt;/a>
 &lt;a href="#" class="baf red">Error&lt;/a>
             </code></pre>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf">Info</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf blue">Search</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf cyan">Send</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf black">Abort</a>
-            
-            <br><br>
-            
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf dark">Open Menu</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf green">Success</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf yellow">Warning</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf red">Error</a>
+            <div class="cente">
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf">Info</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf blue">Search</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf cyan">Send</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf black">Abort</a>
+              
+              <br><br>
+              
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf dark">Open Menu</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf green">Success</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf yellow">Warning</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf red">Error</a>
+            </div>
         </div>
     </div>
     
@@ -100,8 +102,10 @@
         <div class="example">
             <pre class="prettyprint"><code>&lt;a href="#" class="baf disabled">Today&lt;/a>
 &lt;a href="#" class="baf disabled2">Today&lt;/a></code></pre>
-            <a href="#button" class="baf disabled">Today</a>
-            <a href="#button" class="baf disabled2">Today</a>
+            <div class="cente">
+              <a href="#button" class="baf disabled">Today</a>
+              <a href="#button" class="baf disabled2">Today</a>
+            </div>
         </div>
     </div>
     
@@ -115,9 +119,11 @@
                 <pre class="prettyprint"><code>&lt;a href="#" class="baf" disabled="true">Info&lt;/a>
 &lt;a href="#" class="baf blue" disabled="true">Search&lt;/a>
 &lt;a href="#" class="baf black" disabled="true">Abort&lt;/a></code></pre>
-                <a href="#button" class="baf" disabled="true">Info</a>
-                <a href="#button" class="baf blue" disabled="true">Search</a>
-                <a href="#button" class="baf black" disabled="true">Abort</a>
+                <div class="cente">
+                  <a href="#button" class="baf" disabled="true">Info</a>
+                  <a href="#button" class="baf blue" disabled="true">Search</a>
+                  <a href="#button" class="baf black" disabled="true">Abort</a>
+                </div>
             </div>
         </div>
     
@@ -132,8 +138,10 @@
         <div class="example">
             <pre class="prettyprint"><code>&lt;a href="#" class="baf sm">Month&lt;/a>
 &lt;a href="#" class="baf mini">Month&lt;/a></code></pre>
-            <a href="#button" class="baf sm">Month</a>
-            <a href="#button" class="baf mini">Month</a>
+            <div class="cente">
+              <a href="#button" class="baf sm">Month</a>
+              <a href="#button" class="baf mini">Month</a>
+            </div>
         </div>
     </div>
     
@@ -150,11 +158,14 @@
     &lt;a href="#" class="baf">Spam&lt;/a>
     &lt;a href="#" class="baf">Delete&lt;/a>
 &lt;/div></code></pre>
-        <div class="baf-group">
+        <div class="cente">
+          <div class="baf-group">
             <a href="#button" class="baf">Archive</a>
             <a href="#button" class="baf">Spam</a>
             <a href="#button" class="baf">Delete</a>
+          </div>
         </div>
+        
     </div>
 </div>
 
@@ -183,7 +194,7 @@
 
     &lt;a href="#" class="baf">More&lt;/a>
 &lt;/div></code></pre>
-            <div class="actions baf-container">
+            <div class="actions baf-container cente">
                 <a href="#button" class="baf">Compose New</a>
                 
                 <div class="baf-group">
@@ -220,13 +231,16 @@
     &lt;a href="#" class="baf">4 Days&lt;/a>
     &lt;a href="#" class="baf">Agenda&lt;/a>
 &lt;/div></code></pre>
-            <div class="baf-group toggle-buttons">
+            <div class="cente">
+              <div class="baf-group toggle-buttons">
                 <a class="baf">Day</a>
                 <a class="baf">Week</a>
                 <a class="baf checked">Month</a>
                 <a class="baf">4 Days</a>
                 <a class="baf">Agenda</a>
+              </div>
             </div>
+            
         </div>
 
         <div class="example">
@@ -237,14 +251,16 @@
     &lt;a href="#" class="baf mini">4 Days&lt;/a>
     &lt;a href="#" class="baf mini">Agenda&lt;/a>
 &lt;/div></code></pre>
-
-            <div class="baf-group toggle-buttons">
+            <div class="cente">
+              <div class="baf-group toggle-buttons">
                 <a class="baf mini">Day</a>
                 <a class="baf mini">Week</a>
                 <a class="baf mini checked">Month</a>
                 <a class="baf mini">4 Days</a>
                 <a class="baf mini">Agenda</a>
+              </div>
             </div>
+            
         </div>
     </div>
     
@@ -303,6 +319,7 @@
     &lt;a class="baf" style="z-index:4">five&lt;/a>
 &lt;/div>
     </code></pre>
+              <div class="cente">
                 <div class="baf-group toggle-buttons arrow">
                     <a class="baf" style="z-index:8">one</a>
                     <a class="baf" style="z-index:7">two</a>
@@ -350,6 +367,7 @@
                     <a class="baf" style="z-index:5">four</a>
                     <a class="baf" style="z-index:4">five</a>
                 </div>
+              </div>
             </div>
         </div>
     
@@ -366,9 +384,11 @@
 &lt;a href="#" class="baf no-text">&lt;i class="icon-refresh">&lt;/i>&lt;/a>
 &lt;a href="#" class="baf no-text">&lt;i class="icon-trash icon-white">&lt;/i>&lt;/a>
 </code></pre>
-
-            <a class="baf no-text"><i class="icon-refresh"></i></a>
-            <a class="baf red no-text"><i class="icon-trash icon-white"></i></a>
+            <div class="cente">
+              <a class="baf no-text"><i class="icon-refresh"></i></a>
+              <a class="baf red no-text"><i class="icon-trash icon-white"></i></a>
+            </div>
+            
         </div>
         
         <p>Or group them together, just like Gmail's paginator.</p>
@@ -379,11 +399,13 @@
     &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
-
-            <div class="baf-group">
+            <div class="cente">
+              <div class="baf-group">
                 <a class="baf no-text"><i class="icon-chevron-left"></i></a>
                 <a class="baf no-text"><i class="icon-chevron-right"></i></a>
+              </div>
             </div>
+            
         </div>
         
         <p>You can even mix and match with the disabled state.</p>
@@ -394,11 +416,13 @@
     &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
-
-            <div class="baf-group">
+            <div class="cente">
+              <div class="baf-group">
                 <a class="baf no-text disabled2"><i class="icon-chevron-left"></i></a>
                 <a class="baf no-text"><i class="icon-chevron-right"></i></a>
+              </div>
             </div>
+            
         </div>
     </div>
     
@@ -417,11 +441,13 @@
     &lt;a href="#" class="baf xs-no-text">&lt;i class="xs-icon-fw">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
-
-            <div class="baf-group">
+            <div class="cente">
+              <div class="baf-group">
                 <a class="baf xs-no-text"><i class="xs-icon-bw"></i></a>
                 <a class="baf xs-no-text"><i class="xs-icon-fw"></i></a>
+              </div>
             </div>
+            
         </div>
     </div>
     
@@ -438,12 +464,13 @@
     &lt;a href="#" class="baf">&lt;i class="icon-search">&lt;i>Search&lt;/a>
 &lt;div>
 </code></pre>
-
-          <a class="baf"><i class="icon-search"></i> Search</a>
+          <div class="cente">
+            <a class="baf"><i class="icon-search"></i> Search</a>
+          </div>
         </div>
         
         <div class="example">
-            <table>
+            <table class="cente">
                 <thead>
                     <tr>
                         <th>Class</th>
@@ -498,7 +525,7 @@
   &lt;/ul>
 &lt;/div>
 </code></pre>
-
+          <div class="cente">
             <div class="baf-container">
               <div class="baf-group">
                 <a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
@@ -554,6 +581,7 @@
                 </ul>
               </div>
             </div>
+          </div>
         </div>
     </div>
         
@@ -1093,6 +1121,56 @@
                           <li><a href="#"><i class="icomoon-zoom-out"></i> icomoon-zoom-out</a></li>
                       </ul>
                     </div>
+                    <br><br>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        big icomoon icons <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu-big">
+                          <li><a href="#"><i class="icomoon-big-accessibility"></i> icomoon-big-accessibility</a></li>
+                          <li><a href="#"><i class="icomoon-big-address-book2"></i> icomoon-big-address-book2</a></li>
+                          <li><a href="#"><i class="icomoon-big-android"></i> icomoon-big-android</a></li>
+                          <li><a href="#"><i class="icomoon-big-apple"></i> icomoon-big-apple</a></li>
+                          <li><a href="#"><i class="icomoon-big-attachment"></i> icomoon-big-attachment</a></li>
+                          <li><a href="#"><i class="icomoon-big-bars"></i> icomoon-big-bars</a></li>
+                          <li><a href="#"><i class="icomoon-big-broadcast2"></i> icomoon-big-broadcast2</a></li>
+                          <li><a href="#"><i class="icomoon-big-busy"></i> icomoon-big-busy</a></li>
+                          <li><a href="#"><i class="icomoon-big-calendar2"></i> icomoon-big-calendar2</a></li>
+                          <li><a href="#"><i class="icomoon-big-cancel"></i> icomoon-big-cancel</a></li>
+                          <li><a href="#"><i class="icomoon-big-cart3"></i> icomoon-big-cart3</a></li>
+                          <li><a href="#"><i class="icomoon-big-clipboard3"></i> icomoon-big-clipboard3</a></li>
+                          <li><a href="#"><i class="icomoon-big-clock"></i> icomoon-big-clock</a></li>
+                          <li><a href="#"><i class="icomoon-big-cloud-download"></i> icomoon-big-cloud-download</a></li>
+                          <li><a href="#"><i class="icomoon-big-cloud-upload"></i> icomoon-big-cloud-upload</a></li>
+                          <li><a href="#"><i class="icomoon-big-coffee"></i> icomoon-big-coffee</a></li>
+                          <li><a href="#"><i class="icomoon-big-cog2"></i> icomoon-big-cog2</a></li>
+                          <li><a href="#"><i class="icomoon-big-comment"></i> icomoon-big-comment</a></li>
+                          <li><a href="#"><i class="icomoon-big-comments"></i> icomoon-big-comments</a></li>
+                          <li><a href="#"><i class="icomoon-big-database"></i> icomoon-big-database</a></li>
+                          <li><a href="#"><i class="icomoon-big-droplet"></i> icomoon-big-droplet</a></li>
+                          <li><a href="#"><i class="icomoon-big-embed"></i> icomoon-big-embed</a></li>
+                          <li><a href="#"><i class="icomoon-big-eye"></i> icomoon-big-eye</a></li>
+                          <li><a href="#"><i class="icomoon-big-flag3"></i> icomoon-big-flag3</a></li>
+                          <li><a href="#"><i class="icomoon-big-github-fork"></i> icomoon-big-github-fork</a></li>
+                          <li><a href="#"><i class="icomoon-big-info"></i> icomoon-big-info</a></li>
+                          <li><a href="#"><i class="icomoon-big-key"></i> icomoon-big-key</a></li>
+                          <li><a href="#"><i class="icomoon-big-lab"></i> icomoon-big-lab</a></li>
+                          <li><a href="#"><i class="icomoon-big-link"></i> icomoon-big-link</a></li>
+                          <li><a href="#"><i class="icomoon-big-lock"></i> icomoon-big-lock</a></li>
+                          <li><a href="#"><i class="icomoon-big-mail"></i> icomoon-big-mail</a></li>
+                          <li><a href="#"><i class="icomoon-big-mic2"></i> icomoon-big-mic2</a></li>
+                          <li><a href="#"><i class="icomoon-big-music"></i> icomoon-big-music</a></li>
+                          <li><a href="#"><i class="icomoon-big-pencil4"></i> icomoon-big-pencil4</a></li>
+                          <li><a href="#"><i class="icomoon-big-picture2"></i> icomoon-big-picture2</a></li>
+                          <li><a href="#"><i class="icomoon-big-pie"></i> icomoon-big-pie</a></li>
+                          <li><a href="#"><i class="icomoon-big-rocket"></i> icomoon-big-rocket</a></li>
+                          <li><a href="#"><i class="icomoon-big-search2"></i> icomoon-big-search2</a></li>
+                          <li><a href="#"><i class="icomoon-big-star"></i> icomoon-big-star</a></li>
+                          <li><a href="#"><i class="icomoon-big-target2"></i> icomoon-big-target2</a></li>
+                          <li><a href="#"><i class="icomoon-big-trashcan4"></i> icomoon-big-trashcan4</a></li>
+                          <li><a href="#"><i class="icomoon-big-twitter-bird"></i> icomoon-big-twitter-bird</a></li>
+                      </ul>
+                    </div> (only a selection, but you can use all icomoon icons)
                   </div>
                 </div>
         <p>We can even create fancy split-button dropdowns in color with icons and dividers!</p>
@@ -1112,7 +1190,7 @@
   &lt;/ul>
 &lt;/div>
 </code></pre>
-          
+          <div class="cente">
             <div class="baf-group">
               <a class="baf blue"><i class="icon-user icon-white"></i> Add User</a>
               <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
@@ -1126,6 +1204,7 @@
                   <li><a href="#"><i class="icon-print"></i> Separated link</a></li>
               </ul>
             </div>
+          </div>
         </div>
         
         <p>With the same style, we can make cool number input forms <br>try the arrow keys, the plus and minus keys and buttons <br>and the mousewheel to increase/decrease the value</p>
@@ -1161,7 +1240,7 @@
   &lt;/ul>
 &lt;/div>
         </code></pre>
-        
+                  <div class="cente">
                     <div class="baf-group">
                         <a class="baf blue" onmousedown="keepCalling = true; plusone('intinput');" onmouseup="keepCalling = false;" onmouseout="keepCalling = false;"><i class="icon-plus icon-white"></i></a>
                         <a class="baf blue" onmousedown="keepCalling = true; minusone('intinput');" onmouseup="keepCalling = false;" onmouseout="keepCalling = false;"><i class="icon-minus icon-white"></i></a>
@@ -1179,6 +1258,7 @@
                             <li><a href="javascript:id('intinput').value=100;">100</a></li>
                         </ul>
                     </div>
+                  </div>
                 </div>
         
         <p>
@@ -1187,33 +1267,49 @@
         
         <div class="example" style="position:relative">
             <pre class="prettyprint"><code>&lt;div class="input-prepend baf-input">
-  &lt;label class="baf blue add-on" id="email" for="inputemail">
-    &lt;i class="icon-envelope icon-white">&lt;/i> email 
-  &lt;/label>
-  &lt;input class="span2" name="email" id="inputemail" size="16" type="text">
-  &lt;br>
-  &lt;label class="baf green add-on" id="user" for="inputuser">
-    &lt;i class="icon-user icon-white">&lt;/i> name 
-  &lt;/label>
-  &lt;input class="span2 input-green" name="user" id="inputuser" size="16" type="text">
-  &lt;br>
-  &lt;label class="baf yellow add-on" id="key" for="inputkey">
-    &lt;i class="icomoon-key icomoon-white">&lt;/i> key 
-  &lt;/label>
-  &lt;input class="span2 input-yellow" name="key" id="inputkey" size="16" type="text">
-  &lt;br>
-  &lt;label class="baf red add-on" id="wrong" for="inputwrong">
-    &lt;i class="icomoon-thumbs-down icomoon-white">&lt;/i> wrong 
-  &lt;/label>
-  &lt;input class="span2 input-red" name="wrong" id="inputwrong" size="16" type="text">
-  &lt;br>
+    &lt;label class="baf cyan add-on" id="file" for="inputfile">
+      &lt;i class="icomoon-big-attachment icomoon-big-white">&lt;/i> file 
+    &lt;/label>&lt;input class="input-cyan" name="file" 
+      id="inputfile" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf blue add-on" id="email" for="inputemail">
+      &lt;i class="icon-envelope icon-white">&lt;/i> email 
+    &lt;/label>&lt;input class="" name="email" 
+      id="inputemail" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf green add-on" id="user" for="inputuser">
+      &lt;i class="icon-user icon-white">&lt;/i> name 
+    &lt;/label>&lt;input class="input-green" name="user" 
+      id="inputuser" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf yellow add-on" id="key" for="inputkey">
+      &lt;i class="icomoon-key icomoon-white">&lt;/i> key 
+    &lt;/label>&lt;input class="input-yellow" name="key" 
+      id="inputkey" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf red add-on" id="wrong" for="inputwrong">
+      &lt;i class="icomoon-thumbs-down icomoon-white">&lt;/i> wrong 
+    &lt;/label>&lt;input class="input-red" name="wrong" 
+      id="inputwrong" size="16" type="text" onkeyup="">&lt;br>
 &lt;/div>
         </code></pre>
-            <div class="input-prepend baf-input">
-                <label class="baf blue add-on" id="email" for="inputemail"><i class="icon-envelope icon-white"></i> email </label><input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup=""><br>
-                <label class="baf green add-on" id="user" for="inputuser"><i class="icon-user icon-white"></i> name </label><input class="span2 input-green" name="user" id="inputuser" size="16" type="text" onkeyup=""><br>
-                <label class="baf yellow add-on" id="key" for="inputkey"><i class="icomoon-key icomoon-white"></i> key </label><input class="span2 input-yellow" name="key" id="inputkey" size="16" type="text" onkeyup=""><br>
-                <label class="baf red add-on" id="wrong" for="inputwrong"><i class="icomoon-thumbs-down icomoon-white"></i> wrong </label><input class="span2 input-red" name="wrong" id="inputwrong" size="16" type="text" onkeyup=""><br>
+            <div class="input-prepend baf-input cente">
+                <label class="baf cyan add-on" id="file" for="inputfile">
+                  <i class="icomoon-big-attachment icomoon-big-white"></i> file 
+                </label><input class="input-cyan" name="file" 
+                  id="inputfile" size="16" type="text" onkeyup=""><br>
+                <label class="baf blue add-on" id="email" for="inputemail">
+                  <i class="icon-envelope icon-white"></i> email 
+                </label><input class="" name="email" 
+                  id="inputemail" size="16" type="text" onkeyup=""><br>
+                <label class="baf green add-on" id="user" for="inputuser">
+                  <i class="icon-user icon-white"></i> name 
+                </label><input class="input-green" name="user" 
+                  id="inputuser" size="16" type="text" onkeyup=""><br>
+                <label class="baf yellow add-on" id="key" for="inputkey">
+                  <i class="icomoon-key icomoon-white"></i> key 
+                </label><input class="input-yellow" name="key" 
+                  id="inputkey" size="16" type="text" onkeyup=""><br>
+                <label class="baf red add-on" id="wrong" for="inputwrong">
+                  <i class="icomoon-thumbs-down icomoon-white"></i> wrong 
+                </label><input class="input-red" name="wrong" 
+                  id="inputwrong" size="16" type="text" onkeyup=""><br>
             </div>
         </div>
         
@@ -1240,7 +1336,7 @@
 
     <div class="section">
         <h2>Version</h2>
-        <p>baf v. 1.3.1<br>
+        <p>baf v. 1.3.2<br>
         10.2012</p>
     </div>
 
