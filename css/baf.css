@@ -6,8 +6,8 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.3
- *
+ * Version: 1.3.1
+ * 
  */
 
 article,
@@ -112,468 +112,6 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 textarea {
   overflow: auto;
   vertical-align: top;
-}
-
-/* -------------------------------------------------------- Input Add-On */
-
-.input-prepend .add-on, .input-append .add-on {
-  display: inline-block;
-  width: auto;
-  min-width: 65px;
-  height: 18px;
-  padding: 4px 5px;
-  font-weight: normal;
-  line-height: 18px;
-  text-align: center;
-  text-shadow: 0 1px 0 
-  white;
-  vertical-align: middle;
-  background-color: 
-  #CCC;
-  border: 1px solid 
-  #AAA;
-  margin-top: -3px;
-}
-
-.input-prepend .add-on, .input-append .add-on, .input-prepend .btn, .input-append .btn {
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-}
-
-.input-prepend .add-on, .input-prepend .btn {
-  margin-right: 0px;
-}
-
-input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
-  float: none;
-  margin-left: -2px;
-}
-
-input, textarea, select, .uneditable-input {
-  display: inline-block;
-  width: 210px;
-  height: 18px;
-  padding: 4px;
-  margin-bottom: 9px;
-  margin-left: -2px;
-  font-size: 12px;
-  line-height: 18px;
-  color: 
-  #555;
-  border: 1px solid 
-  #CCC;
-  -webkit-border-radius: 0px 8px 8px 0px;
-  -moz-border-radius: 0px 8px 8px 0px;
-  border-radius: 0px 8px 8px 0px;
-}
-
-.add-on .icon-white {
-  margin-top: 2px;
-}
-
-/* -------------------------------------------------------- Icons for Buttons */
-
-[class^="icon-"] {
-  display: inline-block;
-  margin-top: -1px;
-  width: 14px;
-  height: 14px;
-  vertical-align: top;
-  background-image: url(../img/glyphicons-halflings.png);
-  background-position: 14px 14px;
-  background-repeat: no-repeat;
-  *margin-right: .3em;
-}
-[class^="icon-"]:last-child {
-  *margin-left: 0;
-}
-.icon-white {
-  background-image: url(../img/glyphicons-halflings-white.png);
-}
-.disabled > [class^="icon-"], .disabled2 > [class^="icon-"] {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-.icon-glass {
-  background-position: 0      0;
-}
-.icon-music {
-  background-position: -24px 0;
-}
-.icon-search {
-  background-position: -48px 0;
-}
-.icon-envelope {
-  background-position: -72px 0;
-}
-.icon-heart {
-  background-position: -96px 0;
-}
-.icon-star {
-  background-position: -120px 0;
-}
-.icon-star-empty {
-  background-position: -144px 0;
-}
-.icon-user {
-  background-position: -168px 0;
-}
-.icon-film {
-  background-position: -192px 0;
-}
-.icon-th-large {
-  background-position: -216px 0;
-}
-.icon-th {
-  background-position: -240px 0;
-}
-.icon-th-list {
-  background-position: -264px 0;
-}
-.icon-ok {
-  background-position: -288px 0;
-}
-.icon-remove {
-  background-position: -312px 0;
-}
-.icon-zoom-in {
-  background-position: -336px 0;
-}
-.icon-zoom-out {
-  background-position: -360px 0;
-}
-.icon-off {
-  background-position: -384px 0;
-}
-.icon-signal {
-  background-position: -408px 0;
-}
-.icon-cog {
-  background-position: -432px 0;
-}
-.icon-trash {
-  background-position: -456px 0;
-}
-.icon-home {
-  background-position: 0 -24px;
-}
-.icon-file {
-  background-position: -24px -24px;
-}
-.icon-time {
-  background-position: -48px -24px;
-}
-.icon-road {
-  background-position: -72px -24px;
-}
-.icon-download-alt {
-  background-position: -96px -24px;
-}
-.icon-download {
-  background-position: -120px -24px;
-}
-.icon-upload {
-  background-position: -144px -24px;
-}
-.icon-inbox {
-  background-position: -168px -24px;
-}
-.icon-play-circle {
-  background-position: -192px -24px;
-}
-.icon-repeat {
-  background-position: -216px -24px;
-}
-.icon-refresh {
-  background-position: -240px -24px;
-}
-.icon-list-alt {
-  background-position: -264px -24px;
-}
-.icon-lock {
-  background-position: -287px -24px;
-}
-.icon-flag {
-  background-position: -312px -24px;
-}
-.icon-headphones {
-  background-position: -336px -24px;
-}
-.icon-volume-off {
-  background-position: -360px -24px;
-}
-.icon-volume-down {
-  background-position: -384px -24px;
-}
-.icon-volume-up {
-  background-position: -408px -24px;
-}
-.icon-qrcode {
-  background-position: -432px -24px;
-}
-.icon-barcode {
-  background-position: -456px -24px;
-}
-.icon-tag {
-  background-position: 0 -48px;
-}
-.icon-tags {
-  background-position: -25px -48px;
-}
-.icon-book {
-  background-position: -48px -48px;
-}
-.icon-bookmark {
-  background-position: -72px -48px;
-}
-.icon-print {
-  background-position: -96px -48px;
-}
-.icon-camera {
-  background-position: -120px -48px;
-}
-.icon-font {
-  background-position: -144px -48px;
-}
-.icon-bold {
-  background-position: -167px -48px;
-}
-.icon-italic {
-  background-position: -192px -48px;
-}
-.icon-text-height {
-  background-position: -216px -48px;
-}
-.icon-text-width {
-  background-position: -240px -48px;
-}
-.icon-align-left {
-  background-position: -264px -48px;
-}
-.icon-align-center {
-  background-position: -288px -48px;
-}
-.icon-align-right {
-  background-position: -312px -48px;
-}
-.icon-align-justify {
-  background-position: -336px -48px;
-}
-.icon-list {
-  background-position: -360px -48px;
-}
-.icon-indent-left {
-  background-position: -384px -48px;
-}
-.icon-indent-right {
-  background-position: -408px -48px;
-}
-.icon-facetime-video {
-  background-position: -432px -48px;
-}
-.icon-picture {
-  background-position: -456px -48px;
-}
-.icon-pencil {
-  background-position: 0 -72px;
-}
-.icon-map-marker {
-  background-position: -24px -72px;
-}
-.icon-adjust {
-  background-position: -48px -72px;
-}
-.icon-tint {
-  background-position: -72px -72px;
-}
-.icon-edit {
-  background-position: -96px -72px;
-}
-.icon-share {
-  background-position: -120px -72px;
-}
-.icon-check {
-  background-position: -144px -72px;
-}
-.icon-move {
-  background-position: -168px -72px;
-}
-.icon-step-backward {
-  background-position: -192px -72px;
-}
-.icon-fast-backward {
-  background-position: -216px -72px;
-}
-.icon-backward {
-  background-position: -240px -72px;
-}
-.icon-play {
-  background-position: -264px -72px;
-}
-.icon-pause {
-  background-position: -288px -72px;
-}
-.icon-stop {
-  background-position: -312px -72px;
-}
-.icon-forward {
-  background-position: -336px -72px;
-}
-.icon-fast-forward {
-  background-position: -360px -72px;
-}
-.icon-step-forward {
-  background-position: -384px -72px;
-}
-.icon-eject {
-  background-position: -408px -72px;
-}
-.icon-chevron-left {
-  background-position: -432px -72px;
-}
-.icon-chevron-right {
-  background-position: -456px -72px;
-}
-.icon-plus-sign {
-  background-position: 0 -96px;
-}
-.icon-minus-sign {
-  background-position: -24px -96px;
-}
-.icon-remove-sign {
-  background-position: -48px -96px;
-}
-.icon-ok-sign {
-  background-position: -72px -96px;
-}
-.icon-question-sign {
-  background-position: -96px -96px;
-}
-.icon-info-sign {
-  background-position: -120px -96px;
-}
-.icon-screenshot {
-  background-position: -144px -96px;
-}
-.icon-remove-circle {
-  background-position: -168px -96px;
-}
-.icon-ok-circle {
-  background-position: -192px -96px;
-}
-.icon-ban-circle {
-  background-position: -216px -96px;
-}
-.icon-arrow-left {
-  background-position: -240px -96px;
-}
-.icon-arrow-right {
-  background-position: -264px -96px;
-}
-.icon-arrow-up {
-  background-position: -289px -96px;
-}
-.icon-arrow-down {
-  background-position: -312px -96px;
-}
-.icon-share-alt {
-  background-position: -336px -96px;
-}
-.icon-resize-full {
-  background-position: -360px -96px;
-}
-.icon-resize-small {
-  background-position: -384px -96px;
-}
-.icon-plus {
-  background-position: -408px -96px;
-}
-.icon-minus {
-  background-position: -433px -96px;
-}
-.icon-asterisk {
-  background-position: -456px -96px;
-}
-.icon-exclamation-sign {
-  background-position: 0 -120px;
-}
-.icon-gift {
-  background-position: -24px -120px;
-}
-.icon-leaf {
-  background-position: -48px -120px;
-}
-.icon-fire {
-  background-position: -72px -120px;
-}
-.icon-eye-open {
-  background-position: -96px -120px;
-}
-.icon-eye-close {
-  background-position: -120px -120px;
-}
-.icon-warning-sign {
-  background-position: -144px -120px;
-}
-.icon-plane {
-  background-position: -168px -120px;
-}
-.icon-calendar {
-  background-position: -192px -120px;
-}
-.icon-random {
-  background-position: -216px -120px;
-}
-.icon-comment {
-  background-position: -240px -120px;
-}
-.icon-magnet {
-  background-position: -264px -120px;
-}
-.icon-chevron-up {
-  background-position: -288px -120px;
-}
-.icon-chevron-down {
-  background-position: -313px -119px;
-}
-.icon-retweet {
-  background-position: -336px -120px;
-}
-.icon-shopping-cart {
-  background-position: -360px -120px;
-}
-.icon-folder-close {
-  background-position: -384px -120px;
-}
-.icon-folder-open {
-  background-position: -408px -120px;
-}
-.icon-resize-vertical {
-  background-position: -432px -119px;
-}
-.icon-resize-horizontal {
-  background-position: -456px -118px;
-}
-[class^="xs-icon-"] {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-top: 1px;
-  vertical-align: text-top;
-  background-image: url(../img/xs-icons.png);
-  background-position: 12px 12px;
-  background-repeat: no-repeat;
-  *margin-right: .3em;
-}
-[class^="xs-icon-"]:last-child {
-  *margin-left: 0;
-}
-.xs-icon-bw {
-  background-position: -36px 0;
-}
-.xs-icon-fw {
-  background-position: -20px 0;
 }
 
 /* -------------------------------------------------------- Main Style */
@@ -738,18 +276,18 @@ input, textarea, select, .uneditable-input {
   font: bold 12px Helvetica, Arial, sans-serif;
   line-height: 13px;
   color: #444444;
-  min-width: 42px;
+  min-width: 16px;
   text-align: center;
   text-shadow: 0 1px 0 #fff;
   text-decoration: none;
   white-space: nowrap;
 }
 
-.arrow{
+.arrow > .baf{
   min-width: 100px;
 }
 
-.arrow::before, .arrow::after{
+.arrow > .baf::before, .arrow > .baf::after{
   left: 100%;
   border: solid transparent;
   content: " ";
@@ -760,7 +298,7 @@ input, textarea, select, .uneditable-input {
   z-index: 11;
 }
 
-.arrow::after{
+.arrow > .baf::after{
   border-color: rgba(136, 183, 213, 0);
   border-left-color: #F1F1F1;
   border-width: 15px;
@@ -768,7 +306,7 @@ input, textarea, select, .uneditable-input {
   margin-top: -15px;
 }
 
-.smallarrow::after{
+.smallarrow > .baf::after{
   border-color: rgba(136, 183, 213, 0);
   border-left-color: #F1F1F1;
   border-width: 11px;
@@ -776,22 +314,34 @@ input, textarea, select, .uneditable-input {
   margin-top: -11px;
 }
 
-.arrow.blue::after{
+.arrow > .baf:last-child::after{
+  border-width: 0px;
+  top: 0%;
+  margin-top: 0px;
+}
+
+.smallarrow > .baf:last-child::after{
+  border-width: 0px;
+  top: 0%;
+  margin-top: 0px;
+}
+
+.arrow > .baf.blue::after{
   border-left-color: #4B8CF7;
 }
-.arrow.blueh::after{
+.arrow > .baf.blueh::after{
   border-left-color: #207ce5;
 }
 
-.arrow.darkh::after{
+.arrow > .baf.darkh::after{
   border-left-color: #232323;
 }
 
-.arrow.black::after{
+.arrow > .baf.black::after{
   border-left-color: #4F4F4F;
 }
 
-.arrow.Greyh::after{
+.arrow > .baf.Greyh::after{
   border-left-color: #ededed;
 }
 
@@ -1071,14 +621,14 @@ input, textarea, select, .uneditable-input {
   color: white;
   text-shadow: 0 1px rgba(55, 55, 55, 0.1);
   border: 1px solid #383838;
-  background: #45484d; /* Old browsers */
-  background: -moz-linear-gradient(left, #45484d 0%, #070707 38%, #232323 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#45484d), color-stop(38%,#070707), color-stop(100%,#232323)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #45484d 0%,#070707 38%,#232323 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #45484d 0%,#070707 38%,#232323 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #45484d 0%,#070707 38%,#232323 100%); /* IE10+ */
-  background: linear-gradient(to right, #45484d 0%,#070707 38%,#232323 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#232323',GradientType=1 ); /* IE6-9 */
+  background: #5b5b5b; /* Old browsers */
+  background: -moz-linear-gradient(left, #5b5b5b 1%, #2b2b2b 53%, #232323 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%,#5b5b5b), color-stop(53%,#2b2b2b), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #5b5b5b 1%,#2b2b2b 53%,#232323 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #5b5b5b 1%,#2b2b2b 53%,#232323 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #5b5b5b 1%,#2b2b2b 53%,#232323 100%); /* IE10+ */
+  background: linear-gradient(to right, #5b5b5b 1%,#2b2b2b 53%,#232323 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#232323',GradientType=1 ); /* IE6-9 */
 }
 
 .baf.darkh:hover, .baf.darkh:focus, .baf.darkh:active {
@@ -1388,6 +938,58 @@ input, textarea, select, .uneditable-input {
 /* .................................................................... Input */
 /* nice style for forms */
 
+.input-prepend .add-on, .input-append .add-on {
+  display: inline-block;
+  width: auto;
+  min-width: 65px;
+  height: 18px;
+  padding: 4px 5px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: 
+  #CCC;
+  border: 1px solid 
+  #AAA;
+  margin-top: -3px;
+}
+
+.input-prepend .add-on, .input-append .add-on, .input-prepend .btn, .input-append .btn {
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-prepend .add-on, .input-prepend .btn {
+  margin-right: 0px;
+}
+
+input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
+  float: none;
+  margin-left: -2px;
+}
+
+.baf-group > input, .baf-group > textarea, .baf-group > select, .baf-input > input, .baf-input > textarea, .baf-input > select, .uneditable-input {
+  display: inline-block;
+  width: 210px;
+  height: 18px;
+  padding: 5px 4px 3px 4px;
+  margin-bottom: 9px;
+  margin-left: -2px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #555;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 0px 8px 8px 0px;
+  -moz-border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.input-green{
+  outline: none;
+}
+
 .baf-group input[type="number"]{
   height: 21px;
   border-radius: 0px;
@@ -1411,6 +1013,24 @@ input:active, input:focus{
   border-color: #4B8CF7;
   -webkit-box-shadow:  0px 0px 5px 1px #4B8CF7;
   box-shadow:  0px 0px 5px 1px #4B8CF7;
+}
+
+.input-green:active, .input-green:focus{
+  border-color: #359947;
+  -webkit-box-shadow:  0px 0px 5px 1px #359947;
+  box-shadow:  0px 0px 5px 1px #359947;
+}
+
+.input-yellow:active, .input-yellow:focus{
+  border-color: #FAA328;
+  -webkit-box-shadow:  0px 0px 5px 1px #FAA328;
+  box-shadow:  0px 0px 5px 1px #FAA328;
+}
+
+.input-red:active, .input-red:focus{
+  border-color: #ff3333;
+  -webkit-box-shadow:  0px 0px 5px 1px #ff3333;
+  box-shadow:  0px 0px 5px 1px #ff3333;
 }
 
 /* .................................................................... Misc */
@@ -1541,7 +1161,7 @@ input:active, input:focus{
 
 .baf.disabled {
   color: #B8B8B8;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: white;
   cursor: default;
 }
@@ -1550,7 +1170,7 @@ input:active, input:focus{
   color: #b8b8b8;
   text-shadow: none;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1574,15 +1194,12 @@ input:active, input:focus{
   display: inline-block;
   overflow: visible;
   margin: 0;
-  margin-left: 15px;
+  margin-left: 0px;
   padding: 8px 12px;
   cursor: default;
   outline: none;
   border: 1px solid #dcdcdc;
   border-color: #dcdcdc;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
   background-color: #f3f3f3;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
   background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1);
@@ -1604,7 +1221,6 @@ input:active, input:focus{
   font: bold 12px Helvetica, Arial, sans-serif;
   line-height: 13px;
   color: #b8b8b8;
-  min-width: 42px;
   text-align: center;
   text-shadow: 0 1px 0 #fff;
   text-decoration: none;

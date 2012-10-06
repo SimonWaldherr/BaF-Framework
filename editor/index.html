@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <!--
 
  Buttons and Forms
@@ -6,16 +7,16 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.3
+ Version: 1.3.1
 
---><!DOCTYPE html> 
-<html lang="en"> 
+--><html lang="en"> 
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <title>CSS3 Buttons and Forms Editor</title>
     <meta name="description" content="Using CSS3 to create beautiful UI elements">
     <link rel="stylesheet" href="./../css/style.css" type="text/css"  media="screen" />
     <link rel="stylesheet" href="./../css/baf.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="./../css/icons.css" type="text/css"  media="screen" />
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="./../js/script.js"></script>
     <script src="./../js/editor.js"></script>
@@ -25,22 +26,38 @@
     <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
     <div class="header">
-        <h1 id="buttonsandforms"><a href="http://simonwaldherr.github.com/buttons-and-forms/">Buttons and Forms</a></h1>
+        <h1 id="buttonsandforms"><a href="./..">Buttons and Forms</a></h1>
 
         <p>the <a href="https://github.com/SimonWaldherr/buttons-and-forms">buttons and forms</a> <strong>CSS3</strong> styles collection is the easiest way, to make <strong>buttons</strong> and <strong>forms</strong> on webpages look great. It&#8217;s based on the wonderfull code from <a href="http://timodonnell.com/">Tim O&#8217;Donnell</a> and improved by <a href="http://simon.waldherr.eu/">Simon Waldherr</a>. The complete code is licensed under the terms of the <strong>MIT-License</strong>, which allows you to use and to change everything for <strong>free</strong>.</p>
     </div>
 </div>
 <div class="container">
     <div id="editor">
-      <a href="javascript:addTableRow();" class="baf blue"><i class="icon-plus icon-white"></i>  add </a><a href="javascript:generateButton();" class="baf green"><i class="icon-refresh icon-white"></i>  refresh</a><a href="javascript:clearTable();" class="baf red"><i class="icon-trash icon-white"></i>  clear</a>
       <div id="tablediv">
-        <table id="realtable"><tbody id="table">
+        <a onclick="addTableRow(); generateButton();" class="baf blue"><i class="icon-plus icon-white"></i>  add Button</a><a onclick="clearTable();" class="baf red"><i class="icon-trash icon-white"></i>  clear Buttons</a>
+        <br><br><br>
+        <table id="realtable">
+          <thead id="tablehead">
+            <tr><td><b>text</b></td><td><b>color</b></td><td><b>img</b></td><td><b>link</b></td><td><b>group</b></td><td><b>disabled</b></td></tr>
+          </thead>
+          <tbody id="table" class="baf-input">
           
-          <tr><td><b>text</b></td><td><b>color</b></td><td><b>img</b></td><td><b>link</b></td><td><b>group</b></td></tr>
           
           
         </tbody></table>
       </div>
+      <!--
+      <div id="tabledivsi">
+        <hr>
+        <a href="javascript:addTableRowsi();" class="baf blue"><i class="icon-plus icon-white"></i>  add Subitem</a><a href="javascript:generateButtonsi();" class="baf green"><i class="icon-refresh icon-white"></i>  refresh Subitems</a><a href="javascript:clearTablesi();" class="baf red"><i class="icon-trash icon-white"></i>  clear Subitems</a>
+        <table id="realtablesi"><tbody id="tablesi">
+          
+          <tr><td><b>text</b></td><td><b>img</b></td><td><b>link</b></td><td><b>parent</b></td></tr>
+          
+          
+        </tbody></table>
+      </div>
+      -->
     </div>
     <div id="demo">
       <hr>
@@ -49,7 +66,8 @@
       </div>
       <hr>
       <div id="codebox">
-        <textarea id="code"></textarea>
+        <textarea readonly="readonly" id="code"></textarea>
+        <div class="baf-group baf-group-x"><a id="select" onclick="document.getElementById('code').select();" class="baf green">select all</a></div>
       </div>
     </div>
 </div>
@@ -65,19 +83,17 @@
         <p><strong>The MIT License (MIT)</strong></p>
         <p><a href="https://github.com/todc/">Tim O'Donnell</a>, <a href="https://github.com/SimonWaldherr">Simon Waldherr</a></p>
         
-        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        
         <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-        <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-
-        <p><strong><em>previous versions are public domain (until v.1.0.3)</em></strong> </p>
+        
+        <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
     </div>
 
     <div class="section">
         <h2>Version</h2>
-        <p>baf v. 1.3<br>
-        09.2012</p>
+        <p>baf v. 1.3.1<br>
+        10.2012</p>
     </div>
 
     <div class="section">
