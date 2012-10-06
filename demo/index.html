@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 
  Buttons and Forms
@@ -6,21 +7,21 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.3
+ Version: 1.3.2
 
---><!DOCTYPE html> 
-<html lang="en"> 
+--><html lang="en"> 
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <title>CSS3 Buttons and Forms Demo</title>
     <meta name="description" content="Using CSS3 to create beautiful UI elements">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./../css/style.css" type="text/css"  media="screen" />
-    <link rel="stylesheet" href="./../css/baf.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="../css/baf.css" type="text/css"  media="screen" />
+    <link rel="stylesheet" href="../css/icons.css" type="text/css"  media="screen" />
     <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css"> 
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
-    <script src="./../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body onload="prettyPrint()">
 
@@ -28,7 +29,7 @@
     <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
     <div class="header">
-        <h1 id="buttonsandforms"><a href="http://simonwaldherr.github.com/buttons-and-forms/">Buttons and Forms</a></h1>
+        <h1 id="buttonsandforms"><a href="../">Buttons and Forms</a></h1>
         
         <p>the <a href="https://github.com/SimonWaldherr/buttons-and-forms">buttons and forms</a> <strong>CSS3</strong> styles collection is the easiest way, to make <strong>buttons</strong> and <strong>forms</strong> on webpages look great. It&#8217;s based on the wonderfull code from <a href="http://timodonnell.com/">Tim O&#8217;Donnell</a> and improved by <a href="http://simon.waldherr.eu/">Simon Waldherr</a>. The complete code is licensed under the terms of the <strong>MIT-License</strong>, which allows you to use and to change everything for <strong>free</strong>.</p>
     </div>
@@ -43,8 +44,10 @@
         </p>
 
         <div class="example">
-            <pre class="code prettyprint"><code>&lt;a href="#" class="baf">Post comment&lt;/a></code></pre>
-            <form>
+            <pre class="code prettyprint"><code>&lt;a class="baf">New Comment (link)&lt;/a>
+&lt;input class="baf" type="submit" value="New Comment (submit)" />
+&lt;button class="baf">New Comment (button)&lt;/button></code></pre>
+            <form class="cente">
                 <a class="baf">New Comment (link)</a>
                 <input class="baf" type="submit" value="New Comment (submit)" />
                 <button class="baf">New Comment (button)</button>
@@ -70,17 +73,19 @@
 &lt;a href="#" class="baf yellow">Warning&lt;/a>
 &lt;a href="#" class="baf red">Error&lt;/a>
             </code></pre>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf">Info</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf blue">Search</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf cyan">Send</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf black">Abort</a>
-            
-            <br><br>
-            
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf dark">Open Menu</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf green">Success</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf yellow">Warning</a>
-            <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf red">Error</a>
+            <div class="cente">
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf">Info</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf blue">Search</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf cyan">Send</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf black">Abort</a>
+              
+              <br><br>
+              
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf dark">Open Menu</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf green">Success</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf yellow">Warning</a>
+              <a href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};" class="baf red">Error</a>
+            </div>
         </div>
     </div>
     
@@ -97,28 +102,28 @@
         <div class="example">
             <pre class="prettyprint"><code>&lt;a href="#" class="baf disabled">Today&lt;/a>
 &lt;a href="#" class="baf disabled2">Today&lt;/a></code></pre>
-            <a href="#button" class="baf disabled">Today</a>
-            <a href="#button" class="baf disabled2">Today</a>
+            <div class="cente">
+              <a href="#button" class="baf disabled">Today</a>
+              <a href="#button" class="baf disabled2">Today</a>
+            </div>
         </div>
     </div>
     
     <div class="section">
             <h2>Disabled Buttons via Attribute</h2>
             <p>
-              Buttons can also be disabled. The traditional style used in Google 
-              Calendar displays the button with a white background and greyed out 
-              text. Add the <code>disabled</code> class for this style. If you'd 
-              rather keep the grey background but dim it, you can add the 
-              <code>disabled2</code> class.
+              Buttons can also be disabled via <code>disabled="true"</code> attribute.
             </p>
     
             <div class="example">
                 <pre class="prettyprint"><code>&lt;a href="#" class="baf" disabled="true">Info&lt;/a>
 &lt;a href="#" class="baf blue" disabled="true">Search&lt;/a>
 &lt;a href="#" class="baf black" disabled="true">Abort&lt;/a></code></pre>
-                <a href="#button" class="baf" disabled="true">Info</a>
-                <a href="#button" class="baf blue" disabled="true">Search</a>
-                <a href="#button" class="baf black" disabled="true">Abort</a>
+                <div class="cente">
+                  <a href="#button" class="baf" disabled="true">Info</a>
+                  <a href="#button" class="baf blue" disabled="true">Search</a>
+                  <a href="#button" class="baf black" disabled="true">Abort</a>
+                </div>
             </div>
         </div>
     
@@ -133,8 +138,10 @@
         <div class="example">
             <pre class="prettyprint"><code>&lt;a href="#" class="baf sm">Month&lt;/a>
 &lt;a href="#" class="baf mini">Month&lt;/a></code></pre>
-            <a href="#button" class="baf sm">Month</a>
-            <a href="#button" class="baf mini">Month</a>
+            <div class="cente">
+              <a href="#button" class="baf sm">Month</a>
+              <a href="#button" class="baf mini">Month</a>
+            </div>
         </div>
     </div>
     
@@ -151,11 +158,14 @@
     &lt;a href="#" class="baf">Spam&lt;/a>
     &lt;a href="#" class="baf">Delete&lt;/a>
 &lt;/div></code></pre>
-        <div class="baf-group">
+        <div class="cente">
+          <div class="baf-group">
             <a href="#button" class="baf">Archive</a>
             <a href="#button" class="baf">Spam</a>
             <a href="#button" class="baf">Delete</a>
+          </div>
         </div>
+        
     </div>
 </div>
 
@@ -184,7 +194,7 @@
 
     &lt;a href="#" class="baf">More&lt;/a>
 &lt;/div></code></pre>
-            <div class="actions baf-container">
+            <div class="actions baf-container cente">
                 <a href="#button" class="baf">Compose New</a>
                 
                 <div class="baf-group">
@@ -221,13 +231,16 @@
     &lt;a href="#" class="baf">4 Days&lt;/a>
     &lt;a href="#" class="baf">Agenda&lt;/a>
 &lt;/div></code></pre>
-            <div class="baf-group toggle-buttons">
+            <div class="cente">
+              <div class="baf-group toggle-buttons">
                 <a class="baf">Day</a>
                 <a class="baf">Week</a>
                 <a class="baf checked">Month</a>
                 <a class="baf">4 Days</a>
                 <a class="baf">Agenda</a>
+              </div>
             </div>
+            
         </div>
 
         <div class="example">
@@ -238,14 +251,16 @@
     &lt;a href="#" class="baf mini">4 Days&lt;/a>
     &lt;a href="#" class="baf mini">Agenda&lt;/a>
 &lt;/div></code></pre>
-
-            <div class="baf-group toggle-buttons">
+            <div class="cente">
+              <div class="baf-group toggle-buttons">
                 <a class="baf mini">Day</a>
                 <a class="baf mini">Week</a>
                 <a class="baf mini checked">Month</a>
                 <a class="baf mini">4 Days</a>
                 <a class="baf mini">Agenda</a>
+              </div>
             </div>
+            
         </div>
     </div>
     
@@ -256,51 +271,103 @@
             </p>
     
             <div class="example">
-    <pre class="prettyprint"><code>&lt;div class="baf-group toggle-buttons">
-    &lt;a class="baf arrow" style="z-index:8">one&lt;/a>
-    &lt;a class="baf arrow" style="z-index:7">two&lt;/a>
-    &lt;a class="baf blue arrow" style="z-index:6">three&lt;/a>
-    &lt;a class="baf arrow" style="z-index:5">four&lt;/a>
-    &lt;a class="baf">five&lt;/a>
+    <pre class="prettyprint"><code>&lt;div class="baf-group toggle-buttons arrow">
+    &lt;a class="baf" style="z-index:8">one&lt;/a>
+    &lt;a class="baf" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+    &lt;a class="baf" style="z-index:5">four&lt;/a>
+    &lt;a class="baf" style="z-index:4">five&lt;/a>
 &lt;/div>
-&lt;div class="baf-group toggle-buttons">
-    &lt;a class="baf darkh arrow" style="z-index:8">one&lt;/a>
-    &lt;a class="baf darkh arrow" style="z-index:7">two&lt;/a>
-    &lt;a class="baf blueh arrow" style="z-index:6">three&lt;/a>
-    &lt;a class="baf greyh arrow" style="z-index:5">four&lt;/a>
-    &lt;a class="baf greyh">five&lt;/a>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow smallarrow">
+    &lt;a class="baf" style="z-index:8">one&lt;/a>
+    &lt;a class="baf" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+    &lt;a class="baf" style="z-index:5">four&lt;/a>
+    &lt;a class="baf" style="z-index:4">five&lt;/a>
 &lt;/div>
-&lt;div class="baf-group toggle-buttons">
-    &lt;a class="baf black arrow smallarrow" style="z-index:8">one&lt;/a>
-    &lt;a class="baf black arrow smallarrow" style="z-index:7">two&lt;/a>
-    &lt;a class="baf blue arrow smallarrow" style="z-index:6">three&lt;/a>
-    &lt;a class="baf arrow smallarrow" style="z-index:5">four&lt;/a>
-    &lt;a class="baf">five&lt;/a>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow">
+    &lt;a class="baf darkh" style="z-index:8">one&lt;/a>
+    &lt;a class="baf darkh" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blueh" style="z-index:6">three&lt;/a>
+    &lt;a class="baf greyh" style="z-index:5">four&lt;/a>
+    &lt;a class="baf greyh" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow smallarrow">
+    &lt;a class="baf darkh" style="z-index:8">one&lt;/a>
+    &lt;a class="baf darkh" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blueh" style="z-index:6">three&lt;/a>
+    &lt;a class="baf greyh" style="z-index:5">four&lt;/a>
+    &lt;a class="baf greyh" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow">
+    &lt;a class="baf black" style="z-index:8">one&lt;/a>
+    &lt;a class="baf black" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+    &lt;a class="baf" style="z-index:5">four&lt;/a>
+    &lt;a class="baf" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow smallarrow">
+    &lt;a class="baf black" style="z-index:8">one&lt;/a>
+    &lt;a class="baf black" style="z-index:7">two&lt;/a>
+    &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+    &lt;a class="baf" style="z-index:5">four&lt;/a>
+    &lt;a class="baf" style="z-index:4">five&lt;/a>
 &lt;/div>
     </code></pre>
-                <div class="baf-group toggle-buttons">
-                    <a class="baf arrow" style="z-index:8">one</a>
-                    <a class="baf arrow" style="z-index:7">two</a>
-                    <a class="baf blue arrow" style="z-index:6">three</a>
-                    <a class="baf arrow" style="z-index:5">four</a>
+              <div class="cente">
+                <div class="baf-group toggle-buttons arrow">
+                    <a class="baf" style="z-index:8">one</a>
+                    <a class="baf" style="z-index:7">two</a>
+                    <a class="baf blue" style="z-index:6">three</a>
+                    <a class="baf" style="z-index:5">four</a>
                     <a class="baf" style="z-index:4">five</a>
                 </div>
                 <br><br><hr><br>
-                <div class="baf-group toggle-buttons">
-                    <a class="baf darkh arrow" style="z-index:8">one</a>
-                    <a class="baf darkh arrow" style="z-index:7">two</a>
-                    <a class="baf blueh arrow" style="z-index:6">three</a>
-                    <a class="baf greyh arrow" style="z-index:5">four</a>
+                <div class="baf-group toggle-buttons arrow smallarrow">
+                    <a class="baf" style="z-index:8">one</a>
+                    <a class="baf" style="z-index:7">two</a>
+                    <a class="baf blue" style="z-index:6">three</a>
+                    <a class="baf" style="z-index:5">four</a>
+                    <a class="baf" style="z-index:4">five</a>
+                </div>
+                <br><br><hr><br>
+                <div class="baf-group toggle-buttons arrow">
+                    <a class="baf darkh" style="z-index:8">one</a>
+                    <a class="baf darkh" style="z-index:7">two</a>
+                    <a class="baf blueh" style="z-index:6">three</a>
+                    <a class="baf greyh" style="z-index:5">four</a>
                     <a class="baf greyh" style="z-index:4">five</a>
                 </div>
                 <br><br><hr><br>
-                <div class="baf-group toggle-buttons">
-                    <a class="baf black arrow smallarrow" style="z-index:8">one</a>
-                    <a class="baf black arrow smallarrow" style="z-index:7">two</a>
-                    <a class="baf blue arrow smallarrow" style="z-index:6">three</a>
-                    <a class="baf arrow smallarrow" style="z-index:5">four</a>
+                <div class="baf-group toggle-buttons arrow smallarrow">
+                    <a class="baf darkh" style="z-index:8">one</a>
+                    <a class="baf darkh" style="z-index:7">two</a>
+                    <a class="baf blueh" style="z-index:6">three</a>
+                    <a class="baf greyh" style="z-index:5">four</a>
+                    <a class="baf greyh" style="z-index:4">five</a>
+                </div>
+                <br><br><hr><br>
+                <div class="baf-group toggle-buttons arrow">
+                    <a class="baf black" style="z-index:8">one</a>
+                    <a class="baf black" style="z-index:7">two</a>
+                    <a class="baf blue" style="z-index:6">three</a>
+                    <a class="baf" style="z-index:5">four</a>
                     <a class="baf" style="z-index:4">five</a>
                 </div>
+                <br><br><hr><br>
+                <div class="baf-group toggle-buttons arrow smallarrow">
+                    <a class="baf black" style="z-index:8">one</a>
+                    <a class="baf black" style="z-index:7">two</a>
+                    <a class="baf blue" style="z-index:6">three</a>
+                    <a class="baf" style="z-index:5">four</a>
+                    <a class="baf" style="z-index:4">five</a>
+                </div>
+              </div>
             </div>
         </div>
     
@@ -317,9 +384,11 @@
 &lt;a href="#" class="baf no-text">&lt;i class="icon-refresh">&lt;/i>&lt;/a>
 &lt;a href="#" class="baf no-text">&lt;i class="icon-trash icon-white">&lt;/i>&lt;/a>
 </code></pre>
-
-            <a class="baf no-text"><i class="icon-refresh"></i></a>
-            <a class="baf red no-text"><i class="icon-trash icon-white"></i></a>
+            <div class="cente">
+              <a class="baf no-text"><i class="icon-refresh"></i></a>
+              <a class="baf red no-text"><i class="icon-trash icon-white"></i></a>
+            </div>
+            
         </div>
         
         <p>Or group them together, just like Gmail's paginator.</p>
@@ -330,11 +399,13 @@
     &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
-
-            <div class="baf-group">
+            <div class="cente">
+              <div class="baf-group">
                 <a class="baf no-text"><i class="icon-chevron-left"></i></a>
                 <a class="baf no-text"><i class="icon-chevron-right"></i></a>
+              </div>
             </div>
+            
         </div>
         
         <p>You can even mix and match with the disabled state.</p>
@@ -345,11 +416,13 @@
     &lt;a href="#" class="baf no-text">&lt;i class="icon-chevron-right">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
-
-            <div class="baf-group">
+            <div class="cente">
+              <div class="baf-group">
                 <a class="baf no-text disabled2"><i class="icon-chevron-left"></i></a>
                 <a class="baf no-text"><i class="icon-chevron-right"></i></a>
+              </div>
             </div>
+            
         </div>
     </div>
     
@@ -368,11 +441,13 @@
     &lt;a href="#" class="baf xs-no-text">&lt;i class="xs-icon-fw">&lt;/i>&lt;/a>
 &lt;div>
 </code></pre>
-
-            <div class="baf-group">
+            <div class="cente">
+              <div class="baf-group">
                 <a class="baf xs-no-text"><i class="xs-icon-bw"></i></a>
                 <a class="baf xs-no-text"><i class="xs-icon-fw"></i></a>
+              </div>
             </div>
+            
         </div>
     </div>
     
@@ -389,40 +464,41 @@
     &lt;a href="#" class="baf">&lt;i class="icon-search">&lt;i>Search&lt;/a>
 &lt;div>
 </code></pre>
-
-          <a class="baf"><i class="icon-search"></i> Search</a>
+          <div class="cente">
+            <a class="baf"><i class="icon-search"></i> Search</a>
+          </div>
         </div>
         
         <div class="example">
-            <table>
+            <table class="cente">
                 <thead>
                     <tr>
-                        <th scope="col">Class</th>
-                        <th scope="col">Example</th>
+                        <th>Class</th>
+                        <th>Example</th>
                     </tr>
                 </thead>
                 <tr>
-                    <td scope="row"><code>.icon-plus</code></td>
+                    <td><code>.icon-plus</code></td>
                     <td><a href="#button" class="baf"><i class="icon-plus"></i> Add Item</a></td>
                 </tr>
                 <tr>
-                    <td scope="row"><code>.icon-arrow-left</code></td>
+                    <td><code>.icon-arrow-left</code></td>
                     <td><a href="#button" class="baf"><i class="icon-arrow-left"></i> Back</a></td>
                 </tr>
                 <tr>
-                    <td scope="row"><code>.icon-arrow-right</code></td>
+                    <td><code>.icon-arrow-right</code></td>
                     <td><a href="#button" class="baf">Forward <i class="icon-arrow-right"></i></a></td>
                 </tr>
                 <tr>
-                    <td scope="row"><code>.icon-remove</code></td>
+                    <td><code>.icon-remove</code></td>
                     <td><a href="#button" class="baf"><i class="icon-remove"></i> Remove Item</a></td>
                 </tr>
                 <tr>
-                    <td scope="row"><code>.icon-search</code></td>
+                    <td><code>.icon-search</code></td>
                     <td><a href="#button" class="baf"><i class="icon-search"></i> Search</a></td>
                 </tr>
                 <tr>
-                    <td scope="row"><code>.icon-cog</code></td>
+                    <td><code>.icon-cog</code></td>
                     <td><a href="#button" class="baf"><i class="icon-cog"></i> Settings</a></td>
                 </tr>
             </table>
@@ -449,7 +525,7 @@
   &lt;/ul>
 &lt;/div>
 </code></pre>
-
+          <div class="cente">
             <div class="baf-container">
               <div class="baf-group">
                 <a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
@@ -505,169 +581,598 @@
                 </ul>
               </div>
             </div>
+          </div>
         </div>
     </div>
         
-        <div class="section">
+              <div class="section">
                 <h2>Button dropdowns with every image included</h2>
                 <p>
-                  Many images are included in this repo
+                  Many images are included in this repo (glyphicons)
                 </p>
-        
-                <div class="example" style="position:relative">
-                    <div class="baf-container">
-                      <div class="baf-group">
-                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
-                          <i class="icon-list-alt icon-white"></i> All Images 1/4 <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-glass"></i> icon-glass</a></li>
-                            <li><a href="#"><i class="icon-music"></i> icon-music</a></li>
-                            <li><a href="#"><i class="icon-search"></i> icon-search</a></li>
-                            <li><a href="#"><i class="icon-envelope"></i> icon-envelope</a></li>
-                            <li><a href="#"><i class="icon-heart"></i> icon-heart</a></li>
-                            <li><a href="#"><i class="icon-star"></i> icon-star</a></li>
-                            <li><a href="#"><i class="icon-star-empty"></i> icon-star-empty</a></li>
-                            <li><a href="#"><i class="icon-user"></i> icon-user</a></li>
-                            <li><a href="#"><i class="icon-film"></i> icon-film</a></li>
-                            <li><a href="#"><i class="icon-th-large"></i> icon-th-large</a></li>
-                            <li><a href="#"><i class="icon-th"></i> icon-th</a></li>
-                            <li><a href="#"><i class="icon-th-list"></i> icon-th-list</a></li>
-                            <li><a href="#"><i class="icon-ok"></i> icon-ok</a></li>
-                            <li><a href="#"><i class="icon-remove"></i> icon-remove</a></li>
-                            <li><a href="#"><i class="icon-zoom-in"></i> icon-zoom-in</a></li>
-                            <li><a href="#"><i class="icon-zoom-out"></i> icon-zoom-out</a></li>
-                            <li><a href="#"><i class="icon-off"></i> icon-off</a></li>
-                            <li><a href="#"><i class="icon-signal"></i> icon-signal</a></li>
-                            <li><a href="#"><i class="icon-cog"></i> icon-cog</a></li>
-                            <li><a href="#"><i class="icon-trash"></i> icon-trash</a></li>
-                            <li><a href="#"><i class="icon-home"></i> icon-home</a></li>
-                            <li><a href="#"><i class="icon-file"></i> icon-file</a></li>
-                            <li><a href="#"><i class="icon-time"></i> icon-time</a></li>
-                            <li><a href="#"><i class="icon-road"></i> icon-road</a></li>
-                            <li><a href="#"><i class="icon-download-alt"></i> icon-download-alt</a></li>
-                            <li><a href="#"><i class="icon-download"></i> icon-download</a></li>
-                            <li><a href="#"><i class="icon-upload"></i> icon-upload</a></li>
-                            <li><a href="#"><i class="icon-inbox"></i> icon-inbox</a></li>
-                            <li><a href="#"><i class="icon-play-circle"></i> icon-play-circle</a></li>
-                            <li><a href="#"><i class="icon-repeat"></i> icon-repeat</a></li>
-                            <li><a href="#"><i class="icon-refresh"></i> icon-refresh</a></li>
-                            <li><a href="#"><i class="icon-list-alt"></i> icon-list-alt</a></li>
-                            <li><a href="#"><i class="icon-lock"></i> icon-lock</a></li>
-                            <li><a href="#"><i class="icon-flag"></i> icon-flag</a></li>
-                            <li><a href="#"><i class="icon-headphones"></i> icon-headphones</a></li>
-                            <li><a href="#"><i class="icon-volume-off"></i> icon-volume-off</a></li>
-                            <li><a href="#"><i class="icon-volume-down"></i> icon-volume-down</a></li>
-                            <li><a href="#"><i class="icon-volume-up"></i> icon-volume-up</a></li>
-                        </ul>
-                      </div>
-                      <div class="baf-group">
-                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
-                          All Images 2/4 <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-qrcode"></i> icon-qrcode</a></li>
-                            <li><a href="#"><i class="icon-barcode"></i> icon-barcode</a></li>
-                            <li><a href="#"><i class="icon-tag"></i> icon-tag</a></li>
-                            <li><a href="#"><i class="icon-tags"></i> icon-tags</a></li>
-                            <li><a href="#"><i class="icon-book"></i> icon-book</a></li>
-                            <li><a href="#"><i class="icon-bookmark"></i> icon-bookmark</a></li>
-                            <li><a href="#"><i class="icon-print"></i> icon-print</a></li>
-                            <li><a href="#"><i class="icon-camera"></i> icon-camera</a></li>
-                            <li><a href="#"><i class="icon-font"></i> icon-font</a></li>
-                            <li><a href="#"><i class="icon-bold"></i> icon-bold</a></li>
-                            <li><a href="#"><i class="icon-italic"></i> icon-italic</a></li>
-                            <li><a href="#"><i class="icon-text-height"></i> icon-text-height</a></li>
-                            <li><a href="#"><i class="icon-text-width"></i> icon-text-width</a></li>
-                            <li><a href="#"><i class="icon-align-left"></i> icon-align-left</a></li>
-                            <li><a href="#"><i class="icon-align-center"></i> icon-align-center</a></li>
-                            <li><a href="#"><i class="icon-align-right"></i> icon-align-right</a></li>
-                            <li><a href="#"><i class="icon-align-justify"></i> icon-align-justify</a></li>
-                            <li><a href="#"><i class="icon-list"></i> icon-list</a></li>
-                            <li><a href="#"><i class="icon-indent-left"></i> icon-indent-left</a></li>
-                            <li><a href="#"><i class="icon-indent-right"></i> icon-indent-right</a></li>
-                            <li><a href="#"><i class="icon-facetime-video"></i> icon-facetime-video</a></li>
-                            <li><a href="#"><i class="icon-picture"></i> icon-picture</a></li>
-                            <li><a href="#"><i class="icon-pencil"></i> icon-pencil</a></li>
-                            <li><a href="#"><i class="icon-map-marker"></i> icon-map-marker</a></li>
-                            <li><a href="#"><i class="icon-adjust"></i> icon-adjust</a></li>
-                            <li><a href="#"><i class="icon-tint"></i> icon-tint</a></li>
-                            <li><a href="#"><i class="icon-edit"></i> icon-edit</a></li>
-                            <li><a href="#"><i class="icon-share"></i> icon-share</a></li>
-                            <li><a href="#"><i class="icon-check"></i> icon-check</a></li>
-                            <li><a href="#"><i class="icon-move"></i> icon-move</a></li>
-                            <li><a href="#"><i class="icon-step-backward"></i> icon-step-backward</a></li>
-                            <li><a href="#"><i class="icon-fast-backward"></i> icon-fast-backward</a></li>
-                            <li><a href="#"><i class="icon-backward"></i> icon-backward</a></li>
-                            <li><a href="#"><i class="icon-play"></i> icon-play</a></li>
-                            <li><a href="#"><i class="icon-pause"></i> icon-pause</a></li>
-                            <li><a href="#"><i class="icon-stop"></i> icon-stop</a></li>
-                            <li><a href="#"><i class="icon-forward"></i> icon-forward</a></li>
-                            <li><a href="#"><i class="icon-fast-forward"></i> icon-fast-forward</a></li>
-                        </ul>
-                      </div>
-                      <div class="baf-group">
-                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
-                          All Images 3/4 <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-step-forward"></i> icon-step-forward</a></li>
-                            <li><a href="#"><i class="icon-eject"></i> icon-eject</a></li>
-                            <li><a href="#"><i class="icon-chevron-left"></i> icon-chevron-left</a></li>
-                            <li><a href="#"><i class="icon-chevron-right"></i> icon-chevron-right</a></li>
-                            <li><a href="#"><i class="icon-plus-sign"></i> icon-plus-sign</a></li>
-                            <li><a href="#"><i class="icon-minus-sign"></i> icon-minus-sign</a></li>
-                            <li><a href="#"><i class="icon-remove-sign"></i> icon-remove-sign</a></li>
-                            <li><a href="#"><i class="icon-ok-sign"></i> icon-ok-sign</a></li>
-                            <li><a href="#"><i class="icon-question-sign"></i> icon-question-sign</a></li>
-                            <li><a href="#"><i class="icon-info-sign"></i> icon-info-sign</a></li>
-                            <li><a href="#"><i class="icon-screenshot"></i> icon-screenshot</a></li>
-                            <li><a href="#"><i class="icon-remove-circle"></i> icon-remove-circle</a></li>
-                            <li><a href="#"><i class="icon-ok-circle"></i> icon-ok-circle</a></li>
-                            <li><a href="#"><i class="icon-ban-circle"></i> icon-ban-circle</a></li>
-                            <li><a href="#"><i class="icon-arrow-left"></i> icon-arrow-left</a></li>
-                            <li><a href="#"><i class="icon-arrow-right"></i> icon-arrow-right</a></li>
-                            <li><a href="#"><i class="icon-arrow-up"></i> icon-arrow-up</a></li>
-                            <li><a href="#"><i class="icon-arrow-down"></i> icon-arrow-down</a></li>
-                            <li><a href="#"><i class="icon-share-alt"></i> icon-share-alt</a></li>
-                            <li><a href="#"><i class="icon-resize-full"></i> icon-resize-full</a></li>
-                            <li><a href="#"><i class="icon-resize-small"></i> icon-resize-small</a></li>
-                            <li><a href="#"><i class="icon-plus"></i> icon-plus</a></li>
-                            <li><a href="#"><i class="icon-minus"></i> icon-minus</a></li>
-                            <li><a href="#"><i class="icon-asterisk"></i> icon-asterisk</a></li>
-                            <li><a href="#"><i class="icon-exclamation-sign"></i> icon-exclamation-sign</a></li>
-                            <li><a href="#"><i class="icon-gift"></i> icon-gift</a></li>
-                            <li><a href="#"><i class="icon-leaf"></i> icon-leaf</a></li>
-                            <li><a href="#"><i class="icon-fire"></i> icon-fire</a></li>
-                            <li><a href="#"><i class="icon-eye-open"></i> icon-eye-open</a></li>
-                            <li><a href="#"><i class="icon-eye-close"></i> icon-eye-close</a></li>
-                            <li><a href="#"><i class="icon-warning-sign"></i> icon-warning-sign</a></li>
-                            <li><a href="#"><i class="icon-plane"></i> icon-plane</a></li>
-                            <li><a href="#"><i class="icon-calendar"></i> icon-calendar</a></li>
-                            <li><a href="#"><i class="icon-random"></i> icon-random</a></li>
-                            <li><a href="#"><i class="icon-comment"></i> icon-comment</a></li>
-                            <li><a href="#"><i class="icon-magnet"></i> icon-magnet</a></li>
-                            <li><a href="#"><i class="icon-chevron-up"></i> icon-chevron-up</a></li>
-                            <li><a href="#"><i class="icon-chevron-down"></i> icon-chevron-down</a></li>
-                        </ul>
-                      </div>
-                      <div class="baf-group">
-                        <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
-                          All Images 4/4 <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-retweet"></i> icon-retweet</a></li>
-                            <li><a href="#"><i class="icon-shopping-cart"></i> icon-shopping-cart</a></li>
-                            <li><a href="#"><i class="icon-folder-close"></i> icon-folder-close</a></li>
-                            <li><a href="#"><i class="icon-folder-open"></i> icon-folder-open</a></li>
-                            <li><a href="#"><i class="icon-resize-horizontal"></i> icon-resize-horizontal</a></li>
-                        </ul>
-                      </div>
-        
+                <div class="example cente" style="position:relative">
+                  <div class="baf-container">
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        glyphicons 1/4 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icon-glass"></i> icon-glass</a></li>
+                          <li><a href="#"><i class="icon-music"></i> icon-music</a></li>
+                          <li><a href="#"><i class="icon-search"></i> icon-search</a></li>
+                          <li><a href="#"><i class="icon-envelope"></i> icon-envelope</a></li>
+                          <li><a href="#"><i class="icon-heart"></i> icon-heart</a></li>
+                          <li><a href="#"><i class="icon-star"></i> icon-star</a></li>
+                          <li><a href="#"><i class="icon-star-empty"></i> icon-star-empty</a></li>
+                          <li><a href="#"><i class="icon-user"></i> icon-user</a></li>
+                          <li><a href="#"><i class="icon-film"></i> icon-film</a></li>
+                          <li><a href="#"><i class="icon-th-large"></i> icon-th-large</a></li>
+                          <li><a href="#"><i class="icon-th"></i> icon-th</a></li>
+                          <li><a href="#"><i class="icon-th-list"></i> icon-th-list</a></li>
+                          <li><a href="#"><i class="icon-ok"></i> icon-ok</a></li>
+                          <li><a href="#"><i class="icon-remove"></i> icon-remove</a></li>
+                          <li><a href="#"><i class="icon-zoom-in"></i> icon-zoom-in</a></li>
+                          <li><a href="#"><i class="icon-zoom-out"></i> icon-zoom-out</a></li>
+                          <li><a href="#"><i class="icon-off"></i> icon-off</a></li>
+                          <li><a href="#"><i class="icon-signal"></i> icon-signal</a></li>
+                          <li><a href="#"><i class="icon-cog"></i> icon-cog</a></li>
+                          <li><a href="#"><i class="icon-trash"></i> icon-trash</a></li>
+                          <li><a href="#"><i class="icon-home"></i> icon-home</a></li>
+                          <li><a href="#"><i class="icon-file"></i> icon-file</a></li>
+                          <li><a href="#"><i class="icon-time"></i> icon-time</a></li>
+                          <li><a href="#"><i class="icon-road"></i> icon-road</a></li>
+                          <li><a href="#"><i class="icon-download-alt"></i> icon-download-alt</a></li>
+                          <li><a href="#"><i class="icon-download"></i> icon-download</a></li>
+                          <li><a href="#"><i class="icon-upload"></i> icon-upload</a></li>
+                          <li><a href="#"><i class="icon-inbox"></i> icon-inbox</a></li>
+                          <li><a href="#"><i class="icon-play-circle"></i> icon-play-circle</a></li>
+                          <li><a href="#"><i class="icon-repeat"></i> icon-repeat</a></li>
+                      </ul>
                     </div>
-        
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        glyphicons 2/4 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icon-refresh"></i> icon-refresh</a></li>
+                          <li><a href="#"><i class="icon-list-alt"></i> icon-list-alt</a></li>
+                          <li><a href="#"><i class="icon-lock"></i> icon-lock</a></li>
+                          <li><a href="#"><i class="icon-flag"></i> icon-flag</a></li>
+                          <li><a href="#"><i class="icon-headphones"></i> icon-headphones</a></li>
+                          <li><a href="#"><i class="icon-volume-off"></i> icon-volume-off</a></li>
+                          <li><a href="#"><i class="icon-volume-down"></i> icon-volume-down</a></li>
+                          <li><a href="#"><i class="icon-volume-up"></i> icon-volume-up</a></li>
+                          <li><a href="#"><i class="icon-qrcode"></i> icon-qrcode</a></li>
+                          <li><a href="#"><i class="icon-barcode"></i> icon-barcode</a></li>
+                          <li><a href="#"><i class="icon-tag"></i> icon-tag</a></li>
+                          <li><a href="#"><i class="icon-tags"></i> icon-tags</a></li>
+                          <li><a href="#"><i class="icon-book"></i> icon-book</a></li>
+                          <li><a href="#"><i class="icon-bookmark"></i> icon-bookmark</a></li>
+                          <li><a href="#"><i class="icon-print"></i> icon-print</a></li>
+                          <li><a href="#"><i class="icon-camera"></i> icon-camera</a></li>
+                          <li><a href="#"><i class="icon-font"></i> icon-font</a></li>
+                          <li><a href="#"><i class="icon-bold"></i> icon-bold</a></li>
+                          <li><a href="#"><i class="icon-italic"></i> icon-italic</a></li>
+                          <li><a href="#"><i class="icon-text-height"></i> icon-text-height</a></li>
+                          <li><a href="#"><i class="icon-text-width"></i> icon-text-width</a></li>
+                          <li><a href="#"><i class="icon-align-left"></i> icon-align-left</a></li>
+                          <li><a href="#"><i class="icon-align-center"></i> icon-align-center</a></li>
+                          <li><a href="#"><i class="icon-align-right"></i> icon-align-right</a></li>
+                          <li><a href="#"><i class="icon-align-justify"></i> icon-align-justify</a></li>
+                          <li><a href="#"><i class="icon-list"></i> icon-list</a></li>
+                          <li><a href="#"><i class="icon-indent-left"></i> icon-indent-left</a></li>
+                          <li><a href="#"><i class="icon-indent-right"></i> icon-indent-right</a></li>
+                          <li><a href="#"><i class="icon-facetime-video"></i> icon-facetime-video</a></li>
+                          <li><a href="#"><i class="icon-picture"></i> icon-picture</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        glyphicons 3/4 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icon-pencil"></i> icon-pencil</a></li>
+                          <li><a href="#"><i class="icon-map-marker"></i> icon-map-marker</a></li>
+                          <li><a href="#"><i class="icon-adjust"></i> icon-adjust</a></li>
+                          <li><a href="#"><i class="icon-tint"></i> icon-tint</a></li>
+                          <li><a href="#"><i class="icon-edit"></i> icon-edit</a></li>
+                          <li><a href="#"><i class="icon-share"></i> icon-share</a></li>
+                          <li><a href="#"><i class="icon-check"></i> icon-check</a></li>
+                          <li><a href="#"><i class="icon-move"></i> icon-move</a></li>
+                          <li><a href="#"><i class="icon-step-backward"></i> icon-step-backward</a></li>
+                          <li><a href="#"><i class="icon-fast-backward"></i> icon-fast-backward</a></li>
+                          <li><a href="#"><i class="icon-backward"></i> icon-backward</a></li>
+                          <li><a href="#"><i class="icon-play"></i> icon-play</a></li>
+                          <li><a href="#"><i class="icon-pause"></i> icon-pause</a></li>
+                          <li><a href="#"><i class="icon-stop"></i> icon-stop</a></li>
+                          <li><a href="#"><i class="icon-forward"></i> icon-forward</a></li>
+                          <li><a href="#"><i class="icon-fast-forward"></i> icon-fast-forward</a></li>
+                          <li><a href="#"><i class="icon-step-forward"></i> icon-step-forward</a></li>
+                          <li><a href="#"><i class="icon-eject"></i> icon-eject</a></li>
+                          <li><a href="#"><i class="icon-chevron-left"></i> icon-chevron-left</a></li>
+                          <li><a href="#"><i class="icon-chevron-right"></i> icon-chevron-right</a></li>
+                          <li><a href="#"><i class="icon-plus-sign"></i> icon-plus-sign</a></li>
+                          <li><a href="#"><i class="icon-minus-sign"></i> icon-minus-sign</a></li>
+                          <li><a href="#"><i class="icon-remove-sign"></i> icon-remove-sign</a></li>
+                          <li><a href="#"><i class="icon-ok-sign"></i> icon-ok-sign</a></li>
+                          <li><a href="#"><i class="icon-question-sign"></i> icon-question-sign</a></li>
+                          <li><a href="#"><i class="icon-info-sign"></i> icon-info-sign</a></li>
+                          <li><a href="#"><i class="icon-screenshot"></i> icon-screenshot</a></li>
+                          <li><a href="#"><i class="icon-remove-circle"></i> icon-remove-circle</a></li>
+                          <li><a href="#"><i class="icon-ok-circle"></i> icon-ok-circle</a></li>
+                          <li><a href="#"><i class="icon-ban-circle"></i> icon-ban-circle</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        glyphicons 4/4 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icon-arrow-left"></i> icon-arrow-left</a></li>
+                          <li><a href="#"><i class="icon-arrow-right"></i> icon-arrow-right</a></li>
+                          <li><a href="#"><i class="icon-arrow-up"></i> icon-arrow-up</a></li>
+                          <li><a href="#"><i class="icon-arrow-down"></i> icon-arrow-down</a></li>
+                          <li><a href="#"><i class="icon-share-alt"></i> icon-share-alt</a></li>
+                          <li><a href="#"><i class="icon-resize-full"></i> icon-resize-full</a></li>
+                          <li><a href="#"><i class="icon-resize-small"></i> icon-resize-small</a></li>
+                          <li><a href="#"><i class="icon-plus"></i> icon-plus</a></li>
+                          <li><a href="#"><i class="icon-minus"></i> icon-minus</a></li>
+                          <li><a href="#"><i class="icon-asterisk"></i> icon-asterisk</a></li>
+                          <li><a href="#"><i class="icon-exclamation-sign"></i> icon-exclamation-sign</a></li>
+                          <li><a href="#"><i class="icon-gift"></i> icon-gift</a></li>
+                          <li><a href="#"><i class="icon-leaf"></i> icon-leaf</a></li>
+                          <li><a href="#"><i class="icon-fire"></i> icon-fire</a></li>
+                          <li><a href="#"><i class="icon-eye-open"></i> icon-eye-open</a></li>
+                          <li><a href="#"><i class="icon-eye-close"></i> icon-eye-close</a></li>
+                          <li><a href="#"><i class="icon-warning-sign"></i> icon-warning-sign</a></li>
+                          <li><a href="#"><i class="icon-plane"></i> icon-plane</a></li>
+                          <li><a href="#"><i class="icon-calendar"></i> icon-calendar</a></li>
+                          <li><a href="#"><i class="icon-random"></i> icon-random</a></li>
+                          <li><a href="#"><i class="icon-comment"></i> icon-comment</a></li>
+                          <li><a href="#"><i class="icon-magnet"></i> icon-magnet</a></li>
+                          <li><a href="#"><i class="icon-chevron-up"></i> icon-chevron-up</a></li>
+                          <li><a href="#"><i class="icon-chevron-down"></i> icon-chevron-down</a></li>
+                          <li><a href="#"><i class="icon-retweet"></i> icon-retweet</a></li>
+                          <li><a href="#"><i class="icon-shopping-cart"></i> icon-shopping-cart</a></li>
+                          <li><a href="#"><i class="icon-folder-close"></i> icon-folder-close</a></li>
+                          <li><a href="#"><i class="icon-folder-open"></i> icon-folder-open</a></li>
+                          <li><a href="#"><i class="icon-resize-vertical"></i> icon-resize-vertical</a></li>
+                          <li><a href="#"><i class="icon-resize-horizontal"></i> icon-resize-horizontal</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-        
+                <p>
+                  Many images are included in this repo (icomoon)
+                </p>
+                <div class="example cente" style="position:relative">
+                  <div class="baf-container">
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 1/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-7seg-0"></i> icomoon-7seg-0</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-1"></i> icomoon-7seg-1</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-2"></i> icomoon-7seg-2</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-3"></i> icomoon-7seg-3</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-4"></i> icomoon-7seg-4</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-5"></i> icomoon-7seg-5</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-6"></i> icomoon-7seg-6</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-7"></i> icomoon-7seg-7</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-8"></i> icomoon-7seg-8</a></li>
+                          <li><a href="#"><i class="icomoon-7seg-9"></i> icomoon-7seg-9</a></li>
+                          <li><a href="#"><i class="icomoon-accessibility"></i> icomoon-accessibility</a></li>
+                          <li><a href="#"><i class="icomoon-accessibility2"></i> icomoon-accessibility2</a></li>
+                          <li><a href="#"><i class="icomoon-address-book2"></i> icomoon-address-book2</a></li>
+                          <li><a href="#"><i class="icomoon-alarm-approve"></i> icomoon-alarm-approve</a></li>
+                          <li><a href="#"><i class="icomoon-alarm-cancel"></i> icomoon-alarm-cancel</a></li>
+                          <li><a href="#"><i class="icomoon-amazon"></i> icomoon-amazon</a></li>
+                          <li><a href="#"><i class="icomoon-amazon2"></i> icomoon-amazon2</a></li>
+                          <li><a href="#"><i class="icomoon-android"></i> icomoon-android</a></li>
+                          <li><a href="#"><i class="icomoon-apple"></i> icomoon-apple</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down-left"></i> icomoon-arrow-down-left</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down-left3"></i> icomoon-arrow-down-left3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down-left8"></i> icomoon-arrow-down-left8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down-right"></i> icomoon-arrow-down-right</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down-right3"></i> icomoon-arrow-down-right3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down-right8"></i> icomoon-arrow-down-right8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down"></i> icomoon-arrow-down</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down3"></i> icomoon-arrow-down3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down4"></i> icomoon-arrow-down4</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down5"></i> icomoon-arrow-down5</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down7"></i> icomoon-arrow-down7</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-down8"></i> icomoon-arrow-down8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-left"></i> icomoon-arrow-left</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-left3"></i> icomoon-arrow-left3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-left4"></i> icomoon-arrow-left4</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-left5"></i> icomoon-arrow-left5</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-left7"></i> icomoon-arrow-left7</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-left8"></i> icomoon-arrow-left8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-right"></i> icomoon-arrow-right</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-right3"></i> icomoon-arrow-right3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-right4"></i> icomoon-arrow-right4</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 2/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-arrow-right5"></i> icomoon-arrow-right5</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-right7"></i> icomoon-arrow-right7</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-right8"></i> icomoon-arrow-right8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up-left"></i> icomoon-arrow-up-left</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up-left3"></i> icomoon-arrow-up-left3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up-left8"></i> icomoon-arrow-up-left8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up-right"></i> icomoon-arrow-up-right</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up-right3"></i> icomoon-arrow-up-right3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up-right8"></i> icomoon-arrow-up-right8</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up"></i> icomoon-arrow-up</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up3"></i> icomoon-arrow-up3</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up4"></i> icomoon-arrow-up4</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up5"></i> icomoon-arrow-up5</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up7"></i> icomoon-arrow-up7</a></li>
+                          <li><a href="#"><i class="icomoon-arrow-up8"></i> icomoon-arrow-up8</a></li>
+                          <li><a href="#"><i class="icomoon-attachment"></i> icomoon-attachment</a></li>
+                          <li><a href="#"><i class="icomoon-backspace"></i> icomoon-backspace</a></li>
+                          <li><a href="#"><i class="icomoon-backspace2"></i> icomoon-backspace2</a></li>
+                          <li><a href="#"><i class="icomoon-bars"></i> icomoon-bars</a></li>
+                          <li><a href="#"><i class="icomoon-basket"></i> icomoon-basket</a></li>
+                          <li><a href="#"><i class="icomoon-bell2"></i> icomoon-bell2</a></li>
+                          <li><a href="#"><i class="icomoon-block"></i> icomoon-block</a></li>
+                          <li><a href="#"><i class="icomoon-blogger"></i> icomoon-blogger</a></li>
+                          <li><a href="#"><i class="icomoon-blogger2"></i> icomoon-blogger2</a></li>
+                          <li><a href="#"><i class="icomoon-bluetooth"></i> icomoon-bluetooth</a></li>
+                          <li><a href="#"><i class="icomoon-book"></i> icomoon-book</a></li>
+                          <li><a href="#"><i class="icomoon-bookmark-empty"></i> icomoon-bookmark-empty</a></li>
+                          <li><a href="#"><i class="icomoon-bookmark"></i> icomoon-bookmark</a></li>
+                          <li><a href="#"><i class="icomoon-box-add"></i> icomoon-box-add</a></li>
+                          <li><a href="#"><i class="icomoon-box-remove"></i> icomoon-box-remove</a></li>
+                          <li><a href="#"><i class="icomoon-briefcase2"></i> icomoon-briefcase2</a></li>
+                          <li><a href="#"><i class="icomoon-briefcase3"></i> icomoon-briefcase3</a></li>
+                          <li><a href="#"><i class="icomoon-broadcast2"></i> icomoon-broadcast2</a></li>
+                          <li><a href="#"><i class="icomoon-bus"></i> icomoon-bus</a></li>
+                          <li><a href="#"><i class="icomoon-busy"></i> icomoon-busy</a></li>
+                          <li><a href="#"><i class="icomoon-calculator2"></i> icomoon-calculator2</a></li>
+                          <li><a href="#"><i class="icomoon-calendar2"></i> icomoon-calendar2</a></li>
+                          <li><a href="#"><i class="icomoon-camera"></i> icomoon-camera</a></li>
+                          <li><a href="#"><i class="icomoon-camera4"></i> icomoon-camera4</a></li>
+                          <li><a href="#"><i class="icomoon-cancel"></i> icomoon-cancel</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 3/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-cancel2"></i> icomoon-cancel2</a></li>
+                          <li><a href="#"><i class="icomoon-cancel3"></i> icomoon-cancel3</a></li>
+                          <li><a href="#"><i class="icomoon-car"></i> icomoon-car</a></li>
+                          <li><a href="#"><i class="icomoon-cart3"></i> icomoon-cart3</a></li>
+                          <li><a href="#"><i class="icomoon-checkbox-checked"></i> icomoon-checkbox-checked</a></li>
+                          <li><a href="#"><i class="icomoon-checkbox-partial"></i> icomoon-checkbox-partial</a></li>
+                          <li><a href="#"><i class="icomoon-checkbox-unchecked"></i> icomoon-checkbox-unchecked</a></li>
+                          <li><a href="#"><i class="icomoon-checkmark"></i> icomoon-checkmark</a></li>
+                          <li><a href="#"><i class="icomoon-clipboard2"></i> icomoon-clipboard2</a></li>
+                          <li><a href="#"><i class="icomoon-clipboard3"></i> icomoon-clipboard3</a></li>
+                          <li><a href="#"><i class="icomoon-clock"></i> icomoon-clock</a></li>
+                          <li><a href="#"><i class="icomoon-cloud-download"></i> icomoon-cloud-download</a></li>
+                          <li><a href="#"><i class="icomoon-cloud-upload"></i> icomoon-cloud-upload</a></li>
+                          <li><a href="#"><i class="icomoon-cloud3"></i> icomoon-cloud3</a></li>
+                          <li><a href="#"><i class="icomoon-clubs"></i> icomoon-clubs</a></li>
+                          <li><a href="#"><i class="icomoon-coffee"></i> icomoon-coffee</a></li>
+                          <li><a href="#"><i class="icomoon-cog2"></i> icomoon-cog2</a></li>
+                          <li><a href="#"><i class="icomoon-comment"></i> icomoon-comment</a></li>
+                          <li><a href="#"><i class="icomoon-comment2"></i> icomoon-comment2</a></li>
+                          <li><a href="#"><i class="icomoon-comment3"></i> icomoon-comment3</a></li>
+                          <li><a href="#"><i class="icomoon-comment5"></i> icomoon-comment5</a></li>
+                          <li><a href="#"><i class="icomoon-comments"></i> icomoon-comments</a></li>
+                          <li><a href="#"><i class="icomoon-comments3"></i> icomoon-comments3</a></li>
+                          <li><a href="#"><i class="icomoon-compass2"></i> icomoon-compass2</a></li>
+                          <li><a href="#"><i class="icomoon-copy2"></i> icomoon-copy2</a></li>
+                          <li><a href="#"><i class="icomoon-css3"></i> icomoon-css3</a></li>
+                          <li><a href="#"><i class="icomoon-cube"></i> icomoon-cube</a></li>
+                          <li><a href="#"><i class="icomoon-cube2"></i> icomoon-cube2</a></li>
+                          <li><a href="#"><i class="icomoon-cup"></i> icomoon-cup</a></li>
+                          <li><a href="#"><i class="icomoon-dashboard2"></i> icomoon-dashboard2</a></li>
+                          <li><a href="#"><i class="icomoon-database"></i> icomoon-database</a></li>
+                          <li><a href="#"><i class="icomoon-delicious"></i> icomoon-delicious</a></li>
+                          <li><a href="#"><i class="icomoon-deviantart"></i> icomoon-deviantart</a></li>
+                          <li><a href="#"><i class="icomoon-deviantart2"></i> icomoon-deviantart2</a></li>
+                          <li><a href="#"><i class="icomoon-diamond"></i> icomoon-diamond</a></li>
+                          <li><a href="#"><i class="icomoon-diamonds"></i> icomoon-diamonds</a></li>
+                          <li><a href="#"><i class="icomoon-download"></i> icomoon-download</a></li>
+                          <li><a href="#"><i class="icomoon-drawer"></i> icomoon-drawer</a></li>
+                          <li><a href="#"><i class="icomoon-drawer2"></i> icomoon-drawer2</a></li>
+                          <li><a href="#"><i class="icomoon-dribbble"></i> icomoon-dribbble</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 4/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-dribbble2"></i> icomoon-dribbble2</a></li>
+                          <li><a href="#"><i class="icomoon-dribbble3"></i> icomoon-dribbble3</a></li>
+                          <li><a href="#"><i class="icomoon-droplet"></i> icomoon-droplet</a></li>
+                          <li><a href="#"><i class="icomoon-embed"></i> icomoon-embed</a></li>
+                          <li><a href="#"><i class="icomoon-enter"></i> icomoon-enter</a></li>
+                          <li><a href="#"><i class="icomoon-enter2"></i> icomoon-enter2</a></li>
+                          <li><a href="#"><i class="icomoon-equalizer"></i> icomoon-equalizer</a></li>
+                          <li><a href="#"><i class="icomoon-exit"></i> icomoon-exit</a></li>
+                          <li><a href="#"><i class="icomoon-eye"></i> icomoon-eye</a></li>
+                          <li><a href="#"><i class="icomoon-eye2"></i> icomoon-eye2</a></li>
+                          <li><a href="#"><i class="icomoon-facebook"></i> icomoon-facebook</a></li>
+                          <li><a href="#"><i class="icomoon-facebook2"></i> icomoon-facebook2</a></li>
+                          <li><a href="#"><i class="icomoon-facebook3"></i> icomoon-facebook3</a></li>
+                          <li><a href="#"><i class="icomoon-facebook4"></i> icomoon-facebook4</a></li>
+                          <li><a href="#"><i class="icomoon-feed"></i> icomoon-feed</a></li>
+                          <li><a href="#"><i class="icomoon-feed2"></i> icomoon-feed2</a></li>
+                          <li><a href="#"><i class="icomoon-feed3"></i> icomoon-feed3</a></li>
+                          <li><a href="#"><i class="icomoon-file-css"></i> icomoon-file-css</a></li>
+                          <li><a href="#"><i class="icomoon-file-excel"></i> icomoon-file-excel</a></li>
+                          <li><a href="#"><i class="icomoon-file-openoffice"></i> icomoon-file-openoffice</a></li>
+                          <li><a href="#"><i class="icomoon-file-pdf"></i> icomoon-file-pdf</a></li>
+                          <li><a href="#"><i class="icomoon-file-powerpoint"></i> icomoon-file-powerpoint</a></li>
+                          <li><a href="#"><i class="icomoon-file-word"></i> icomoon-file-word</a></li>
+                          <li><a href="#"><i class="icomoon-file-xml"></i> icomoon-file-xml</a></li>
+                          <li><a href="#"><i class="icomoon-file-zip"></i> icomoon-file-zip</a></li>
+                          <li><a href="#"><i class="icomoon-file"></i> icomoon-file</a></li>
+                          <li><a href="#"><i class="icomoon-file2"></i> icomoon-file2</a></li>
+                          <li><a href="#"><i class="icomoon-finder"></i> icomoon-finder</a></li>
+                          <li><a href="#"><i class="icomoon-fire2"></i> icomoon-fire2</a></li>
+                          <li><a href="#"><i class="icomoon-firefox"></i> icomoon-firefox</a></li>
+                          <li><a href="#"><i class="icomoon-flag"></i> icomoon-flag</a></li>
+                          <li><a href="#"><i class="icomoon-flag3"></i> icomoon-flag3</a></li>
+                          <li><a href="#"><i class="icomoon-flickr"></i> icomoon-flickr</a></li>
+                          <li><a href="#"><i class="icomoon-flickr2"></i> icomoon-flickr2</a></li>
+                          <li><a href="#"><i class="icomoon-flickr3"></i> icomoon-flickr3</a></li>
+                          <li><a href="#"><i class="icomoon-folder3"></i> icomoon-folder3</a></li>
+                          <li><a href="#"><i class="icomoon-folder4"></i> icomoon-folder4</a></li>
+                          <li><a href="#"><i class="icomoon-font"></i> icomoon-font</a></li>
+                          <li><a href="#"><i class="icomoon-forrst"></i> icomoon-forrst</a></li>
+                          <li><a href="#"><i class="icomoon-forrst2"></i> icomoon-forrst2</a></li>
+                      </ul>
+                    </div>
+                    <br><br>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 5/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-forward"></i> icomoon-forward</a></li>
+                          <li><a href="#"><i class="icomoon-gift"></i> icomoon-gift</a></li>
+                          <li><a href="#"><i class="icomoon-git"></i> icomoon-git</a></li>
+                          <li><a href="#"><i class="icomoon-git2"></i> icomoon-git2</a></li>
+                          <li><a href="#"><i class="icomoon-git3"></i> icomoon-git3</a></li>
+                          <li><a href="#"><i class="icomoon-github-cat"></i> icomoon-github-cat</a></li>
+                          <li><a href="#"><i class="icomoon-github-fork"></i> icomoon-github-fork</a></li>
+                          <li><a href="#"><i class="icomoon-github"></i> icomoon-github</a></li>
+                          <li><a href="#"><i class="icomoon-github2"></i> icomoon-github2</a></li>
+                          <li><a href="#"><i class="icomoon-github3"></i> icomoon-github3</a></li>
+                          <li><a href="#"><i class="icomoon-glasses2"></i> icomoon-glasses2</a></li>
+                          <li><a href="#"><i class="icomoon-glasses3"></i> icomoon-glasses3</a></li>
+                          <li><a href="#"><i class="icomoon-gplus"></i> icomoon-gplus</a></li>
+                          <li><a href="#"><i class="icomoon-gplus2"></i> icomoon-gplus2</a></li>
+                          <li><a href="#"><i class="icomoon-gplus3"></i> icomoon-gplus3</a></li>
+                          <li><a href="#"><i class="icomoon-gplus4"></i> icomoon-gplus4</a></li>
+                          <li><a href="#"><i class="icomoon-grid2"></i> icomoon-grid2</a></li>
+                          <li><a href="#"><i class="icomoon-happy2"></i> icomoon-happy2</a></li>
+                          <li><a href="#"><i class="icomoon-heart"></i> icomoon-heart</a></li>
+                          <li><a href="#"><i class="icomoon-heart2"></i> icomoon-heart2</a></li>
+                          <li><a href="#"><i class="icomoon-help"></i> icomoon-help</a></li>
+                          <li><a href="#"><i class="icomoon-help2"></i> icomoon-help2</a></li>
+                          <li><a href="#"><i class="icomoon-history"></i> icomoon-history</a></li>
+                          <li><a href="#"><i class="icomoon-home"></i> icomoon-home</a></li>
+                          <li><a href="#"><i class="icomoon-home5"></i> icomoon-home5</a></li>
+                          <li><a href="#"><i class="icomoon-home6"></i> icomoon-home6</a></li>
+                          <li><a href="#"><i class="icomoon-html5-2"></i> icomoon-html5-2</a></li>
+                          <li><a href="#"><i class="icomoon-html5"></i> icomoon-html5</a></li>
+                          <li><a href="#"><i class="icomoon-icomoon"></i> icomoon-icomoon</a></li>
+                          <li><a href="#"><i class="icomoon-ie"></i> icomoon-ie</a></li>
+                          <li><a href="#"><i class="icomoon-info"></i> icomoon-info</a></li>
+                          <li><a href="#"><i class="icomoon-job"></i> icomoon-job</a></li>
+                          <li><a href="#"><i class="icomoon-key"></i> icomoon-key</a></li>
+                          <li><a href="#"><i class="icomoon-key2"></i> icomoon-key2</a></li>
+                          <li><a href="#"><i class="icomoon-lab"></i> icomoon-lab</a></li>
+                          <li><a href="#"><i class="icomoon-laptop"></i> icomoon-laptop</a></li>
+                          <li><a href="#"><i class="icomoon-lastfm"></i> icomoon-lastfm</a></li>
+                          <li><a href="#"><i class="icomoon-lastfm2"></i> icomoon-lastfm2</a></li>
+                          <li><a href="#"><i class="icomoon-libreoffice"></i> icomoon-libreoffice</a></li>
+                          <li><a href="#"><i class="icomoon-lightning"></i> icomoon-lightning</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 6/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-link"></i> icomoon-link</a></li>
+                          <li><a href="#"><i class="icomoon-linkedin"></i> icomoon-linkedin</a></li>
+                          <li><a href="#"><i class="icomoon-loading"></i> icomoon-loading</a></li>
+                          <li><a href="#"><i class="icomoon-loading2"></i> icomoon-loading2</a></li>
+                          <li><a href="#"><i class="icomoon-location"></i> icomoon-location</a></li>
+                          <li><a href="#"><i class="icomoon-lock"></i> icomoon-lock</a></li>
+                          <li><a href="#"><i class="icomoon-loop3"></i> icomoon-loop3</a></li>
+                          <li><a href="#"><i class="icomoon-ltr"></i> icomoon-ltr</a></li>
+                          <li><a href="#"><i class="icomoon-mail"></i> icomoon-mail</a></li>
+                          <li><a href="#"><i class="icomoon-mail4"></i> icomoon-mail4</a></li>
+                          <li><a href="#"><i class="icomoon-mail5"></i> icomoon-mail5</a></li>
+                          <li><a href="#"><i class="icomoon-menu"></i> icomoon-menu</a></li>
+                          <li><a href="#"><i class="icomoon-menu2"></i> icomoon-menu2</a></li>
+                          <li><a href="#"><i class="icomoon-menu3"></i> icomoon-menu3</a></li>
+                          <li><a href="#"><i class="icomoon-meter-fast"></i> icomoon-meter-fast</a></li>
+                          <li><a href="#"><i class="icomoon-meter-medium"></i> icomoon-meter-medium</a></li>
+                          <li><a href="#"><i class="icomoon-meter-slow"></i> icomoon-meter-slow</a></li>
+                          <li><a href="#"><i class="icomoon-mic2"></i> icomoon-mic2</a></li>
+                          <li><a href="#"><i class="icomoon-minus"></i> icomoon-minus</a></li>
+                          <li><a href="#"><i class="icomoon-minus2"></i> icomoon-minus2</a></li>
+                          <li><a href="#"><i class="icomoon-mobile"></i> icomoon-mobile</a></li>
+                          <li><a href="#"><i class="icomoon-mobile2"></i> icomoon-mobile2</a></li>
+                          <li><a href="#"><i class="icomoon-mouse2"></i> icomoon-mouse2</a></li>
+                          <li><a href="#"><i class="icomoon-music"></i> icomoon-music</a></li>
+                          <li><a href="#"><i class="icomoon-neutral2"></i> icomoon-neutral2</a></li>
+                          <li><a href="#"><i class="icomoon-new-page"></i> icomoon-new-page</a></li>
+                          <li><a href="#"><i class="icomoon-news"></i> icomoon-news</a></li>
+                          <li><a href="#"><i class="icomoon-opera"></i> icomoon-opera</a></li>
+                          <li><a href="#"><i class="icomoon-out"></i> icomoon-out</a></li>
+                          <li><a href="#"><i class="icomoon-out2"></i> icomoon-out2</a></li>
+                          <li><a href="#"><i class="icomoon-paragraph-center"></i> icomoon-paragraph-center</a></li>
+                          <li><a href="#"><i class="icomoon-paragraph-left"></i> icomoon-paragraph-left</a></li>
+                          <li><a href="#"><i class="icomoon-paragraph-right"></i> icomoon-paragraph-right</a></li>
+                          <li><a href="#"><i class="icomoon-pencil"></i> icomoon-pencil</a></li>
+                          <li><a href="#"><i class="icomoon-pencil4"></i> icomoon-pencil4</a></li>
+                          <li><a href="#"><i class="icomoon-phone2"></i> icomoon-phone2</a></li>
+                          <li><a href="#"><i class="icomoon-picasa"></i> icomoon-picasa</a></li>
+                          <li><a href="#"><i class="icomoon-picasa2"></i> icomoon-picasa2</a></li>
+                          <li><a href="#"><i class="icomoon-picture"></i> icomoon-picture</a></li>
+                          <li><a href="#"><i class="icomoon-picture2"></i> icomoon-picture2</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 7/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-pie"></i> icomoon-pie</a></li>
+                          <li><a href="#"><i class="icomoon-pinterest"></i> icomoon-pinterest</a></li>
+                          <li><a href="#"><i class="icomoon-pinterest2"></i> icomoon-pinterest2</a></li>
+                          <li><a href="#"><i class="icomoon-play"></i> icomoon-play</a></li>
+                          <li><a href="#"><i class="icomoon-play2"></i> icomoon-play2</a></li>
+                          <li><a href="#"><i class="icomoon-playlist"></i> icomoon-playlist</a></li>
+                          <li><a href="#"><i class="icomoon-plus"></i> icomoon-plus</a></li>
+                          <li><a href="#"><i class="icomoon-plus2"></i> icomoon-plus2</a></li>
+                          <li><a href="#"><i class="icomoon-power"></i> icomoon-power</a></li>
+                          <li><a href="#"><i class="icomoon-power2"></i> icomoon-power2</a></li>
+                          <li><a href="#"><i class="icomoon-puzzle"></i> icomoon-puzzle</a></li>
+                          <li><a href="#"><i class="icomoon-radio-checked"></i> icomoon-radio-checked</a></li>
+                          <li><a href="#"><i class="icomoon-radio-unchecked"></i> icomoon-radio-unchecked</a></li>
+                          <li><a href="#"><i class="icomoon-reddit"></i> icomoon-reddit</a></li>
+                          <li><a href="#"><i class="icomoon-redo2"></i> icomoon-redo2</a></li>
+                          <li><a href="#"><i class="icomoon-reply-all"></i> icomoon-reply-all</a></li>
+                          <li><a href="#"><i class="icomoon-reply"></i> icomoon-reply</a></li>
+                          <li><a href="#"><i class="icomoon-rocket"></i> icomoon-rocket</a></li>
+                          <li><a href="#"><i class="icomoon-rtl"></i> icomoon-rtl</a></li>
+                          <li><a href="#"><i class="icomoon-safari"></i> icomoon-safari</a></li>
+                          <li><a href="#"><i class="icomoon-screen2"></i> icomoon-screen2</a></li>
+                          <li><a href="#"><i class="icomoon-search"></i> icomoon-search</a></li>
+                          <li><a href="#"><i class="icomoon-search2"></i> icomoon-search2</a></li>
+                          <li><a href="#"><i class="icomoon-share"></i> icomoon-share</a></li>
+                          <li><a href="#"><i class="icomoon-share2"></i> icomoon-share2</a></li>
+                          <li><a href="#"><i class="icomoon-skype"></i> icomoon-skype</a></li>
+                          <li><a href="#"><i class="icomoon-smiley2"></i> icomoon-smiley2</a></li>
+                          <li><a href="#"><i class="icomoon-soundcloud"></i> icomoon-soundcloud</a></li>
+                          <li><a href="#"><i class="icomoon-soundcloud2"></i> icomoon-soundcloud2</a></li>
+                          <li><a href="#"><i class="icomoon-spades"></i> icomoon-spades</a></li>
+                          <li><a href="#"><i class="icomoon-star-empty"></i> icomoon-star-empty</a></li>
+                          <li><a href="#"><i class="icomoon-star-half"></i> icomoon-star-half</a></li>
+                          <li><a href="#"><i class="icomoon-star"></i> icomoon-star</a></li>
+                          <li><a href="#"><i class="icomoon-stats-up"></i> icomoon-stats-up</a></li>
+                          <li><a href="#"><i class="icomoon-stumbleupon"></i> icomoon-stumbleupon</a></li>
+                          <li><a href="#"><i class="icomoon-stumbleupon2"></i> icomoon-stumbleupon2</a></li>
+                          <li><a href="#"><i class="icomoon-support"></i> icomoon-support</a></li>
+                          <li><a href="#"><i class="icomoon-tab"></i> icomoon-tab</a></li>
+                          <li><a href="#"><i class="icomoon-tab2"></i> icomoon-tab2</a></li>
+                          <li><a href="#"><i class="icomoon-tablet"></i> icomoon-tablet</a></li>
+                      </ul>
+                    </div>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        icomoon 8/8 <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#"><i class="icomoon-tag2"></i> icomoon-tag2</a></li>
+                          <li><a href="#"><i class="icomoon-target"></i> icomoon-target</a></li>
+                          <li><a href="#"><i class="icomoon-target2"></i> icomoon-target2</a></li>
+                          <li><a href="#"><i class="icomoon-thumbs-down"></i> icomoon-thumbs-down</a></li>
+                          <li><a href="#"><i class="icomoon-thumbs-up"></i> icomoon-thumbs-up</a></li>
+                          <li><a href="#"><i class="icomoon-trashcan"></i> icomoon-trashcan</a></li>
+                          <li><a href="#"><i class="icomoon-trashcan2"></i> icomoon-trashcan2</a></li>
+                          <li><a href="#"><i class="icomoon-trashcan4"></i> icomoon-trashcan4</a></li>
+                          <li><a href="#"><i class="icomoon-tree-view"></i> icomoon-tree-view</a></li>
+                          <li><a href="#"><i class="icomoon-tri-down"></i> icomoon-tri-down</a></li>
+                          <li><a href="#"><i class="icomoon-tri-left"></i> icomoon-tri-left</a></li>
+                          <li><a href="#"><i class="icomoon-tri-right"></i> icomoon-tri-right</a></li>
+                          <li><a href="#"><i class="icomoon-tri-up"></i> icomoon-tri-up</a></li>
+                          <li><a href="#"><i class="icomoon-tumblr"></i> icomoon-tumblr</a></li>
+                          <li><a href="#"><i class="icomoon-tumblr2"></i> icomoon-tumblr2</a></li>
+                          <li><a href="#"><i class="icomoon-twitter-bird"></i> icomoon-twitter-bird</a></li>
+                          <li><a href="#"><i class="icomoon-twitter-bird2"></i> icomoon-twitter-bird2</a></li>
+                          <li><a href="#"><i class="icomoon-twitter-bird3"></i> icomoon-twitter-bird3</a></li>
+                          <li><a href="#"><i class="icomoon-undo2"></i> icomoon-undo2</a></li>
+                          <li><a href="#"><i class="icomoon-unlink"></i> icomoon-unlink</a></li>
+                          <li><a href="#"><i class="icomoon-unlocked"></i> icomoon-unlocked</a></li>
+                          <li><a href="#"><i class="icomoon-upload"></i> icomoon-upload</a></li>
+                          <li><a href="#"><i class="icomoon-user2"></i> icomoon-user2</a></li>
+                          <li><a href="#"><i class="icomoon-user4"></i> icomoon-user4</a></li>
+                          <li><a href="#"><i class="icomoon-vimeo"></i> icomoon-vimeo</a></li>
+                          <li><a href="#"><i class="icomoon-vimeo2"></i> icomoon-vimeo2</a></li>
+                          <li><a href="#"><i class="icomoon-windows"></i> icomoon-windows</a></li>
+                          <li><a href="#"><i class="icomoon-wordpress"></i> icomoon-wordpress</a></li>
+                          <li><a href="#"><i class="icomoon-wordpress2"></i> icomoon-wordpress2</a></li>
+                          <li><a href="#"><i class="icomoon-wrench2"></i> icomoon-wrench2</a></li>
+                          <li><a href="#"><i class="icomoon-xing"></i> icomoon-xing</a></li>
+                          <li><a href="#"><i class="icomoon-yahoo"></i> icomoon-yahoo</a></li>
+                          <li><a href="#"><i class="icomoon-yahoo2"></i> icomoon-yahoo2</a></li>
+                          <li><a href="#"><i class="icomoon-youtube"></i> icomoon-youtube</a></li>
+                          <li><a href="#"><i class="icomoon-youtube2"></i> icomoon-youtube2</a></li>
+                          <li><a href="#"><i class="icomoon-zoom-in"></i> icomoon-zoom-in</a></li>
+                          <li><a href="#"><i class="icomoon-zoom-out"></i> icomoon-zoom-out</a></li>
+                      </ul>
+                    </div>
+                    <br><br>
+                    <div class="baf-group">
+                      <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                        big icomoon icons <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu-big">
+                          <li><a href="#"><i class="icomoon-big-accessibility"></i> icomoon-big-accessibility</a></li>
+                          <li><a href="#"><i class="icomoon-big-address-book2"></i> icomoon-big-address-book2</a></li>
+                          <li><a href="#"><i class="icomoon-big-android"></i> icomoon-big-android</a></li>
+                          <li><a href="#"><i class="icomoon-big-apple"></i> icomoon-big-apple</a></li>
+                          <li><a href="#"><i class="icomoon-big-attachment"></i> icomoon-big-attachment</a></li>
+                          <li><a href="#"><i class="icomoon-big-bars"></i> icomoon-big-bars</a></li>
+                          <li><a href="#"><i class="icomoon-big-broadcast2"></i> icomoon-big-broadcast2</a></li>
+                          <li><a href="#"><i class="icomoon-big-busy"></i> icomoon-big-busy</a></li>
+                          <li><a href="#"><i class="icomoon-big-calendar2"></i> icomoon-big-calendar2</a></li>
+                          <li><a href="#"><i class="icomoon-big-cancel"></i> icomoon-big-cancel</a></li>
+                          <li><a href="#"><i class="icomoon-big-cart3"></i> icomoon-big-cart3</a></li>
+                          <li><a href="#"><i class="icomoon-big-clipboard3"></i> icomoon-big-clipboard3</a></li>
+                          <li><a href="#"><i class="icomoon-big-clock"></i> icomoon-big-clock</a></li>
+                          <li><a href="#"><i class="icomoon-big-cloud-download"></i> icomoon-big-cloud-download</a></li>
+                          <li><a href="#"><i class="icomoon-big-cloud-upload"></i> icomoon-big-cloud-upload</a></li>
+                          <li><a href="#"><i class="icomoon-big-coffee"></i> icomoon-big-coffee</a></li>
+                          <li><a href="#"><i class="icomoon-big-cog2"></i> icomoon-big-cog2</a></li>
+                          <li><a href="#"><i class="icomoon-big-comment"></i> icomoon-big-comment</a></li>
+                          <li><a href="#"><i class="icomoon-big-comments"></i> icomoon-big-comments</a></li>
+                          <li><a href="#"><i class="icomoon-big-database"></i> icomoon-big-database</a></li>
+                          <li><a href="#"><i class="icomoon-big-droplet"></i> icomoon-big-droplet</a></li>
+                          <li><a href="#"><i class="icomoon-big-embed"></i> icomoon-big-embed</a></li>
+                          <li><a href="#"><i class="icomoon-big-eye"></i> icomoon-big-eye</a></li>
+                          <li><a href="#"><i class="icomoon-big-flag3"></i> icomoon-big-flag3</a></li>
+                          <li><a href="#"><i class="icomoon-big-github-fork"></i> icomoon-big-github-fork</a></li>
+                          <li><a href="#"><i class="icomoon-big-info"></i> icomoon-big-info</a></li>
+                          <li><a href="#"><i class="icomoon-big-key"></i> icomoon-big-key</a></li>
+                          <li><a href="#"><i class="icomoon-big-lab"></i> icomoon-big-lab</a></li>
+                          <li><a href="#"><i class="icomoon-big-link"></i> icomoon-big-link</a></li>
+                          <li><a href="#"><i class="icomoon-big-lock"></i> icomoon-big-lock</a></li>
+                          <li><a href="#"><i class="icomoon-big-mail"></i> icomoon-big-mail</a></li>
+                          <li><a href="#"><i class="icomoon-big-mic2"></i> icomoon-big-mic2</a></li>
+                          <li><a href="#"><i class="icomoon-big-music"></i> icomoon-big-music</a></li>
+                          <li><a href="#"><i class="icomoon-big-pencil4"></i> icomoon-big-pencil4</a></li>
+                          <li><a href="#"><i class="icomoon-big-picture2"></i> icomoon-big-picture2</a></li>
+                          <li><a href="#"><i class="icomoon-big-pie"></i> icomoon-big-pie</a></li>
+                          <li><a href="#"><i class="icomoon-big-rocket"></i> icomoon-big-rocket</a></li>
+                          <li><a href="#"><i class="icomoon-big-search2"></i> icomoon-big-search2</a></li>
+                          <li><a href="#"><i class="icomoon-big-star"></i> icomoon-big-star</a></li>
+                          <li><a href="#"><i class="icomoon-big-target2"></i> icomoon-big-target2</a></li>
+                          <li><a href="#"><i class="icomoon-big-trashcan4"></i> icomoon-big-trashcan4</a></li>
+                          <li><a href="#"><i class="icomoon-big-twitter-bird"></i> icomoon-big-twitter-bird</a></li>
+                      </ul>
+                    </div> (only a selection, but you can use all icomoon icons)
+                  </div>
+                </div>
         <p>We can even create fancy split-button dropdowns in color with icons and dividers!</p>
         
         <div class="example" style="position:relative">
@@ -685,7 +1190,7 @@
   &lt;/ul>
 &lt;/div>
 </code></pre>
-          
+          <div class="cente">
             <div class="baf-group">
               <a class="baf blue"><i class="icon-user icon-white"></i> Add User</a>
               <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
@@ -699,47 +1204,47 @@
                   <li><a href="#"><i class="icon-print"></i> Separated link</a></li>
               </ul>
             </div>
+          </div>
         </div>
         
-        <p>With the same style, we can make cool number input forms<br>try arrow keys to increase/decrease the value</p>
+        <p>With the same style, we can make cool number input forms <br>try the arrow keys, the plus and minus keys and buttons <br>and the mousewheel to increase/decrease the value</p>
         
                 <div class="example" style="position:relative">
                 <pre class="prettyprint"><code>&lt;div class="baf-group">
-          &lt;a class="baf blue" 
-              onmousedown="keepCalling = true; plusone('intinput');" 
-              onmouseup="keepCalling = false;" 
-              onmouseout="keepCalling = false;">
-            &lt;i class="icon-plus icon-white">&lt;/i>
-          &lt;/a>
-          &lt;a class="baf blue" 
-              onmousedown="keepCalling = true; minusone('intinput');" 
-              onmouseup="keepCalling = false;" 
-              onmouseout="keepCalling = false;">
-            &lt;i class="icon-minus icon-white">&lt;/i>
-          &lt;/a>
-          &lt;input id="intinput"
-          onkeydown="javascript:changeValues(document.getElementById('intinput'));"
-          type="number" name="quantity" value="42" min="0" max="100">
-          &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
-          
-            &lt;span class="caret">&lt;/span>
-          &lt;/a>
-          &lt;ul class="dropdown-menu">
-              &lt;li>&lt;a href="javascript:id('intinput').value=0;">0&lt;/a>&lt;/li>
-              &lt;li class="divider">&lt;/li>
-              &lt;li>&lt;a href="javascript:id('intinput').value=25;">25&lt;/a>&lt;/li>
-              &lt;li>&lt;a href="javascript:id('intinput').value=50;">50&lt;/a>&lt;/li>
-              &lt;li>&lt;a href="javascript:id('intinput').value=75;">75&lt;/a>&lt;/li>
-              &lt;li class="divider">&lt;/li>
-              &lt;li>&lt;a href="javascript:id('intinput').value=100;">100&lt;/a>&lt;/li>
-          &lt;/ul>
-        &lt;/div>
+  &lt;a class="baf blue" 
+      onmousedown="keepCalling = true; plusone('intinput');" 
+      onmouseup="keepCalling = false;" 
+      onmouseout="keepCalling = false;">
+    &lt;i class="icon-plus icon-white">&lt;/i>
+  &lt;/a>
+  &lt;a class="baf blue" 
+      onmousedown="keepCalling = true; minusone('intinput');" 
+      onmouseup="keepCalling = false;" 
+      onmouseout="keepCalling = false;">
+    &lt;i class="icon-minus icon-white">&lt;/i>
+  &lt;/a>
+  &lt;input id="intinput" 
+      onkeydown="changeValues(this);" 
+      type="number" name="quantity" value="42" min="0" max="100">
+  &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>&lt;a href="javascript:id('intinput').value=0;">0&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:id('intinput').value=25;">25&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:id('intinput').value=50;">50&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:id('intinput').value=75;">75&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:id('intinput').value=100;">100&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
         </code></pre>
-        
+                  <div class="cente">
                     <div class="baf-group">
                         <a class="baf blue" onmousedown="keepCalling = true; plusone('intinput');" onmouseup="keepCalling = false;" onmouseout="keepCalling = false;"><i class="icon-plus icon-white"></i></a>
                         <a class="baf blue" onmousedown="keepCalling = true; minusone('intinput');" onmouseup="keepCalling = false;" onmouseout="keepCalling = false;"><i class="icon-minus icon-white"></i></a>
-                        <input id="intinput" onkeydown="javascript:changeValues(document.getElementById('intinput'));" type="number" name="quantity" value="42" min="0" max="100">
+                        <input id="intinput" onkeydown="changeValues(this);" type="number" name="quantity" value="42" min="0" max="100">
                         <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
                             <span class="caret"></span>
                         </a>
@@ -753,6 +1258,7 @@
                             <li><a href="javascript:id('intinput').value=100;">100</a></li>
                         </ul>
                     </div>
+                  </div>
                 </div>
         
         <p>
@@ -760,14 +1266,50 @@
         </p>
         
         <div class="example" style="position:relative">
-            <pre class="prettyprint"><code>&lt;div class="input-prepend">
+            <pre class="prettyprint"><code>&lt;div class="input-prepend baf-input">
+    &lt;label class="baf cyan add-on" id="file" for="inputfile">
+      &lt;i class="icomoon-big-attachment icomoon-big-white">&lt;/i> file 
+    &lt;/label>&lt;input class="input-cyan" name="file" 
+      id="inputfile" size="16" type="text" onkeyup="">&lt;br>
     &lt;label class="baf blue add-on" id="email" for="inputemail">
-    &lt;i class="icon-envelope icon-white">&lt;/i> email &lt;/label>
-    &lt;input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup="">
+      &lt;i class="icon-envelope icon-white">&lt;/i> email 
+    &lt;/label>&lt;input class="" name="email" 
+      id="inputemail" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf green add-on" id="user" for="inputuser">
+      &lt;i class="icon-user icon-white">&lt;/i> name 
+    &lt;/label>&lt;input class="input-green" name="user" 
+      id="inputuser" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf yellow add-on" id="key" for="inputkey">
+      &lt;i class="icomoon-key icomoon-white">&lt;/i> key 
+    &lt;/label>&lt;input class="input-yellow" name="key" 
+      id="inputkey" size="16" type="text" onkeyup="">&lt;br>
+    &lt;label class="baf red add-on" id="wrong" for="inputwrong">
+      &lt;i class="icomoon-thumbs-down icomoon-white">&lt;/i> wrong 
+    &lt;/label>&lt;input class="input-red" name="wrong" 
+      id="inputwrong" size="16" type="text" onkeyup="">&lt;br>
 &lt;/div>
         </code></pre>
-            <div class="input-prepend">
-                <label class="baf blue add-on" id="email" for="inputemail"><i class="icon-envelope icon-white"></i> email </label><input class="span2" name="email" id="inputemail" size="16" type="text" onkeyup="">
+            <div class="input-prepend baf-input cente">
+                <label class="baf cyan add-on" id="file" for="inputfile">
+                  <i class="icomoon-big-attachment icomoon-big-white"></i> file 
+                </label><input class="input-cyan" name="file" 
+                  id="inputfile" size="16" type="text" onkeyup=""><br>
+                <label class="baf blue add-on" id="email" for="inputemail">
+                  <i class="icon-envelope icon-white"></i> email 
+                </label><input class="" name="email" 
+                  id="inputemail" size="16" type="text" onkeyup=""><br>
+                <label class="baf green add-on" id="user" for="inputuser">
+                  <i class="icon-user icon-white"></i> name 
+                </label><input class="input-green" name="user" 
+                  id="inputuser" size="16" type="text" onkeyup=""><br>
+                <label class="baf yellow add-on" id="key" for="inputkey">
+                  <i class="icomoon-key icomoon-white"></i> key 
+                </label><input class="input-yellow" name="key" 
+                  id="inputkey" size="16" type="text" onkeyup=""><br>
+                <label class="baf red add-on" id="wrong" for="inputwrong">
+                  <i class="icomoon-thumbs-down icomoon-white"></i> wrong 
+                </label><input class="input-red" name="wrong" 
+                  id="inputwrong" size="16" type="text" onkeyup=""><br>
             </div>
         </div>
         
@@ -785,19 +1327,17 @@
         <p><strong>The MIT License (MIT)</strong></p>
         <p><a href="https://github.com/todc/">Tim O'Donnell</a>, <a href="https://github.com/SimonWaldherr">Simon Waldherr</a></p>
         
-        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
         
         <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
         
-        <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-        
-        <p><strong><em>previous versions are public domain (until v.1.0.3)</em></strong> </p>
+        <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
     </div>
 
     <div class="section">
         <h2>Version</h2>
-        <p>baf v. 1.3<br>
-        09.2012</p>
+        <p>baf v. 1.3.2<br>
+        10.2012</p>
     </div>
 
     <div class="section">
@@ -814,7 +1354,7 @@
 
 </div>
 
-<script src="./../js/bootstrap-dropdown.js"></script>
+<script src="../js/bootstrap-dropdown.js"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.3
+ * Version: 1.3.2
  *
  */
 
@@ -37,17 +37,34 @@ function minusone(id)
 
 function changeValues(element)
   {
-    var kc = window.event.keyCode;
-    if (((kc === 37)||(kc === 40))&&(element.value > (Math.round(element.min))))
+    
+    if(element != '[object HTMLInputElement]')
       {
-        //left||down -
+        element = document.getElementById(element);
+      }
+    var kc = window.event.keyCode;
+    if (((kc === 37)||(kc === 40)||(kc === 109))&&(element.value > (Math.round(element.min))))
+      {
+        //left||down||minus -
         element.value = Math.round(element.value)-1;
         return false;
       }
-    else if (((kc === 38)||(kc === 39))&&((Math.round(element.max)) > element.value))
+    else if (((kc === 38)||(kc === 39)||(kc === 107))&&((Math.round(element.max)) > element.value))
       {
-        //up||right +
+        //up||right||plus +
         element.value = Math.round(element.value)+1;
+        return false;
+      }
+    else if ((kc === 34)&&(element.value > (Math.round(element.min))))
+      {
+        //page down -
+        element.value = Math.round(element.value)-10;
+        return false;
+      }
+    else if ((kc === 33)&&((Math.round(element.max)) > element.value))
+      {
+        //page up +
+        element.value = Math.round(element.value)+10;
         return false;
       }
     else

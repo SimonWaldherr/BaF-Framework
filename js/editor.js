@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.3
+ * Version: 1.3.2
  *
  */
 
@@ -16,6 +16,7 @@ function addTableRow()
     code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select></td>';
     code += '<td><select name="icon" size="1" onchange="javascript:generateButton();"><option></option><option>plus</option><option>minus</option><option>search</option><option>envelope</option><option>heart</option><option>star</option><option>user</option><option>ok</option><option>remove</option><option>off</option><option>cog</option><option>trash</option><option>home</option><option>download</option><option>upload</option><option>refresh</option><option>pencil</option><option>picture</option><option>share</option></select></td>';
     code += '<td><input name="link" type="text" onkeyup="javascript:generateButton();"></td><td><input name="text" type="text" placeholder="group" onkeyup="javascript:generateButton();"></td>';
+    code += '<td><input type="checkbox" onchange="javascript:generateButton();"></td>';
     
     var node=document.createElement("tr");
     node.innerHTML = code;
@@ -54,6 +55,10 @@ function generateButton()
         else
           {
             ButtonCode[group] += '<a href="#"';
+          }
+        if(TBL.rows[x].cells[5].firstChild.checked == true)
+          {
+            ButtonCode[group] += ' disabled="true" ';
           }
         ButtonCode[group] += ' class="baf '+TBL.rows[x].cells[1].firstChild.value+'">';
         if((TBL.rows[x].cells[2].firstChild.value != '')&&(TBL.rows[x].cells[1].firstChild.value == 'grey'))
