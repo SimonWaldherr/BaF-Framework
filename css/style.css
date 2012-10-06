@@ -1,0 +1,207 @@
+/*
+ *
+ * Buttons and Forms
+ *
+ * Repo: https://github.com/SimonWaldherr/buttons-and-forms
+ * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
+ * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
+ * License: MIT
+ * Version: 1.3.2
+ *
+ */
+
+html, body, div, form, p, code, pre { 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  vertical-align: baseline; 
+  font-family: sans-serif; 
+}
+
+h1, h2, h3, p{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+}
+
+h1 a{
+  color: #09254e;
+}
+
+h1 a:hover{
+  color: #207dff;
+}
+
+body { 
+  font: 14px/18px sans-serif; 
+  color: #444; 
+  background: #DDD; 
+}
+
+a { 
+  color: #207dff; 
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active { 
+  color: #1e77de;
+  text-decoration: underline; 
+}
+
+h1 { 
+  margin: 0 0 0.5em; 
+  font-size: 36px; 
+  font-weight: bold; 
+}
+
+h2 { 
+  margin: 0 0 0.75em; 
+  font-size: 21px; 
+  font-weight: bold; 
+}
+
+h3 { 
+  margin: 0 0 0.333em; 
+  font-size: 16px; 
+  font-weight: normal; 
+}
+
+p { 
+  margin: 0 0 1.333em; 
+  line-height: 18px; 
+}
+
+em { 
+  font-style: italic; 
+}
+
+table { 
+  border-collapse: separate; 
+  border-spacing: 0; 
+  margin: 0; 
+  vertical-align: middle; 
+}
+
+th { 
+  font-weight: bold; 
+}
+
+th, td { 
+  padding: 5px 25px 5px 5px; 
+  text-align: left; 
+  vertical-align: middle; 
+}
+
+pre, code { 
+  font-family: monospace, sans-serif; 
+  font-size: 1em; 
+  color:#080; 
+}
+
+.container { 
+  position:relative; 
+  overflow:hidden; 
+  width: 700px; 
+  padding: 40px 60px; 
+  border: 1px solid #AAA; 
+  margin: 40px auto 20px; 
+  background: #FCFCFC; 
+  -webkit-box-shadow: 0 0 25px 5px rgba(0,0,0,0.1); 
+  -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0 0 25px 5px rgba(0,0,0,0.1); 
+  border-radius: 9px; 
+}
+
+.container pre,
+.container .prettyprint { 
+  padding: 0; 
+  border: 0; 
+  margin: 0 0 20px; 
+  font-size: 13px; 
+  background: #fff; 
+}
+
+.ribbon { 
+  position: absolute; 
+  top: -1px; 
+  right: -1px; 
+  opacity: 0.9; 
+}
+
+.ribbon:hover, .ribbon:focus, .ribbon:active { 
+  opacity: 1; 
+}
+.ribbon img { 
+  display: block; 
+  border: 0; 
+}
+
+.header { 
+  padding-right:80px; 
+}
+
+.section { 
+  margin: 40px 0 20px; 
+}
+
+.example { 
+  padding: 20px; 
+  background: #fff; 
+  border: 1px solid #ccc; 
+  margin: 10px -20px 20px; 
+  border-radius: 8px; 
+}
+
+.cente{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer { 
+  margin: 20px 0 50px; 
+  font-size: 11px; 
+  color: #666; 
+  text-align: center; 
+}
+
+.footer a { 
+  color: #666; 
+}
+
+#table select, #table input, #table b, #tablesi select, #tablesi input, #tablesi b {
+  width: 90px;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px;
+  margin: 1px;
+  display: inline-table;
+  text-align: center;
+  border: 1px #ccc solid;
+}
+#code{
+  margin: 5px;
+  width: 680px;
+  max-width: 680px;
+  height: 175px;
+  max-height: 775px;
+  border-radius: 0px;
+}
+#demobox{
+  margin: 25px;
+  text-align: center;
+}
+#editor {
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+#tablediv{
+  margin: 15px 0 15px 0;
+}
+#select{
+  width: 675px;
+}
+input[type="checkbox"] {
+  left: 35px;
+  position: relative;
+}
