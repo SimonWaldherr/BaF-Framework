@@ -6,11 +6,11 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.3.2
+ * Version: 1.4
  *
  */
 
-function id(id)
+function $id(id)
   {
     return document.getElementById(id);
   }
@@ -19,18 +19,18 @@ var keepCalling = true;
 
 function plusone(id)
   {
-    if((keepCalling)&&((Math.round(document.getElementById(id).max)) > document.getElementById(id).value))
+    if((keepCalling)&&((Math.round($id(id).max)) > $id(id).value))
       {
-        document.getElementById(id).value++;
+        $id(id).value++;
         window.setTimeout(plusone, 130, id);
       }
   }
 
 function minusone(id)
   {
-    if((keepCalling)&&(document.getElementById(id).value > (Math.round(document.getElementById(id).min))))
+    if((keepCalling)&&($id(id).value > (Math.round($id(id).min))))
       {
-        document.getElementById(id).value--;
+        $id(id).value--;
         window.setTimeout(minusone, 130, id);
       }
   }
@@ -40,7 +40,7 @@ function changeValues(element)
     
     if(element != '[object HTMLInputElement]')
       {
-        element = document.getElementById(element);
+        element = $id(element);
       }
     var kc = window.event.keyCode;
     if (((kc === 37)||(kc === 40)||(kc === 109))&&(element.value > (Math.round(element.min))))

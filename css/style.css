@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.3.2
+ * Version: 1.4
  *
  */
 
@@ -180,6 +180,11 @@ pre, code {
   color: #666; 
 }
 
+.hideme{
+  display: none;
+  visibility: hidden;
+}
+
 #table select, #table input, #table b, #tablesi select, #tablesi input, #tablesi b {
   width: 90px;
   border-radius: 4px;
@@ -191,6 +196,7 @@ pre, code {
   text-align: center;
   border: 1px #ccc solid;
 }
+
 #code{
   margin: 5px;
   width: 680px;
@@ -199,22 +205,82 @@ pre, code {
   max-height: 775px;
   border-radius: 0px;
 }
+
 #demobox{
   margin: 25px;
   text-align: center;
+  height: 70px;
+  
+  width: 640px;
+  border: 0;
 }
+
 #editor {
   margin: auto;
   text-align: center;
   margin-top: 25px;
 }
+
+#infobox{
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 #tablediv{
   margin: 15px 0 15px 0;
 }
-#select{
-  width: 675px;
-}
+
 input[type="checkbox"] {
   left: 35px;
   position: relative;
+}
+
+#iconselectcontainer{
+  display: none;
+  padding-bottom: 85px;
+}
+
+#displaymodebutton{
+  vertical-align: bottom;
+  margin: auto;
+  position: relative;
+  top: 22px;
+  left: 40%;
+}
+
+#selectbuttoncode{
+  display: none;
+}
+
+.fs1 {
+  font-size: 2em;
+}
+
+.select{
+  width: 200px;
+  position: relative;
+  left: 238px;
+  text-align: center;
+}
+
+[data-icon]::before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.glyph {
+  float: left;
+  text-align: center;
+  background: #EEE;
+  padding: .75em;
+  margin: .75em 1.5em .75em 0;
+  width: 7em;
+  border-radius: .375em;
+  box-shadow: inset 0 0 0 1px white, 0 0 0 1px #CCC;
 }
