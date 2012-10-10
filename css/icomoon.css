@@ -6,12 +6,38 @@ License: CC BY-SA 3.0      -- http://creativecommons.org/licenses/by-sa/3.0/
 .baf-icomoon, .baf-icomoon::before{
   font-family: 'icomoon';
   content: attr(data-icon);
+  position: relative;
+  top: 0.5px;
   speak: none;
   font-weight: normal;
-  font-size: 21px;
+  font-size: 9pt;
   display: inline-block;
-  margin: -6px -3px -3px -3px;
   text-shadow: none;
+  margin: 0px 0px -2px 0px;
+}
+
+.baf-icomoon.big, .baf-icomoon.big::before{
+  top: 0px;
+  font-weight: normal;
+  font-size: 13pt;
+  margin: -3px 0px -2px 0px;
+}
+
+.baf-icomoon.bigger, .baf-icomoon.bigger::before{
+  top: -0.4px;
+  font-weight: normal;
+  font-size: 18pt;
+  margin: -6px 0px -3px 0px;
+}
+
+ .dropdown-menu a .baf-icomoon {
+   position: absolute;
+   left: 7px;
+   top: 6px;
+ }
+
+.xs-no-text .baf-icomoon, .xs-no-text .baf-icomoon::before{
+  top: 0px;
 }
 
 /* font */

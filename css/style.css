@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.4
+ * Version: 1.5
  *
  */
 
@@ -98,7 +98,7 @@ th {
 }
 
 th, td { 
-  padding: 5px 25px 5px 5px; 
+  padding: 5px 20px 5px 5px; 
   text-align: left; 
   vertical-align: middle; 
 }
@@ -197,6 +197,11 @@ pre, code {
   border: 1px #ccc solid;
 }
 
+thead td{
+  width: 90px;
+  text-align: center;
+}
+
 #code{
   margin: 5px;
   width: 680px;
@@ -227,6 +232,7 @@ pre, code {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  display: none;
 }
 
 #tablediv{
@@ -253,6 +259,10 @@ input[type="checkbox"] {
 
 #selectbuttoncode{
   display: none;
+}
+
+#tablebox{
+  overflow-x: scroll;
 }
 
 .fs1 {
