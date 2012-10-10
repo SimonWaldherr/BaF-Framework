@@ -1170,11 +1170,36 @@ input:active, input:focus{
   width: 240px;
 }
 
+/* ................................................................ 3D */
+/* 3d button style */
+
+.baf.dimension, .baf.dimension.blue, .baf.dimension.green, .baf.dimension.red {
+  box-shadow: inset 0px 3px 16px -2px #aaaaaa, 0px 1px 0 #777, 0 6px 0px #CCC, 0 8px 4px 1px #EEE;
+}
+
+.baf.dimension.cyan, .baf.dimension.red {
+  box-shadow: inset 0px 3px 16px -2px #eeeeee, 0px 1px 0 #777, 0 6px 0px #CCC, 0 8px 4px 1px #EEE;
+}
+
+.baf.dimension.yellow {
+  box-shadow: inset 0px 3px 16px -2px #ffffff, 0px 1px 0 #777, 0 6px 0px #CCC, 0 8px 4px 1px #EEE;
+}
+
+.baf.dimension:active {
+  box-shadow: inset 0px 4px 15px 1px #aaaaaa, 0px 1px 0 #777, 0 2px 0px #CCC, 0 4px 4px 1px #DDD;
+  margin-top: 4px;
+  margin-bottom: -4px;
+}
+
+.baf.dimension.blue:active, .baf.dimension.cyan:active, .baf.dimension.yellow:active, .baf.dimension.red:active, .baf.dimension.green:active {
+  box-shadow: inset 0px 4px 15px -3px #ffffff, 0px 1px 0 #777, 0 2px 0px #CCC, 0 4px 4px 1px #DDD;
+}
+
 /* ................................................................ hover color style */
 /* change the color of your buttons on hover */
 
 .baf.bluehover{
-    
+
 }
 .baf.bluehover:hover,
 .baf.bluehover:focus,
@@ -1201,6 +1226,7 @@ input:active, input:focus{
     background-image: -moz-linear-gradient(#5ba8de, #3072b3);
     background-image: -o-linear-gradient(#5ba8de, #3072b3);
     background-image: linear-gradient(#5ba8de, #3072b3);
+    box-shadow: inset 0px 4px 15px -3px #ffffff, 0px 1px 0 #777, 0 2px 0px #CCC, 0 4px 4px 1px #DDD;
 }
 
 .baf.redhover{
@@ -1234,31 +1260,7 @@ input:active, input:focus{
     background-image: -ms-linear-gradient(#b33630, #dc5f59);
     background-image: -o-linear-gradient(#b33630, #dc5f59);
     background-image: linear-gradient(#b33630, #dc5f59);
-}
-
-/* ................................................................ 3D */
-/* 3d button style */
-
-.baf.dimension, .baf.dimension.blue, .baf.dimension.green, .baf.dimension.red {
-  box-shadow: inset 0px 3px 16px -2px #aaaaaa, 0px 1px 0 #777, 0 6px 0px #CCC, 0 8px 4px 1px #EEE;
-}
-
-.baf.dimension.cyan, .baf.dimension.red {
-  box-shadow: inset 0px 3px 16px -2px #eeeeee, 0px 1px 0 #777, 0 6px 0px #CCC, 0 8px 4px 1px #EEE;
-}
-
-.baf.dimension.yellow {
-  box-shadow: inset 0px 3px 16px -2px #ffffff, 0px 1px 0 #777, 0 6px 0px #CCC, 0 8px 4px 1px #EEE;
-}
-
-.baf.dimension:active {
-  box-shadow: inset 0px 4px 15px 1px #aaaaaa, 0px 1px 0 #777, 0 2px 0px #CCC, 0 4px 4px 1px #DDD;
-  margin-top: 4px;
-  margin-bottom: -4px;
-}
-
-.baf.dimension.blue:active, .baf.dimension.cyan:active, .baf.dimension.yellow:active, .baf.dimension.red:active, .baf.dimension.green:active {
-  box-shadow: inset 0px 4px 15px -3px #ffffff, 0px 1px 0 #777, 0 2px 0px #CCC, 0 4px 4px 1px #DDD;
+    box-shadow: inset 0px 4px 15px -3px #ffffff, 0px 1px 0 #777, 0 2px 0px #CCC, 0 4px 4px 1px #DDD;
 }
 
 /* ................................................................ Disabled */
