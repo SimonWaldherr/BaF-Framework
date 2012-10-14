@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.5
+ * Version: 1.6
  *
  */
 
@@ -123,7 +123,7 @@ function generateButton()
     else
       {
         $id('democontainer').innerHTML = '<iframe id="demobox"></iframe>';
-        $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.5/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.5/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>'+output+'</body></html>';
+        $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.6/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.6/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>'+output+'</body></html>';
       }
     
     var reg = new Array(new RegExp('><div', "gi"), 

@@ -7,7 +7,7 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.5
+ Version: 1.6
 
 -->
 <html lang="en">
@@ -15,13 +15,16 @@
     <title>CSS3 Buttons and Forms Demo</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <meta content="Using CSS3 to create beautiful UI elements" name="description"/>
+    <link href="../repos/fd-slider/css/fd-slider-tooltip.css" rel="stylesheet"/>
+    <link href="../repos/fd-slider/css/fd-slider.css" rel="stylesheet"/>
     <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="../css/baf.css" media="screen" rel="stylesheet" type="text/css"/>
-    <!--<link href="../css/icons.css" media="screen" rel="stylesheet" type="text/css"/>-->
     <link href="../css/icomoon.css" media="screen" rel="stylesheet" type="text/css"/>
+    <!--<link href="../css/slider.css" media="screen" rel="stylesheet" type="text/css"/>-->
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script src="../repos/fd-slider/js/fd-slider.min.js"></script>
     <script src="../js/script.js"></script>
   </head>
   <body onload="prettyPrint()">
@@ -879,10 +882,10 @@ Search&lt;/a>
           </code></pre>
           <div class="cente">
             <div class="baf-group">
-              <a class="baf blue" onmousedown="keepCalling=true; plusone('intinput', 400);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="keepCalling=true; plusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
               </a>
-              <a class="baf blue" onmousedown="keepCalling=true; minusone('intinput', 400);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="keepCalling=true; minusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
               </a>
               <input id="intinput" max="100" min="0" name="quantity" onkeydown="changeValues(this);" type="number" value="42"/>
@@ -898,6 +901,218 @@ Search&lt;/a>
                 <li class="divider"></li>
                 <li><a href="javascript:$id('intinput').value=100;">100</a></li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Input fields</h2>
+        <p>With the same style, we can make cool number input forms
+          <br/>try the arrow keys, the plus and minus keys and buttons
+          <br/>and the mousewheel to increase/decrease the value</p>
+        <div class="example" style="position:relative;">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf blue" onmousedown="keepCalling=true; plusone('rangeinput1', 400, 60, 1);" 
+                      onmouseout="keepCalling=false;" 
+                      onmouseup="keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf blue" onmousedown="keepCalling=true; minusone('rangeinput1', 400, 60, 1);" 
+                      onmouseout="keepCalling=false;" 
+                      onmouseup="keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
+  &lt;/a>
+  &lt;div class="bafslider baf blue">
+    &lt;input name="rangeinput1" id="rangeinput1" max="20" min="0" type="text" 
+           title="Range: 0 to 20 in steps of 1" value="10" maxlength="6" onchange="">
+  &lt;/div>
+  &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=5; 
+                 fdSlider.updateSlider('rangeinput1');">5&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=7; 
+                 fdSlider.updateSlider('rangeinput1');">7&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=10; 
+                 fdSlider.updateSlider('rangeinput1');">10&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=13; 
+                 fdSlider.updateSlider('rangeinput1');">13&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=15; 
+                 fdSlider.updateSlider('rangeinput1');">15&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+&lt;br />
+&lt;div class="cente">
+&lt;div class="baf-group">
+  &lt;a class="baf yellow" onmousedown="keepCalling=true; plusone('rangeinput3', 160, 1, 1);" 
+                        onmouseout="keepCalling=false;" 
+                        onmouseup="keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf yellow" onmousedown="keepCalling=true; minusone('rangeinput3', 160, 1, 1);" 
+                        onmouseout="keepCalling=false;" 
+                        onmouseup="keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
+  &lt;/a>
+  &lt;div class="bafslider baf yellow">
+    &lt;input name="rangeinput3" id="rangeinput3" max="360" min="0" type="text" 
+           title="Range: 0 to 360 in steps of 1" value="180" maxlength="6" onchange="">
+  &lt;/div>
+&lt;/div>
+&lt;br />
+&lt;div class="baf-group">
+  &lt;span class="baf" onclick="$id('rangeinput2box').style.width='200px'; 
+                             window.setTimeout(fdSlider.updateSlider, 1000, 'rangeinput2');">
+    &lt;span class="baf-icomoon bigger" aria-hidden="true" data-icon="&amp;#xe041;">
+      &amp;nbsp;&lt;/span> Range Input
+  &lt;/span>
+  &lt;div class="bafslider baf" id="rangeinput2box" style="width:0px;">
+    &lt;input name="rangeinput2" id="rangeinput2" max="100" min="0" type="text" 
+           title="Range: 0 to 100 in steps of 1" value="50" maxlength="6">
+  &lt;/div>
+  &lt;a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=0; 
+                 fdSlider.updateSlider('rangeinput2');">0&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=25; 
+                 fdSlider.updateSlider('rangeinput2');">25&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=50; 
+                 fdSlider.updateSlider('rangeinput2');">50&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=75; 
+                 fdSlider.updateSlider('rangeinput2');">75&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=100; 
+                 fdSlider.updateSlider('rangeinput2');">100&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+&lt;script>
+  fdSlider.createSlider({
+    inp:document.getElementById("rangeinput1"),
+    step:1, 
+    maxStep:1,
+    min:0,
+    max:20,
+    animation:"tween",
+    forceValue:true
+  });
+
+  fdSlider.createSlider({
+    inp:document.getElementById("rangeinput2"),
+    step:1, 
+    maxStep:1,
+    min:0,
+    max:100,
+    animation:"tween",
+    forceValue:true
+  });
+
+  fdSlider.createSlider({
+    inp:document.getElementById("rangeinput3"),
+    step:1, 
+    maxStep:10,
+    min:0,
+    max:360,
+    animation:"tween",
+    forceValue:true
+  });
+  &lt;/script>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf blue" onmousedown="keepCalling=true; plusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
+              </a>
+              <a class="baf blue" onmousedown="keepCalling=true; minusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
+              </a>
+              <div class="bafslider baf blue">
+                <input name="rangeinput1" id="rangeinput1" max="20" min="0" type="text" title="Range: 0 to 20 in steps of 1" value="10" maxlength="6" onchange="">
+              </div>
+              <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:$id('rangeinput1').value=5; fdSlider.updateSlider('rangeinput1');">5</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:$id('rangeinput1').value=7; fdSlider.updateSlider('rangeinput1');">7</a></li>
+                <li><a href="javascript:$id('rangeinput1').value=10; fdSlider.updateSlider('rangeinput1');">10</a></li>
+                <li><a href="javascript:$id('rangeinput1').value=13; fdSlider.updateSlider('rangeinput1');">13</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:$id('rangeinput1').value=15; fdSlider.updateSlider('rangeinput1');">15</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="cente">
+              <div class="baf-group">
+                <a class="baf yellow" onmousedown="keepCalling=true; plusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
+                </a>
+                <a class="baf yellow" onmousedown="keepCalling=true; minusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
+                </a>
+                <div class="bafslider baf yellow">
+                  <input name="rangeinput3" id="rangeinput3" max="360" min="0" type="text" title="Range: 0 to 360 in steps of 1" value="180" maxlength="6" onchange="">
+                </div>
+              </div>
+              <br />
+              <div class="baf-group">
+                <span class="baf" onclick="$id('rangeinput2box').style.width='200px'; window.setTimeout(fdSlider.updateSlider, 1000, 'rangeinput2');">
+                  <span class="baf-icomoon bigger" aria-hidden="true" data-icon="&#xe041;">&nbsp;</span> Range Input
+                </span>
+                <div class="bafslider baf" id="rangeinput2box" style="width:0px;">
+                  <input name="rangeinput2" id="rangeinput2" max="100" min="0" type="text" title="Range: 0 to 100 in steps of 1" value="50" maxlength="6">
+                </div>
+                <a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:$id('rangeinput2').value=0; fdSlider.updateSlider('rangeinput2');">0</a></li>
+                  <li class="divider"></li>
+                  <li><a href="javascript:$id('rangeinput2').value=25; fdSlider.updateSlider('rangeinput2');">25</a></li>
+                  <li><a href="javascript:$id('rangeinput2').value=50; fdSlider.updateSlider('rangeinput2');">50</a></li>
+                  <li><a href="javascript:$id('rangeinput2').value=75; fdSlider.updateSlider('rangeinput2');">75</a></li>
+                  <li class="divider"></li>
+                  <li><a href="javascript:$id('rangeinput2').value=100; fdSlider.updateSlider('rangeinput2');">100</a></li>
+                </ul>
+              </div>
+              <script>
+                fdSlider.createSlider({
+                  inp:document.getElementById("rangeinput1"),
+                  step:1, 
+                  maxStep:1,
+                  min:0,
+                  max:20,
+                  animation:"tween",
+                  forceValue:true
+                });
+                
+                fdSlider.createSlider({
+                  inp:document.getElementById("rangeinput2"),
+                  step:1, 
+                  maxStep:1,
+                  min:0,
+                  max:100,
+                  animation:"tween",
+                  forceValue:true
+                });
+                
+                fdSlider.createSlider({
+                  inp:document.getElementById("rangeinput3"),
+                  step:1, 
+                  maxStep:10,
+                  min:0,
+                  max:360,
+                  animation:"tween",
+                  forceValue:true
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -1032,7 +1247,7 @@ Search&lt;/a>
       </div>
       <div class="section">
         <h3>Version</h3>
-        <p>baf v. 1.5<br/>
+        <p>baf v. 1.6<br/>
           10.2012</p>
       </div>
       <div class="section">

@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.5
+ * Version: 1.6
  *
  */
 
@@ -17,37 +17,45 @@ function $id(id)
 
 var keepCalling = true;
 
-function plusone(id, wait)
+function plusone(id, wait, min, slider)
   {
     if((keepCalling)&&((Math.round($id(id).max)) > $id(id).value))
       {
         $id(id).value++;
-        if(wait > 60)
+        if(wait > min)
           {
             wait = wait-60;
           }
-        if(wait < 60)
+        if(wait < min)
           {
             wait = 60;
           }
-        window.setTimeout(plusone, wait, id, wait);
+        if(slider == 1)
+          {
+            fdSlider.updateSlider(id);
+          }
+        window.setTimeout(plusone, wait, id, wait, min, slider);
       }
   }
 
-function minusone(id, wait)
+function minusone(id, wait, min, slider)
   {
     if((keepCalling)&&($id(id).value > (Math.round($id(id).min))))
       {
-        if(wait > 60)
+        $id(id).value--;
+        if(wait > min)
           {
             wait = wait-60;
           }
-        if(wait < 60)
+        if(wait < min)
           {
             wait = 60;
           }
-        $id(id).value--;
-        window.setTimeout(minusone, wait, id, wait);
+        if(slider == 1)
+          {
+            fdSlider.updateSlider(id);
+          }
+        window.setTimeout(minusone, wait, id, wait, min, slider);
       }
   }
 
