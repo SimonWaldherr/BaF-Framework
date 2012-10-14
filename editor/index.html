@@ -16,20 +16,18 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <meta content="Using CSS3 to create beautiful UI elements" name="description"/>
     <link href="../css/baf.css" media="screen" rel="stylesheet" type="text/css"/>
-    <!-- <link href="../css/icons.css" media="screen" rel="stylesheet" type="text/css"/> -->
     <link href="../css/icomoon.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/editor.js"></script>
   </head>
   <body onload="prettyPrint()">
     <div class="container">
       <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank">
-        <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png">
+        <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" />
       </a>
       <div class="header">
         <h1 id="buttonsandforms"><a href="./..">Buttons and Forms</a></h1>
@@ -54,10 +52,10 @@
       <div id="editor">
         <div id="tablediv">
           <a class="baf blue" onclick="addTableRow(); generateButton();">
-            <i class="icon-plus icon-white"></i>
+            <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"> </span>
             add Button</a>
           <a class="baf red" onclick="clearTable();">
-            <i class="icon-trash icon-white"></i>
+            <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe05f;"> </span>
             clear Buttons</a>
           
           <br/>
@@ -89,7 +87,7 @@
         <div id="democontainer">
           
         </div>
-        <div class="baf-group" id="displaymodebutton"><a onclick="$id('displaymode').value = 'div'; generateButton();" class="baf"> <div class="baf-icomoon" aria-hidden="true" data-icon="&#xe0ce;"> &nbsp;</div>div</a><a onclick="$id('displaymode').value = 'iframe'; generateButton();" class="baf"><div class="baf-icomoon" aria-hidden="true" data-icon="&#xe014;"> &nbsp;</div>iframe</a></div>
+        <div class="baf-group" id="displaymodebutton"><a onclick="$id('displaymode').value = 'div'; generateButton();" class="baf bluehover"> <div class="baf-icomoon" aria-hidden="true" data-icon="&#xe0ce;"> &nbsp;</div>div</a><a onclick="$id('displaymode').value = 'iframe'; generateButton();" class="baf bluehover"><div class="baf-icomoon" aria-hidden="true" data-icon="&#xe014;"> &nbsp;</div>iframe</a></div>
         <hr/><br/><br/><input id="displaymode" class="hideme" type="text" value="div" />
         <div id="codebox">
           <div id="precode"></div>
