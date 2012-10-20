@@ -124,6 +124,11 @@ textarea {
   *margin-bottom: -3px;
 }
 
+.baf.grey.dropdown-toggle {
+  width: 14px;
+  margin-bottom: 5px;
+}
+
 .dropdown-toggle:active, .open .dropdown-toggle {
   outline: 0;
 }

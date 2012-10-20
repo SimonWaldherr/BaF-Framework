@@ -15,14 +15,17 @@
     <title>CSS3 Buttons and Forms Editor</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <meta content="Using CSS3 to create beautiful UI elements" name="description"/>
+    <link href="../repos/fd-slider/css/fd-slider-tooltip.css" rel="stylesheet"/>
+    <link href="../repos/fd-slider/css/fd-slider.css" rel="stylesheet"/>
     <link href="../css/baf.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="../css/icomoon.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="../css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" rel="stylesheet"/>
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script src="../repos/fd-slider/js/fd-slider.min.js"></script>
     <script src="../js/script.js"></script>
-    <script src="../js/editor.js"></script>
+    <script src="../js/editor-form.js"></script>
   </head>
   <body onload="prettyPrint()">
     <div class="container">
@@ -51,34 +54,25 @@
       <input id="buttonscount" class="hideme" name="buttonscount" type="text" value="0" />
       <div id="editor">
         <div id="tablediv">
-          <a class="baf blue" onclick="addTableRow(); generateButton();">
-            <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"> </span>
-            add Button</a>
-          <a class="baf red" onclick="clearTable();">
-            <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe05f;"> </span>
-            clear Buttons</a>
+          <div class="baf-group baf-group-x1">
+            <a class="baf grey w60 bluehover" onclick="addListElement('text')">text</a>
+            <a class="baf grey w60 bluehover" onclick="addListElement('password')">password</a>
+            <a class="baf grey w60 bluehover" onclick="addListElement('number')">number</a>
+            <a class="baf grey w60 bluehover" onclick="addListElement('email')">email</a>
+            <!--<a class="baf grey w60 bluehover" onclick="addListElement('date')">date</a>-->
+          </div>
+          <div class="baf-group baf-group-x2">
+            <a class="baf red w60 redhover" onclick="clearTable();">
+              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe05f;"> &nbsp;
+              </span>clear</a>
+          </div> 
           
           <br/>
           <br/>
           <br/>
-          <div id="tablebox">
-            <table id="realtable">
-              <thead id="tablehead">
-                <tr>
-                  <td><b>text</b></td>
-                  <td><b>color</b></td>
-                  <td><b>img</b></td>
-                  <td><b>imgsize</b></td>
-                  <td><b>link</b></td>
-                  <td><b>group</b></td>
-                  <td><b>buttonsize</b></td>
-                  <td><b>3D</b></td>
-                  <td><b>hovercolor</b></td>
-                  <td><b>disabled</b></td>
-                </tr>
-              </thead>
-              <tbody class="baf-input" id="table"></tbody>
-            </table>
+          <div id="listbox">
+            <ol id="list">
+            </ol>
           </div>
         </div>
       </div>
@@ -87,7 +81,7 @@
         <div id="democontainer">
           
         </div>
-        <div class="baf-group" id="displaymodebutton"><a onclick="$id('displaymode').value = 'div'; generateButton();" class="baf bluehover"> <div class="baf-icomoon" aria-hidden="true" data-icon="&#xe0ce;"> &nbsp;</div>div</a><a onclick="$id('displaymode').value = 'iframe'; generateButton();" class="baf bluehover"><div class="baf-icomoon" aria-hidden="true" data-icon="&#xe014;"> &nbsp;</div>iframe</a></div>
+        <div class="baf-group" id="displaymodebutton"><a onclick="$id('displaymode').value = 'div'; generateForm();" class="baf bluehover"> <div class="baf-icomoon" aria-hidden="true" data-icon="&#xe0ce;"> &nbsp;</div>div</a><a onclick="$id('displaymode').value = 'iframe'; generateForm();" class="baf bluehover"><div class="baf-icomoon" aria-hidden="true" data-icon="&#xe014;"> &nbsp;</div>iframe</a></div>
         <hr/><br/><br/><input id="displaymode" class="hideme" type="text" value="div" />
         <div id="codebox">
           <div id="precode"></div>
