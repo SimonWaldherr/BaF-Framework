@@ -316,6 +316,10 @@ left: 0px;
   -webkit-font-smoothing: antialiased;
 }
 
+#listbox .sort {
+  width: 35px;
+}
+
 .glyph {
   float: left;
   text-align: center;
