@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.6
+ * Version: 1.7
  *
  */
 
@@ -212,7 +212,7 @@ thead td {
     margin: 25px;
     text-align: center;
     height: 70px;
-    display: inline;
+    display: inline-table;
     width: 640px;
     border: 0;
 }
@@ -287,6 +287,9 @@ input[type="checkbox"] {
 .baf.red.del {
     padding: 6px 6px;
     margin-left: -30px;
+}
+td .baf.red.del {
+    margin-left: 0px;
 }
 .hideme {
     display: none;

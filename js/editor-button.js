@@ -6,32 +6,35 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.6
+ * Version: 1.7
  *
  */
 
 function addTableRow()
   {
-    $id("buttonscount").value = (Math.round($id("buttonscount").value)+1);
-    //Text - 0
-    var code = '<td><input name="text" type="text" placeholder="text" onkeyup="javascript:generateButton();"></td>';
-    //Color - 1
+    var buttonscount = Math.round($id("buttonscount").value)+1;
+    $id("buttonscount").value = buttonscount;
+    //Delete
+    var code = '<td id="tdhide'+buttonscount+'"><div class="hideme"><input type="text" id="liele'+buttonscount+'" value="" /></div><a onclick="$id(\'liele'+buttonscount+'\').value = \'hidden\'; $id(\'realtable\').rows['+buttonscount+'].style.display = \'none\'; generateButton();" class="baf red del"><span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe099;"></span></a></td>';
+    //Text - 1
+    code += '<td><input name="text" type="text" placeholder="text" onkeyup="javascript:generateButton();"></td>';
+    //Color - 2
     code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select></td>';
-    //Image - 2
-    code += '<td><input id="iconid'+$id("buttonscount").value+'" class="hideme" style="display:none;" name="text" type="text"><a onclick="selectIcomoonIcon('+$id("buttonscount").value+')" class="baf grey">change icon</a></td>';
-    //ImageSize - 3
+    //Image - 3
+    code += '<td><input id="iconid'+buttonscount+'" class="hideme" style="display:none;" name="text" type="text"><a onclick="selectIcomoonIcon('+buttonscount+')" class="baf grey">change icon</a></td>';
+    //ImageSize - 4
     code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>normal</option><option>big</option><option>bigger</option></select></td>';
-    //Link - 4
+    //Link - 5
     code += '<td><input name="link" type="text" onkeyup="javascript:generateButton();"></td>';
-    //Group - 5
-    code += '<td><input name="text" type="text" placeholder="group" value="'+($id("buttonscount").value)+'" onkeyup="javascript:generateButton();"></td>';
-    //Size - 6
+    //Group - 6
+    code += '<td><input name="text" type="text" placeholder="group" value="'+buttonscount+'" onkeyup="javascript:generateButton();"></td>';
+    //Size - 7
     code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>normal</option><option>60</option><option>120</option><option>190</option><option>240</option></select></td>';
-    //3D - 7
+    //3D - 8
     code += '<td><input type="checkbox" onchange="javascript:generateButton();"></td>';
-    //Hover - 8
+    //Hover - 9
     code += '<td><select name="color" size="1" onchange="javascript:generateButton();"><option>normal</option><option>blue</option><option>red</option></select></td>';
-    //Disable - 9
+    //Disable - 10
     code += '<td><input type="checkbox" onchange="javascript:generateButton();"></td>';
     
     var node=document.createElement("tr");
@@ -54,58 +57,61 @@ function showContent()
 
 function generateButton()
   {
-    var TBL = $id('realtable');
-    //var ButtonCode = '';
+    var TBL = $id('realtable');;
     var ButtonCode = new Array();
     var group = '';
     for(var x = 1; x < TBL.rows.length; x++)
       {
-        group = TBL.rows[x].cells[5].firstChild.value;
-        if(ButtonCode[group] == undefined)
+        //if(TBL.rows[x].cells[0].nextSibling.nextSibling.value != 'hidden')
+        if($id('liele'+x).value != 'hidden')
           {
-            ButtonCode[group] = '';
-          }
-        if(TBL.rows[x].cells[4].firstChild.value != '')
-          {
-            ButtonCode[group] += '<a href="'+TBL.rows[x].cells[4].firstChild.value+'"';
-          }
-        else
-          {
-            ButtonCode[group] += '<a';
-          }
-        if(TBL.rows[x].cells[9].firstChild.checked == true)
-          {
-            ButtonCode[group] += ' disabled="true" ';
-          }
-        ButtonCode[group] += ' class="baf '+TBL.rows[x].cells[1].firstChild.value;
-        if(TBL.rows[x].cells[6].firstChild.value != 'normal')
-          {
-            ButtonCode[group] += ' w'+TBL.rows[x].cells[6].firstChild.value;
-          }
-        if(TBL.rows[x].cells[7].firstChild.checked == true)
-          {
-            ButtonCode[group] += ' dimension';
-          }
-        if(TBL.rows[x].cells[8].firstChild.value != 'normal')
-        {
-          ButtonCode[group] += ' '+TBL.rows[x].cells[8].firstChild.value+'hover';
-        }
-        ButtonCode[group] += '">';
-        if(TBL.rows[x].cells[2].firstChild.value != '')
-          {
-            ButtonCode[group] += '<span class="baf-icomoon';
-            if(TBL.rows[x].cells[3].firstChild.value != 'normal')
+            group = TBL.rows[x].cells[6].firstChild.value;
+            if(ButtonCode[group] == undefined)
               {
-                ButtonCode[group] += ' '+TBL.rows[x].cells[3].firstChild.value;
+                ButtonCode[group] = '';
               }
-            ButtonCode[group] += '" aria-hidden="true" data-icon="&#xe'+TBL.rows[x].cells[2].firstChild.value+';">';
-            if(TBL.rows[x].cells[0].firstChild.value != '')
+            if(TBL.rows[x].cells[5].firstChild.value != '')
               {
-                ButtonCode[group] += ' &nbsp;';
+                ButtonCode[group] += '<a href="'+TBL.rows[x].cells[4].firstChild.value+'"';
               }
-            ButtonCode[group] += '</span>';
+            else
+              {
+                ButtonCode[group] += '<a';
+              }
+            if(TBL.rows[x].cells[10].firstChild.checked == true)
+              {
+                ButtonCode[group] += ' disabled="true" ';
+              }
+            ButtonCode[group] += ' class="baf '+TBL.rows[x].cells[2].firstChild.value;
+            if(TBL.rows[x].cells[7].firstChild.value != 'normal')
+              {
+                ButtonCode[group] += ' w'+TBL.rows[x].cells[7].firstChild.value;
+              }
+            if(TBL.rows[x].cells[8].firstChild.checked == true)
+              {
+                ButtonCode[group] += ' dimension';
+              }
+            if(TBL.rows[x].cells[9].firstChild.value != 'normal')
+            {
+              ButtonCode[group] += ' '+TBL.rows[x].cells[9].firstChild.value+'hover';
+            }
+            ButtonCode[group] += '">';
+            if(TBL.rows[x].cells[3].firstChild.value != '')
+              {
+                ButtonCode[group] += '<span class="baf-icomoon';
+                if(TBL.rows[x].cells[4].firstChild.value != 'normal')
+                  {
+                    ButtonCode[group] += ' '+TBL.rows[x].cells[4].firstChild.value;
+                  }
+                ButtonCode[group] += '" aria-hidden="true" data-icon="&#xe'+TBL.rows[x].cells[3].firstChild.value+';">';
+                if(TBL.rows[x].cells[1].firstChild.value != '')
+                  {
+                    ButtonCode[group] += ' &nbsp;';
+                  }
+                ButtonCode[group] += '</span>';
+              }
+            ButtonCode[group] += TBL.rows[x].cells[1].firstChild.value+'</a>';
           }
-        ButtonCode[group] += TBL.rows[x].cells[0].firstChild.value+'</a>';
       }
     
     var output = '';
@@ -123,7 +129,7 @@ function generateButton()
     else
       {
         $id('democontainer').innerHTML = '<iframe id="demobox"></iframe>';
-        $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.6/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.6/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>'+output+'</body></html>';
+        $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.7/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.7/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>'+output+'</body></html>';
       }
     
     var reg = new Array(new RegExp('><div', "gi"), 

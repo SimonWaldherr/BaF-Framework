@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.6
+ * Version: 1.7
  *
  */
 
@@ -30,15 +30,15 @@ function addListElement(type)
           //ImageSize - 3
           code += '<label for="imgsize'+listcount+'">Imagesize</label><select name="imgsize'+listcount+'" id="imgsize'+listcount+'" size="1" onchange="javascript:generateForm();"><option>normal</option><option>big</option><option>bigger</option></select>';
           //Max Length - 4
-          code += '<label for="max'+listcount+'">max length</label><input name="max'+listcount+'" id="max'+listcount+'" type="number" placeholder="" onkeyup="javascript:generateForm();" />';
+          code += '<label for="max'+listcount+'">max length</label><input name="max'+listcount+'" id="max'+listcount+'" type="number" placeholder="" onchange="javascript:generateForm();" />';
           //Min Length - 5
-          code += '<label for="min'+listcount+'">min length</label><input name="min'+listcount+'" id="min'+listcount+'" type="number" placeholder="" onkeyup="javascript:generateForm();" />';
+          code += '<label for="min'+listcount+'">min length</label><input name="min'+listcount+'" id="min'+listcount+'" type="number" placeholder="" onchange="javascript:generateForm();" />';
           //AutoClean - 6
           code += '<span>Clean</span><input id="ac'+listcount+'" type="checkbox" onchange="javascript:generateForm();" />';
           break;
         case 'password':
           //Sort
-          code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onkeyup="javascript:generateForm();" />';
+          code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
           //Text - 0
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
           //Color - 1
@@ -52,7 +52,7 @@ function addListElement(type)
           break;
         case 'number':
           //Sort
-          code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onkeyup="javascript:generateForm();" />';
+          code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
           //Text - 0
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
           //Color - 1
@@ -64,13 +64,13 @@ function addListElement(type)
           //InputType - 3
           code += '<label for="inputtype'+listcount+'">Inputtype</label><select name="inputtype'+listcount+'" id="inputtype'+listcount+'" size="1" onchange="javascript:generateForm();"><option>number</option><option>range</option></select>';
           //Max Value - 4
-          code += '<label for="max'+listcount+'">max value</label><input name="max'+listcount+'" id="max'+listcount+'" type="number" value="100" placeholder="" onkeyup="javascript:generateForm();" />';
+          code += '<label for="max'+listcount+'">max value</label><input name="max'+listcount+'" id="max'+listcount+'" type="number" value="100" placeholder="" onchange="javascript:generateForm();" />';
           //Min Value - 5
-          code += '<label for="min'+listcount+'">min value</label><input name="min'+listcount+'" id="min'+listcount+'" type="number" value="0" placeholder="" onkeyup="javascript:generateForm();" />';
+          code += '<label for="min'+listcount+'">min value</label><input name="min'+listcount+'" id="min'+listcount+'" type="number" value="0" placeholder="" onchange="javascript:generateForm();" />';
           break;
         case 'email':
           //Sort
-          code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onkeyup="javascript:generateForm();" />';
+          code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
           //Text - 0
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
           //Color - 1
@@ -80,7 +80,7 @@ function addListElement(type)
           //ImageSize - 3
           code += '<label for="imgsize'+listcount+'">Imagesize</label><select name="imgsize'+listcount+'" id="imgsize'+listcount+'" size="1" onchange="javascript:generateForm();"><option>normal</option><option>big</option><option>bigger</option></select>';
           //validate - 4
-          code += '<span>validate </span><input type="checkbox" onchange="javascript:generateForm();" />';
+          code += '<span>validate </span><input id="ev'+listcount+'" type="checkbox" checked="checked" onchange="javascript:generateForm();" />';
           break;
       }
     code += '</div>';
@@ -99,7 +99,6 @@ function generateForm()
     var listcount = (Math.round($id("buttonscount").value)+1);
     var FormCode  = new Array();
     var group     = '';
-    var rangeInit = new Array();
     var intquart  = new Array();
     
     while(i<listcount)
@@ -110,10 +109,13 @@ function generateForm()
         img     = $id('iconid'+i).value;
         imgsize = $id('imgsize'+i).value;
         
-        if(img != '')
+        if((img != '')&&(text != ''))
           {
-            //img = '&#xe'+img;
             img = '<span class="baf-icomoon '+imgsize+'" aria-hidden="true" data-icon="&#xe'+img+';">&nbsp;</span> '
+          }
+        else if(img != '')
+          {
+            img = '<span class="baf-icomoon '+imgsize+'" aria-hidden="true" data-icon="&#xe'+img+';"></span> '
           }
         
         if(FormCode[group] == undefined)
@@ -126,50 +128,64 @@ function generateForm()
             case 'text':
               maxlength = $id('max'+i).value;
               minlength = $id('min'+i).value;
-              autoclean = $id('ac'+i).checked;
+              autoclean = '';
+              if($id('ac'+i).checked)
+                {
+                  autoclean = ' onkeyup="this.value = baf_converttxt(this.value)"';
+                }
               
-              FormCode[group] = '<label class="baf '+color+' add-on" for="text-'+text+group+'" id="key">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'" size="16" type="text"/>';
+              
+              FormCode[group] = '<label class="baf '+color+' add-on" for="text-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'"'+autoclean+' size="16" type="text"/>';
               break;
             case 'password':
-              security = $id('sv'+i).value;
-              FormCode[group] = '<label class="baf '+color+' add-on" for="pw-'+text+group+'" id="key">'+img+text+'</label><input class="input-'+color+'" id="pw-'+text+group+'" name="pw-'+text+group+'" size="16" type="password"/>';
+              security = '';
+              if($id('sv'+i).checked)
+                {
+                  security = ' onkeyup="baf_password(this.value, this.previousElementSibling.id)"';
+                }
+              FormCode[group] = '<label class="baf '+color+' add-on" for="pw-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="pw-'+text+group+'" name="pw-'+text+group+'"'+security+' size="16" type="password"/>';
               break;
             case 'number':
-              maxvalue = $id('max'+i).value;
-              minvalue = $id('min'+i).value;
-              intquart[0] = Math.round(Math.round(maxvalue-minvalue)/4);
-              intquart[1] = Math.round(Math.round(maxvalue-minvalue)/2);
-              intquart[2] = Math.round(Math.round(maxvalue-minvalue)/4*3);
+              maxvalue = Math.round($id('max'+i).value);
+              minvalue = Math.round($id('min'+i).value);
+              intquart[0] = Math.round(minvalue+(maxvalue-minvalue)/4);
+              intquart[1] = Math.round(minvalue+(maxvalue-minvalue)/2);
+              intquart[2] = Math.round(minvalue+(maxvalue-minvalue)/4*3);
               if($id('inputtype'+i).value == 'number')
                 {
                   FormCode[group] = '<div class="baf-group">';
-                  if(text == '')
+                  if((text == '')&&(img == ''))
                     {
-                      FormCode[group] += '<a class="baf '+color+'" onmousedown="keepCalling=true; plusone(\'int-'+text+group+'\', 400);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;"><span class="baf-icomoon '+imgsize+'" aria-hidden="true" data-icon="&#xe094;"></span></a><a class="baf '+color+'" onmousedown="keepCalling=true; minusone(\'int-'+text+group+'\', 400);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span></a>';
+                      FormCode[group] += '<a class="baf '+color+'" onmousedown="baf_keepCalling=true; baf_plusone(\'int-'+text+group+'\', 400, 60);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span></a><a class="baf '+color+'" onmousedown="baf_keepCalling=true; baf_minusone(\'int-'+text+group+'\', 400, 60);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span></a>';
                     }
                   else
                     {
                       FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+'">'+img+text+'</label>';
                     }
-                  FormCode[group] += '<input id="int-'+text+group+'" class="input-'+color+'" max="'+maxvalue+'" min="'+minvalue+'" name="quantity" onkeydown="changeValues(this);" type="number" value="'+intquart[1]+'"/><a class="baf '+color+' dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a><ul class="dropdown-menu-'+color+'"><li><a href="javascript:$id(\'int-'+text+group+'\').value='+minvalue+';">'+minvalue+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[0]+';">'+intquart[0]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[1]+';">'+intquart[1]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[2]+';">'+intquart[2]+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+maxvalue+';">'+maxvalue+'</a></li></ul></div>';
+                  FormCode[group] += '<input id="int-'+text+group+'" class="input-'+color+'" max="'+maxvalue+'" min="'+minvalue+'" name="quantity" onchange="baf_changeValues(this);" type="number" value="'+intquart[1]+'"/><a class="baf '+color+' dropdown-toggle"><span class="caret"></span></a><ul class="dropdown-menu-'+color+'"><li><a href="javascript:$id(\'int-'+text+group+'\').value='+minvalue+';">'+minvalue+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[0]+';">'+intquart[0]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[1]+';">'+intquart[1]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[2]+';">'+intquart[2]+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+maxvalue+';">'+maxvalue+'</a></li></ul></div>';
                 }
               else
                 {
                   FormCode[group] = '<div class="baf-group">';
-                  if(text == '')
+                  if((text == '')&&(img == ''))
                     {
-                      FormCode[group] += '<a class="baf '+color+'" onmousedown="keepCalling=true; plusone(\'int-'+text+group+'\', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;"><span class="baf-icomoon '+imgsize+'" aria-hidden="true" data-icon="&#xe094;"></span></a><a class="baf '+color+'" onmousedown="keepCalling=true; minusone(\'int-'+text+group+'\', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span></a>';
+                      FormCode[group] += '<a class="baf '+color+'" onmousedown="baf_keepCalling=true; baf_plusone(\'int-'+text+group+'\', 400, 60, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span></a><a class="baf '+color+'" onmousedown="baf_keepCalling=true; baf_minusone(\'int-'+text+group+'\', 400, 60, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span></a>';
                     }
                   else
                     {
-                      FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+'"><span class="baf-icomoon" aria-hidden="true" data-icon="'+img+';"></span>'+text+'</label>';
+                      FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+'">'+img+text+'</label>';
                     }
-                  FormCode[group] += '<div class="bafslider baf '+color+'"><input name="rangeinput1" id="int-'+text+group+'" max="'+maxvalue+'" min="'+minvalue+'" type="text" title="" value="'+intquart[1]+'" maxlength="6" onchange=""></div><a class="baf '+color+' dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a><ul class="dropdown-menu-'+color+'"><li><a href="javascript:$id(\'int-'+text+group+'\').value='+minvalue+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+minvalue+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[0]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[0]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[1]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[1]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[2]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[2]+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+maxvalue+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+maxvalue+'</a></li></ul></div>';
-                  rangeInit[i] = new Array();
-                  rangeInit[i][0] = 'int-'+text+group;
-                  rangeInit[i][1] = minvalue;
-                  rangeInit[i][2] = maxvalue;
+                  FormCode[group] += '<div class="bafslider baf '+color+'"><input class="range-slider" name="rangeinput1" id="int-'+text+group+'" max="'+maxvalue+'" min="'+minvalue+'" type="text" title="" value="'+intquart[1]+'" maxlength="6"></div><a class="baf '+color+' dropdown-toggle"><span class="caret"></span></a><ul class="dropdown-menu-'+color+'"><li><a href="javascript:$id(\'int-'+text+group+'\').value='+minvalue+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+minvalue+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[0]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[0]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[1]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[1]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[2]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[2]+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+maxvalue+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+maxvalue+'</a></li></ul></div>';
                 }
+              break;
+            case 'email':
+              validate = '';
+              if($id('ev'+i).checked)
+                {
+                  validate = ' onkeyup="baf_email(this.value, this.previousElementSibling.id)"'
+                }
+              
+              FormCode[group] = '<label class="baf '+color+' add-on" for="text-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'"'+validate+' size="16" type="text"/>';
               break;
           }
         ++i;
@@ -192,7 +208,7 @@ function generateForm()
     else
       {
         $id('democontainer').innerHTML = '<iframe id="demobox"></iframe>';
-        $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.6/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.6/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>'+output+'</body></html>';
+        $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.7/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.7/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>'+output+'</body></html>';
       }
     
     var reg = new Array(new RegExp('><div', "gi"), 
@@ -223,20 +239,7 @@ function generateForm()
     
     $id('precode').innerHTML = '<pre class="code prettyprint"><code id="code">\n'+output+' \n</code></pre>';
     $id('selectbuttoncode').style.display = 'inline-block';
-    
-    for (x in rangeInit)
-      {
-        fdSlider.createSlider({
-          inp:document.getElementById(rangeInit[x][0]),
-          step:1, 
-          maxStep:1,
-          min:rangeInit[x][1],
-          max:rangeInit[x][2],
-          animation:"tween",
-          forceValue:true
-        });
-      }
-    
+    baf_listenerInit();
     window.setTimeout(prettyPrint, 100);
   }
 

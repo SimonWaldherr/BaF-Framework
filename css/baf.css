@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.6
+ * Version: 1.7
  * 
  */
 
@@ -957,8 +957,6 @@ textarea {
 
 .input-prepend .add-on, .input-append .add-on {
   display: inline-block;
-  width: auto;
-  min-width: 85px;
   height: 18px;
   padding: 4px 5px;
   font-weight: normal;
@@ -1006,7 +1004,7 @@ input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditabl
   border-radius: 0px 8px 8px 0px;
 }
 
-.input-green{
+.input-green {
   outline: none;
 }
 
@@ -1025,11 +1023,14 @@ input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditabl
   border-color: #4B8CF7;
 }
 
-input{
+input:active, input:focus{
   outline: none;
+  border-color: #4B8CF7;
+  -webkit-box-shadow:  0px 0px 5px 1px #4B8CF7;
+  box-shadow:  0px 0px 5px 1px #4B8CF7;
 }
 
-input:active, input:focus{
+.input-grey:active, .input-grey:focus{
   border-color: #4B8CF7;
   -webkit-box-shadow:  0px 0px 5px 1px #4B8CF7;
   box-shadow:  0px 0px 5px 1px #4B8CF7;
@@ -1043,6 +1044,7 @@ input:active, input:focus{
 
 .input-green:active, .input-green:focus{
   border-color: #359947;
+  border: 1px solid #359947;
   -webkit-box-shadow:  0px 0px 5px 1px #359947;
   box-shadow:  0px 0px 5px 1px #359947;
 }
@@ -1190,16 +1192,28 @@ input:active, input:focus{
   width: 30px;
 }
 
-.w60{
+.w60, .w60 label{
   width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+}
+
+.w90{
+  width: 90px;
 }
 
 .w120{
   width: 120px;
 }
+
+.w160{
+  width: 160px;
+}
+
 .w190{
   width: 190px;
 }
+
 .w240{
   width: 240px;
 }
@@ -1372,7 +1386,6 @@ input:active, input:focus{
   padding: 0px;
   display: inline-block;
   height: 29px;
-  //overflow: hidden;
 
   transition: width 1s;
   -moz-transition: width 1s;
@@ -1404,28 +1417,17 @@ input:active, input:focus{
 
 }
 .fd-slider-range{
- border-radius: 0px;
- padding-right: 1px;
+  border-radius: 0px;
+  padding-right: 1px;
 
- /*
- background: #eeeeee;
- background: -moz-linear-gradient(left, #eeeeee 0%, #cccccc 100%);
- background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
- background: -webkit-linear-gradient(left, #eeeeee 0%,#cccccc 100%);
- background: -o-linear-gradient(left, #eeeeee 0%,#cccccc 100%);
- background: -ms-linear-gradient(left, #eeeeee 0%,#cccccc 100%);
- background: linear-gradient(to right, #eeeeee 0%,#cccccc 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );
- */
-
- background: #f2f5f6; /* Old browsers */
- background: -moz-linear-gradient(left, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
- background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
- background: -webkit-linear-gradient(left, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
- background: -o-linear-gradient(left, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
- background: -ms-linear-gradient(left, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
- background: linear-gradient(to right, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 */
+  background: #f2f5f6; /* Old browsers */
+  background: -moz-linear-gradient(left, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+  background: linear-gradient(to right, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 */
 }
 .blue .fd-slider-range{
   background: #2989d8; /* Old browsers */
@@ -1448,18 +1450,14 @@ input:active, input:focus{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 */
 }
 .fd-slider-bar{
- padding: 0px;
+  padding: 0px;
 }
 .fd-slider-handle{
-  //top: 20px;
-  //margin-left: -10px;
   width: 5px;
   height: 28px;
   background-image: none;
   background: #3a3538;
   cursor: move;
-  //border-radius: 15px;
-  //display: none;
 }
 .blue .fd-slider-handle{
   background: #4579ff;

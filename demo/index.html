@@ -7,7 +7,7 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.6
+ Version: 1.7
 
 -->
 <html lang="en">
@@ -24,9 +24,9 @@
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
     <script src="../repos/fd-slider/js/fd-slider.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/baf.js"></script>
   </head>
-  <body onload="prettyPrint()">
+  <body onload="prettyPrint(); baf_listenerInit();">
     <div class="container">
       <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"/></a>
       <div class="header">
@@ -111,49 +111,49 @@
         <div class="example">
           <pre class="prettyprint"><code>
 &lt;a class="baf" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Info&lt;/a>
+              else{baf_changeloadingmode(this);}};">Info&lt;/a>
 &lt;a class="baf blue" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Search&lt;/a>
+              else{baf_changeloadingmode(this);}};">Search&lt;/a>
 &lt;a class="baf cyan" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Send&lt;/a>
+              else{baf_changeloadingmode(this);}};">Send&lt;/a>
 &lt;a class="baf black" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Abort&lt;/a>
+              else{baf_changeloadingmode(this);}};">Abort&lt;/a>
 &lt;br/>&lt;br/>
 &lt;a class="baf dark" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Open Menu&lt;/a>
+              else{baf_changeloadingmode(this);}};">Open Menu&lt;/a>
 &lt;a class="baf green" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Success&lt;/a>
+              else{baf_changeloadingmode(this);}};">Success&lt;/a>
 &lt;a class="baf yellow" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Warning&lt;/a>
+              else{baf_changeloadingmode(this);}};">Warning&lt;/a>
 &lt;a class="baf red" href="#button" 
-   onclick="if(changeloadingmode(this)){
+   onclick="if(baf_changeloadingmode(this)){
               if(window.confirm('show class name')){alert(this.className);}
-              else{changeloadingmode(this);}};">Error&lt;/a>
+              else{baf_changeloadingmode(this);}};">Error&lt;/a>
           </code></pre>
           <div class="cente">
-            <a class="baf" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Info</a>
-            <a class="baf blue" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Search</a>
-            <a class="baf cyan" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Send</a>
-            <a class="baf black" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Abort</a>
+            <a class="baf" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Info</a>
+            <a class="baf blue" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Search</a>
+            <a class="baf cyan" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Send</a>
+            <a class="baf black" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Abort</a>
             <br/><br/>
-            <a class="baf dark" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Open Menu</a>
-            <a class="baf green" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Success</a>
-            <a class="baf yellow" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Warning</a>
-            <a class="baf red" href="#button" onclick="if(changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{changeloadingmode(this);}};">Error</a>
+            <a class="baf dark" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Open Menu</a>
+            <a class="baf green" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Success</a>
+            <a class="baf yellow" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Warning</a>
+            <a class="baf red" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Error</a>
           </div>
         </div>
       </div>
@@ -656,7 +656,7 @@ Search&lt;/a>
           <pre class="prettyprint"><code>
 &lt;div class="baf-container">
   &lt;div class="baf-group">
-    &lt;a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;a class="baf dropdown-toggle w160">
       Dropdown Menu
       &lt;span class="caret">&lt;/span>
     &lt;/a>
@@ -671,7 +671,7 @@ Search&lt;/a>
 &lt;hr/>
 &lt;div class="baf-container">
   &lt;div class="baf-group">
-    &lt;a class="baf red dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;a class="baf red dropdown-toggle w160">
       Dropdown Menu red
       &lt;span class="caret">&lt;/span>
     &lt;/a>
@@ -686,7 +686,7 @@ Search&lt;/a>
 &lt;hr/>
 &lt;div class="baf-container">
   &lt;div class="baf-group">
-    &lt;a class="baf green dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;a class="baf green dropdown-toggle w160">
       Dropdown Menu green
       &lt;span class="caret">&lt;/span>
     &lt;/a>
@@ -702,7 +702,7 @@ Search&lt;/a>
 &lt;hr/>
 &lt;div class="baf-container">
   &lt;div class="baf-group">
-    &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+    &lt;a class="baf blue dropdown-toggle w160">
       Dropdown Menu blue
       &lt;span class="caret">&lt;/span>
     &lt;/a>
@@ -718,7 +718,7 @@ Search&lt;/a>
           <div class="cente">
             <div class="baf-container">
               <div class="baf-group">
-                <a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="baf dropdown-toggle w160">
                   Dropdown Menu
                   <span class="caret"></span>
                 </a>
@@ -733,7 +733,7 @@ Search&lt;/a>
             <hr/>
             <div class="baf-container">
               <div class="baf-group">
-                <a class="baf red dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="baf red dropdown-toggle w160">
                   Dropdown Menu red
                   <span class="caret"></span>
                 </a>
@@ -748,7 +748,7 @@ Search&lt;/a>
             <hr/>
             <div class="baf-container">
               <div class="baf-group">
-                <a class="baf green dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="baf green dropdown-toggle w160">
                   Dropdown Menu green
                   <span class="caret"></span>
                 </a>
@@ -764,7 +764,7 @@ Search&lt;/a>
             <hr/>
             <div class="baf-container">
               <div class="baf-group">
-                <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="baf blue dropdown-toggle w160">
                   Dropdown Menu blue
                   <span class="caret"></span>
                 </a>
@@ -787,7 +787,7 @@ Search&lt;/a>
   &lt;a class="baf blue">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe03f;">&amp;nbsp;&lt;/span>
     Add User&lt;/a>
-  &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+  &lt;a class="baf blue dropdown-toggle">
     &lt;span class="caret">&lt;/span>
   &lt;/a>
   &lt;ul class="dropdown-menu">
@@ -816,7 +816,7 @@ Search&lt;/a>
               <a class="baf blue">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe03f;">&nbsp;</span>
                 Add User</a>
-              <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+              <a class="baf blue dropdown-toggle">
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -851,21 +851,21 @@ Search&lt;/a>
           <pre class="prettyprint"><code>
 &lt;div class="baf-group">
   &lt;a class="baf blue" 
-     onmousedown="keepCalling=true; plusone('intinput', 400);" 
+     onmousedown="keepCalling=true; baf_plusone('intinput', 400);" 
      onmouseout="keepCalling=false;" 
      onmouseup="keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
   &lt;a class="baf blue" 
-     onmousedown="keepCalling=true; minusone('intinput', 400);" 
+     onmousedown="keepCalling=true; baf_minusone('intinput', 400);" 
      onmouseout="keepCalling=false;" 
      onmouseup="keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
   &lt;/a>
   &lt;input id="intinput" max="100" min="0" name="quantity" 
-         onkeydown="changeValues(this);" 
+         onkeydown="baf_changeValues(this);" 
          type="number" value="42"/>
-  &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+  &lt;a class="baf blue dropdown-toggle">
     &lt;span class="caret">&lt;/span>
   &lt;/a>
   &lt;ul class="dropdown-menu">
@@ -881,14 +881,14 @@ Search&lt;/a>
           </code></pre>
           <div class="cente">
             <div class="baf-group">
-              <a class="baf blue" onmousedown="keepCalling=true; plusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="keepCalling=true; baf_plusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
               </a>
-              <a class="baf blue" onmousedown="keepCalling=true; minusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="keepCalling=true; baf_minusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
               </a>
-              <input id="intinput" max="100" min="0" name="quantity" onkeydown="changeValues(this);" type="number" value="42"/>
-              <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+              <input id="intinput" max="100" min="0" name="quantity" onkeydown="baf_changeValues(this);" type="number" value="42"/>
+              <a class="baf blue dropdown-toggle">
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -905,19 +905,17 @@ Search&lt;/a>
         </div>
       </div>
       <div class="section">
-        <h2>Input fields</h2>
-        <p>With the same style, we can make cool number input forms
-          <br/>try the arrow keys, the plus and minus keys and buttons
-          <br/>and the mousewheel to increase/decrease the value</p>
+        <h2>Input Range fields</h2>
+        <p>you can even make range-style numeric textfields</p>
         <div class="example" style="position:relative;">
           <pre class="prettyprint"><code>
 &lt;div class="baf-group">
-  &lt;a class="baf blue" onmousedown="keepCalling=true; plusone('rangeinput1', 400, 60, 1);" 
+  &lt;a class="baf blue" onmousedown="keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" 
                       onmouseout="keepCalling=false;" 
                       onmouseup="keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
-  &lt;a class="baf blue" onmousedown="keepCalling=true; minusone('rangeinput1', 400, 60, 1);" 
+  &lt;a class="baf blue" onmousedown="keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" 
                       onmouseout="keepCalling=false;" 
                       onmouseup="keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
@@ -926,7 +924,7 @@ Search&lt;/a>
     &lt;input name="rangeinput1" id="rangeinput1" max="20" min="0" type="text" 
            title="Range: 0 to 20 in steps of 1" value="10" maxlength="6" onchange="">
   &lt;/div>
-  &lt;a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+  &lt;a class="baf blue dropdown-toggle">
     &lt;span class="caret">&lt;/span>
   &lt;/a>
   &lt;ul class="dropdown-menu">
@@ -947,12 +945,12 @@ Search&lt;/a>
 &lt;br />
 &lt;div class="cente">
 &lt;div class="baf-group">
-  &lt;a class="baf yellow" onmousedown="keepCalling=true; plusone('rangeinput3', 160, 1, 1);" 
+  &lt;a class="baf yellow" onmousedown="keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" 
                         onmouseout="keepCalling=false;" 
                         onmouseup="keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
-  &lt;a class="baf yellow" onmousedown="keepCalling=true; minusone('rangeinput3', 160, 1, 1);" 
+  &lt;a class="baf yellow" onmousedown="keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" 
                         onmouseout="keepCalling=false;" 
                         onmouseup="keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
@@ -973,7 +971,7 @@ Search&lt;/a>
     &lt;input name="rangeinput2" id="rangeinput2" max="100" min="0" type="text" 
            title="Range: 0 to 100 in steps of 1" value="50" maxlength="6">
   &lt;/div>
-  &lt;a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
+  &lt;a class="baf dropdown-toggle">
     &lt;span class="caret">&lt;/span>
   &lt;/a>
   &lt;ul class="dropdown-menu">
@@ -991,50 +989,19 @@ Search&lt;/a>
                  fdSlider.updateSlider('rangeinput2');">100&lt;/a>&lt;/li>
   &lt;/ul>
 &lt;/div>
-&lt;script>
-  fdSlider.createSlider({
-    inp:document.getElementById("rangeinput1"),
-    step:1, 
-    maxStep:1,
-    min:0,
-    max:20,
-    animation:"tween",
-    forceValue:true
-  });
-
-  fdSlider.createSlider({
-    inp:document.getElementById("rangeinput2"),
-    step:1, 
-    maxStep:1,
-    min:0,
-    max:100,
-    animation:"tween",
-    forceValue:true
-  });
-
-  fdSlider.createSlider({
-    inp:document.getElementById("rangeinput3"),
-    step:1, 
-    maxStep:10,
-    min:0,
-    max:360,
-    animation:"tween",
-    forceValue:true
-  });
-  &lt;/script>
           </code></pre>
           <div class="cente">
             <div class="baf-group">
-              <a class="baf blue" onmousedown="keepCalling=true; plusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
               </a>
-              <a class="baf blue" onmousedown="keepCalling=true; minusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
               </a>
               <div class="bafslider baf blue">
                 <input name="rangeinput1" id="rangeinput1" max="20" min="0" type="text" title="Range: 0 to 20 in steps of 1" value="10" maxlength="6" onchange="">
               </div>
-              <a class="baf blue dropdown-toggle" data-toggle="dropdown" href="#">
+              <a class="baf blue dropdown-toggle">
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
@@ -1050,10 +1017,10 @@ Search&lt;/a>
             <br />
             <div class="cente">
               <div class="baf-group">
-                <a class="baf yellow" onmousedown="keepCalling=true; plusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                <a class="baf yellow" onmousedown="keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                   <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
                 </a>
-                <a class="baf yellow" onmousedown="keepCalling=true; minusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                <a class="baf yellow" onmousedown="keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
                   <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
                 </a>
                 <div class="bafslider baf yellow">
@@ -1068,7 +1035,7 @@ Search&lt;/a>
                 <div class="bafslider baf" id="rangeinput2box" style="width:0px;">
                   <input name="rangeinput2" id="rangeinput2" max="100" min="0" type="text" title="Range: 0 to 100 in steps of 1" value="50" maxlength="6">
                 </div>
-                <a class="baf dropdown-toggle" data-toggle="dropdown" href="#">
+                <a class="baf dropdown-toggle">
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -1081,37 +1048,6 @@ Search&lt;/a>
                   <li><a href="javascript:$id('rangeinput2').value=100; fdSlider.updateSlider('rangeinput2');">100</a></li>
                 </ul>
               </div>
-              <script>
-                fdSlider.createSlider({
-                  inp:document.getElementById("rangeinput1"),
-                  step:1, 
-                  maxStep:1,
-                  min:0,
-                  max:20,
-                  animation:"tween",
-                  forceValue:true
-                });
-                
-                fdSlider.createSlider({
-                  inp:document.getElementById("rangeinput2"),
-                  step:1, 
-                  maxStep:1,
-                  min:0,
-                  max:100,
-                  animation:"tween",
-                  forceValue:true
-                });
-                
-                fdSlider.createSlider({
-                  inp:document.getElementById("rangeinput3"),
-                  step:1, 
-                  maxStep:10,
-                  min:0,
-                  max:360,
-                  animation:"tween",
-                  forceValue:true
-                });
-              </script>
             </div>
           </div>
         </div>
@@ -1123,33 +1059,33 @@ Search&lt;/a>
         <div class="example" style="position:relative">
           <pre class="prettyprint"><code>
 &lt;div class="input-prepend baf-input cente">
-  &lt;label class="baf add-on" for="inputdefault" id="default">default&lt;/label>
+  &lt;label class="baf add-on w90" for="inputdefault" id="default">default&lt;/label>
   &lt;input class="" id="inputdefault" name="default" size="16" type="text"/>
   &lt;br/>
-  &lt;label class="baf black add-on" for="inputdefault2" id="default2">default2&lt;/label>
+  &lt;label class="baf black add-on w90" for="inputdefault2" id="default2">default2&lt;/label>
   &lt;input class="" id="inputdefault2" name="default2" size="16" type="text"/>
   &lt;br/>
-  &lt;label class="baf cyan add-on" for="inputfile" id="file">
+  &lt;label class="baf cyan add-on w90" for="inputfile" id="file">
     &lt;span class="baf-icomoon" aria-hidden="true" 
           data-icon="&amp;#xe081;">&amp;nbsp;&lt;/span>file&lt;/label>
   &lt;input class="input-cyan" id="inputfile" name="file" size="16" type="text"/>
   &lt;br/>
-  &lt;label class="baf blue add-on" for="inputemail" id="email">
+  &lt;label class="baf blue add-on w90" for="inputemail" id="email">
     &lt;span class="baf-icomoon" aria-hidden="true" 
           data-icon="&amp;#xe02f;">&amp;nbsp;&lt;/span>email&lt;/label>
   &lt;input class="" id="inputemail" name="email" size="16" type="text"/>
   &lt;br/>
-  &lt;label class="baf green add-on" for="inputuser" id="user">
+  &lt;label class="baf green add-on w90" for="inputuser" id="user">
     &lt;span class="baf-icomoon" aria-hidden="true" 
           data-icon="&amp;#xe03f;">&amp;nbsp;&lt;/span>name&lt;/label>
   &lt;input class="input-green" id="inputuser" name="user" size="16" type="text"/>
   &lt;br/>
-  &lt;label class="baf yellow add-on" for="inputkey" id="key">
+  &lt;label class="baf yellow add-on w90" for="inputkey" id="key">
     &lt;span class="baf-icomoon" aria-hidden="true" 
           data-icon="&amp;#xe046;">&amp;nbsp;&lt;/span>key&lt;/label>
   &lt;input class="input-yellow" id="inputkey" name="key" size="16" type="text"/>
   &lt;br/>
-  &lt;label class="baf red add-on" for="inputwrong" id="wrong">
+  &lt;label class="baf red add-on w90" for="inputwrong" id="wrong">
     &lt;span class="baf-icomoon" aria-hidden="true" 
           data-icon="&amp;#xe08c;">&amp;nbsp;&lt;/span>wrong&lt;/label>
   &lt;input class="input-red" id="inputwrong" name="wrong" size="16" type="text"/>
@@ -1157,29 +1093,29 @@ Search&lt;/a>
 &lt;/div>
           </code></pre>
           <div class="input-prepend baf-input cente">
-            <label class="baf add-on" for="inputdefault" id="default">
+            <label class="baf add-on w90" for="inputdefault" id="default">
               default
             </label><input class="" id="inputdefault" name="default" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf black add-on" for="inputdefault2" id="default2">
+            <label class="baf black add-on w90" for="inputdefault2" id="default2">
               default2
             </label><input class="" id="inputdefault2" name="default2" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf cyan add-on" for="inputfile" id="file">
+            <label class="baf cyan add-on w90" for="inputfile" id="file">
               <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe081;">&nbsp;</span>
               file
             </label><input class="input-cyan" id="inputfile" name="file" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf blue add-on" for="inputemail" id="email">
+            <label class="baf blue add-on w90" for="inputemail" id="email">
               <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe02f;">&nbsp;</span>
               email
             </label><input class="" id="inputemail" name="email" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf green add-on" for="inputuser" id="user">
+            <label class="baf green add-on w90" for="inputuser" id="user">
               <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe03f;">&nbsp;</span>
               name
             </label><input class="input-green" id="inputuser" name="user" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf yellow add-on" for="inputkey" id="key">
+            <label class="baf yellow add-on w90" for="inputkey" id="key">
               <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe046;">&nbsp;</span>
               key
             </label><input class="input-yellow" id="inputkey" name="key" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf red add-on" for="inputwrong" id="wrong">
+            <label class="baf red add-on w90" for="inputwrong" id="wrong">
               <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe08c;">&nbsp;</span>
               wrong
             </label><input class="input-red" id="inputwrong" name="wrong" onkeyup="" size="16" type="text"/><br/>
@@ -1246,7 +1182,7 @@ Search&lt;/a>
       </div>
       <div class="section">
         <h3>Version</h3>
-        <p>baf v. 1.6<br/>
+        <p>baf v. 1.7<br/>
           10.2012</p>
       </div>
       <div class="section">
@@ -1265,7 +1201,6 @@ Search&lt;/a>
     <a href="../editor/" class="baf grey bluehover" style="margin: 20px auto 60px auto; display: block; width: 340px;">
       <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe041;"> &nbsp;
       </span>open the Buttons and Forms Editor</a>
-    <script src="../js/bootstrap-dropdown.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33526676-1']);
