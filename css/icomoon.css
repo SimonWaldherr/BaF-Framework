@@ -29,9 +29,9 @@ License: CC BY-SA 3.0      -- http://creativecommons.org/licenses/by-sa/3.0/
 }
 
 .baf-icomoon.bigger, .baf-icomoon.bigger::before{
-  top: 0.6px;
+  top: 0px;
   font-weight: normal;
-  font-size: 18pt;
+  font-size: 17pt;
   margin: -5px 0px -3px 0px;
 }
 

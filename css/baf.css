@@ -913,6 +913,7 @@ textarea {
   min-width: 5px;
   height: 13px;
   padding: 8px;
+  margin-bottom: 5px;
 }
 
 .baf .caret {

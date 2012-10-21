@@ -113,7 +113,7 @@ function generateForm()
         if(img != '')
           {
             //img = '&#xe'+img;
-            img = '<span class="baf-icomoon '+imgsize+'" aria-hidden="true" data-icon="&#xe'+img+';"> &nbsp;</span> '
+            img = '<span class="baf-icomoon '+imgsize+'" aria-hidden="true" data-icon="&#xe'+img+';">&nbsp;</span> '
           }
         
         if(FormCode[group] == undefined)
