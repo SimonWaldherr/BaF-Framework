@@ -21,65 +21,71 @@ function addListElement(type)
         case 'text':
           //Sort
           code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
-          //Text - 0
+          //Text
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
-          //Color - 1
+          //Color
           code += '<label for="color'+listcount+'">color</label><select name="color'+listcount+'" id="color'+listcount+'" size="1" onchange="javascript:generateForm();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select>';
-          //Img - 2
+          //size
+          code += '<label for="size'+listcount+'">size</label><select name="size'+listcount+'" id="size'+listcount+'" size="1" onchange="javascript:generateForm();"><option>auto</option><option>60px</option><option>90px</option><option>120px</option><option>190px</option><option>240px</option></select>';
+          //Img
           code += '<span>Image </span> <input id="iconid'+listcount+'" class="hideme" style="display:none;" name="img'+listcount+'" type="text"><a onclick="selectIcomoonIcon('+listcount+')" class="baf grey">change icon</a> ';
-          //ImageSize - 3
+          //ImageSize
           code += '<label for="imgsize'+listcount+'">Imagesize</label><select name="imgsize'+listcount+'" id="imgsize'+listcount+'" size="1" onchange="javascript:generateForm();"><option>normal</option><option>big</option><option>bigger</option></select>';
-          //Max Length - 4
+          //Max Length
           code += '<label for="max'+listcount+'">max length</label><input name="max'+listcount+'" id="max'+listcount+'" type="number" placeholder="" onchange="javascript:generateForm();" />';
-          //Min Length - 5
-          code += '<label for="min'+listcount+'">min length</label><input name="min'+listcount+'" id="min'+listcount+'" type="number" placeholder="" onchange="javascript:generateForm();" />';
-          //AutoClean - 6
+          //AutoClean
           code += '<span>Clean</span><input id="ac'+listcount+'" type="checkbox" onchange="javascript:generateForm();" />';
           break;
         case 'password':
           //Sort
           code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
-          //Text - 0
+          //Text
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
-          //Color - 1
+          //Color
           code += '<label for="color'+listcount+'">color</label><select name="color'+listcount+'" id="color'+listcount+'" size="1" onchange="javascript:generateForm();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select>';
-          //Img - 2
+          //size
+          code += '<label for="size'+listcount+'">size</label><select name="size'+listcount+'" id="size'+listcount+'" size="1" onchange="javascript:generateForm();"><option>auto</option><option>60px</option><option>90px</option><option>120px</option><option>190px</option><option>240px</option></select>';
+          //Img
           code += '<span>Image </span> <input id="iconid'+listcount+'" class="hideme" style="display:none;" name="img'+listcount+'" type="text"><a onclick="selectIcomoonIcon('+listcount+')" class="baf grey">change icon</a> ';
-          //ImageSize - 3
+          //ImageSize
           code += '<label for="imgsize'+listcount+'">Imagesize</label><select name="imgsize'+listcount+'" id="imgsize'+listcount+'" size="1" onchange="javascript:generateForm();"><option>normal</option><option>big</option><option>bigger</option></select>';
-          //SecurityValue - 4
+          //SecurityValue
           code += '<span>Show security </span><input id="sv'+listcount+'" type="checkbox" onchange="javascript:generateForm();" />';
           break;
         case 'number':
           //Sort
           code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
-          //Text - 0
+          //Text
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
-          //Color - 1
+          //Color
           code += '<label for="color'+listcount+'">color</label><select name="color'+listcount+'" id="color'+listcount+'" size="1" onchange="javascript:generateForm();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select>';
-          //Img - 2
+          //size
+          code += '<label for="size'+listcount+'">size</label><select name="size'+listcount+'" id="size'+listcount+'" size="1" onchange="javascript:generateForm();"><option>auto</option><option>60px</option><option>90px</option><option>120px</option><option>190px</option><option>240px</option></select>';
+          //Img
           code += '<span>Image </span> <input id="iconid'+listcount+'" class="hideme" style="display:none;" name="img'+listcount+'" type="text"><a onclick="selectIcomoonIcon('+listcount+')" class="baf grey">change icon</a> ';
-          //ImageSize - 3
+          //ImageSize
           code += '<label for="imgsize'+listcount+'">Imagesize</label><select name="imgsize'+listcount+'" id="imgsize'+listcount+'" size="1" onchange="javascript:generateForm();"><option>normal</option><option>big</option><option>bigger</option></select>';
-          //InputType - 3
+          //InputType
           code += '<label for="inputtype'+listcount+'">Inputtype</label><select name="inputtype'+listcount+'" id="inputtype'+listcount+'" size="1" onchange="javascript:generateForm();"><option>number</option><option>range</option></select>';
-          //Max Value - 4
+          //Max Value
           code += '<label for="max'+listcount+'">max value</label><input name="max'+listcount+'" id="max'+listcount+'" type="number" value="100" placeholder="" onchange="javascript:generateForm();" />';
-          //Min Value - 5
+          //Min Value
           code += '<label for="min'+listcount+'">min value</label><input name="min'+listcount+'" id="min'+listcount+'" type="number" value="0" placeholder="" onchange="javascript:generateForm();" />';
           break;
         case 'email':
           //Sort
           code += '<label for="sort'+listcount+'">Sort </label><input class="sort" name="sort'+listcount+'" id="sort'+listcount+'" type="number" placeholder="" value="'+listcount+'" onchange="javascript:generateForm();" />';
-          //Text - 0
+          //Text
           code += '<label for="text'+listcount+'">text</label><input name="text'+listcount+'" id="text'+listcount+'" type="text" placeholder="" onkeyup="javascript:generateForm();" />';
-          //Color - 1
+          //Color
           code += '<label for="color'+listcount+'">color</label><select name="color'+listcount+'" id="color'+listcount+'" size="1" onchange="javascript:generateForm();"><option>grey</option><option>black</option><option>cyan</option><option>blue</option><option>green</option><option>yellow</option><option>red</option></select>';
-          //Img - 2
+          //size
+          code += '<label for="size'+listcount+'">size</label><select name="size'+listcount+'" id="size'+listcount+'" size="1" onchange="javascript:generateForm();"><option>auto</option><option>60px</option><option>90px</option><option>120px</option><option>190px</option><option>240px</option></select>';
+          //Img
           code += '<span>Image </span> <input id="iconid'+listcount+'" class="hideme" style="display:none;" name="img'+listcount+'" type="text"><a onclick="selectIcomoonIcon('+listcount+')" class="baf grey">change icon</a> ';
-          //ImageSize - 3
+          //ImageSize
           code += '<label for="imgsize'+listcount+'">Imagesize</label><select name="imgsize'+listcount+'" id="imgsize'+listcount+'" size="1" onchange="javascript:generateForm();"><option>normal</option><option>big</option><option>bigger</option></select>';
-          //validate - 4
+          //validate
           code += '<span>validate </span><input id="ev'+listcount+'" type="checkbox" checked="checked" onchange="javascript:generateForm();" />';
           break;
       }
@@ -93,7 +99,7 @@ function addListElement(type)
 
 function generateForm()
   {
-    var text, color, img, imgsize, maxlength, minlength, autoclean, security, inputtype, maxvalue, minvalue, validate;
+    var text, color, size, img, imgsize, maxlength, minlength, autoclean, security, inputtype, maxvalue, minvalue, validate;
     
     var i         = 1;
     var listcount = (Math.round($id("buttonscount").value)+1);
@@ -108,6 +114,28 @@ function generateForm()
         color   = $id('color'+i).value;
         img     = $id('iconid'+i).value;
         imgsize = $id('imgsize'+i).value;
+        
+        switch($id('size'+i).value)
+          {
+            case 'auto':
+              size = '';
+              break;
+            case '60px':
+              size = ' w60';
+              break;
+            case '90px':
+              size = ' w90';
+              break;
+            case '120px':
+              size = ' w120';
+              break;
+            case '190px':
+              size = ' w190';
+              break;
+            case '240px':
+              size = ' w240';
+              break; 
+          }
         
         if((img != '')&&(text != ''))
           {
@@ -127,7 +155,6 @@ function generateForm()
           {
             case 'text':
               maxlength = $id('max'+i).value;
-              minlength = $id('min'+i).value;
               autoclean = '';
               if($id('ac'+i).checked)
                 {
@@ -135,7 +162,7 @@ function generateForm()
                 }
               
               
-              FormCode[group] = '<label class="baf '+color+' add-on" for="text-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'"'+autoclean+' size="16" type="text"/>';
+              FormCode[group] = '<label class="baf '+color+size+' add-on" for="text-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'"'+autoclean+' maxlength="'+maxlength+'" size="16" type="text"/>';
               break;
             case 'password':
               security = '';
@@ -143,7 +170,7 @@ function generateForm()
                 {
                   security = ' onkeyup="baf_password(this.value, this.previousElementSibling.id)"';
                 }
-              FormCode[group] = '<label class="baf '+color+' add-on" for="pw-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="pw-'+text+group+'" name="pw-'+text+group+'"'+security+' size="16" type="password"/>';
+              FormCode[group] = '<label class="baf '+color+size+' add-on" for="pw-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="pw-'+text+group+'" name="pw-'+text+group+'"'+security+' size="16" type="password"/>';
               break;
             case 'number':
               maxvalue = Math.round($id('max'+i).value);
@@ -160,7 +187,7 @@ function generateForm()
                     }
                   else
                     {
-                      FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+'">'+img+text+'</label>';
+                      FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+size+'">'+img+text+'</label>';
                     }
                   FormCode[group] += '<input id="int-'+text+group+'" class="input-'+color+'" max="'+maxvalue+'" min="'+minvalue+'" name="quantity" onchange="baf_changeValues(this);" type="number" value="'+intquart[1]+'"/><a class="baf '+color+' dropdown-toggle"><span class="caret"></span></a><ul class="dropdown-menu-'+color+'"><li><a href="javascript:$id(\'int-'+text+group+'\').value='+minvalue+';">'+minvalue+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[0]+';">'+intquart[0]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[1]+';">'+intquart[1]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[2]+';">'+intquart[2]+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+maxvalue+';">'+maxvalue+'</a></li></ul></div>';
                 }
@@ -173,7 +200,7 @@ function generateForm()
                     }
                   else
                     {
-                      FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+'">'+img+text+'</label>';
+                      FormCode[group] += '<label for="int-'+text+group+'" class="baf '+color+size+'">'+img+text+'</label>';
                     }
                   FormCode[group] += '<div class="bafslider baf '+color+'"><input class="range-slider" name="rangeinput1" id="int-'+text+group+'" max="'+maxvalue+'" min="'+minvalue+'" type="text" title="" value="'+intquart[1]+'" maxlength="6"></div><a class="baf '+color+' dropdown-toggle"><span class="caret"></span></a><ul class="dropdown-menu-'+color+'"><li><a href="javascript:$id(\'int-'+text+group+'\').value='+minvalue+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+minvalue+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[0]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[0]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[1]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[1]+'</a></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+intquart[2]+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+intquart[2]+'</a></li><li class="divider"></li><li><a href="javascript:$id(\'int-'+text+group+'\').value='+maxvalue+'; fdSlider.updateSlider(\'int-'+text+group+'\');">'+maxvalue+'</a></li></ul></div>';
                 }
@@ -185,7 +212,7 @@ function generateForm()
                   validate = ' onkeyup="baf_email(this.value, this.previousElementSibling.id)"'
                 }
               
-              FormCode[group] = '<label class="baf '+color+' add-on" for="text-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'"'+validate+' size="16" type="text"/>';
+              FormCode[group] = '<label class="baf '+color+size+' add-on" for="text-'+text+group+'" id="label-'+text+group+'">'+img+text+'</label><input class="input-'+color+'" id="text-'+text+group+'" name="text-'+text+group+'"'+validate+' size="16" type="text"/>';
               break;
           }
         ++i;
