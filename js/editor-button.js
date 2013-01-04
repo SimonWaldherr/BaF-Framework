@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.7
+ * Version: 1.8
  *
  */
 
@@ -166,7 +166,7 @@ function clearTable()
   {
     $id('demobox').innerHTML = '';
     $id('precode').innerHTML = '';
-    $id('realtable').innerHTML = '<thead id="tablehead"><tr><td><b>text</b></td><td><b>color</b></td><td><b>img</b></td><td><b>imgsize</b></td><td><b>link</b></td><td><b>group</b></td><td><b>buttonsize</b></td><td><b>3D</b></td><td><b>bluehover</b></td><td><b>disabled</b></td></tr></thead><tbody class="baf-input" id="table"></tbody>';
+    $id('realtable').innerHTML = '<thead id="tablehead"><tr><td><b>delete</b></td><td><b>text</b></td><td><b>color</b></td><td><b>img</b></td><td><b>imgsize</b></td><td><b>link</b></td><td><b>group</b></td><td><b>buttonsize</b></td><td><b>3D</b></td><td><b>bluehover</b></td><td><b>disabled</b></td></tr></thead><tbody class="baf-input" id="table"></tbody>';
     $id('selectbuttoncode').style.display = 'none';
     $id("buttonscount").value = 0;
   }

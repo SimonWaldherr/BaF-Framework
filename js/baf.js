@@ -6,7 +6,7 @@
  * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  * License: MIT
- * Version: 1.7
+ * Version: 1.8
  *
  */
 
@@ -24,7 +24,7 @@ function baf_plusone(id, wait, min, slider)
         $id(id).value++;
         if(wait > min)
           {
-            wait = wait-60;
+            wait = wait-30;
           }
         if(wait < min)
           {
@@ -45,7 +45,7 @@ function baf_minusone(id, wait, min, slider)
         $id(id).value--;
         if(wait > min)
           {
-            wait = wait-60;
+            wait = wait-30;
           }
         if(wait < min)
           {
