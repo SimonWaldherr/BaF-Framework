@@ -983,6 +983,18 @@ textarea {
   min-height: 13px;
 }
 
+.textarea label.baf {
+  display: block;
+  float: left;
+  width: 100%;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  margin-left: -6px;
+  margin-bottom: -1px;
+}
+
 input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
   float: none;
   margin-left: -2px;
@@ -1023,7 +1035,7 @@ input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditabl
   border-color: #4B8CF7;
 }
 
-input:active, input:focus{
+input:active, input:focus, textarea:active, textarea:focus{
   outline: none;
   border-color: #4B8CF7;
   -webkit-box-shadow:  0px 0px 5px 1px #4B8CF7;
@@ -1059,6 +1071,18 @@ input:active, input:focus{
   border-color: #ff3333;
   -webkit-box-shadow:  0px 0px 5px 1px #ff3333;
   box-shadow:  0px 0px 5px 1px #ff3333;
+}
+
+.textarea textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  max-width: 100%;
+  margin-left: -6px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  border-color: grey;
 }
 
 /* .................................................................... Misc */

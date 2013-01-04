@@ -910,12 +910,14 @@ Search&lt;/a>
         <div class="example" style="position:relative;">
           <pre class="prettyprint"><code>
 &lt;div class="baf-group">
-  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" 
+  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; 
+                                      baf_plusone('rangeinput1', 400, 60, 1);" 
                       onmouseout="baf_keepCalling=false;" 
                       onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
-  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" 
+  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; 
+                                      baf_minusone('rangeinput1', 400, 60, 1);" 
                       onmouseout="baf_keepCalling=false;" 
                       onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
@@ -945,12 +947,14 @@ Search&lt;/a>
 &lt;br />
 &lt;div class="cente">
 &lt;div class="baf-group">
-  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" 
+  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; 
+                                        baf_plusone('rangeinput3', 160, 1, 1);" 
                         onmouseout="baf_keepCalling=false;" 
                         onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
-  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" 
+  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; 
+                                        baf_minusone('rangeinput3', 160, 1, 1);" 
                         onmouseout="baf_keepCalling=false;" 
                         onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
@@ -1119,6 +1123,80 @@ Search&lt;/a>
               <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe08c;">&nbsp;</span>
               wrong
             </label><input class="input-red" id="inputwrong" name="wrong" onkeyup="" size="16" type="text"/><br/>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <p>
+          and of course textareas
+        </p>
+        <div class="example" style="position:relative">
+          <pre class="prettyprint"><code>
+&lt;div class="textarea" style="float: left; margin: 20px; width: 190px;">
+  &lt;label class="baf add-on w90" for="" id="">one&lt;/label>
+  &lt;textarea class="" id="" name="" onkeyup="" size="16" type="text">&lt;/textarea>
+&lt;/div>
+
+&lt;div class="textarea" style="float: left; margin: 20px; width: 190px;">
+  &lt;label class="baf add-on w90" for="" id="">two&lt;/label>
+  &lt;textarea class="" id="" name="" onkeyup="" size="16" type="text">&lt;/textarea>
+&lt;/div>
+
+&lt;div class="textarea" style="float: left; margin: 20px; width: 190px;">
+  &lt;label class="baf add-on w90" for="" id="">three&lt;/label>
+  &lt;textarea class="" id="" name="" onkeyup="" size="16" type="text">&lt;/textarea>
+&lt;/div>
+
+&lt;div class="textarea">
+  &lt;label class="baf add-on w90" for="defaulttextarea" id="defaultt1">default&lt;/label>
+  &lt;textarea class="" id="defaulttextarea" name="defaulttextarea" onkeyup="" 
+            size="16" type="text">&lt;/textarea>
+&lt;/div>
+&lt;br/>
+
+&lt;div class="textarea">
+  &lt;label class="baf black add-on w90" for="blacktextarea" id="defaultt2">black&lt;/label>
+  &lt;textarea class="" id="blacktextarea" name="blacktextarea" onkeyup="" 
+            size="16" type="text"/>&lt;/textarea>
+&lt;/div>
+&lt;br/>
+
+&lt;div class="textarea">
+  &lt;label class="baf blue add-on w90" for="blacktextarea" id="defaultt3">blue&lt;/label>
+  &lt;textarea class="" id="bluetextarea" name="bluetextarea" onkeyup="" 
+            size="16" type="text"/>&lt;/textarea>
+&lt;/div>
+&lt;br/>
+
+&lt;div class="textarea">
+  &lt;label class="baf red add-on w90" for="redtextarea" id="defaultt4">red&lt;/label>
+  &lt;textarea class="" id="redtextarea" name="redtextarea" onkeyup="" 
+            size="16" type="text"/>&lt;/textarea>
+&lt;/div>
+&lt;br/>
+          </code></pre>
+          <div class="input-prepend baf-input cente">
+            <div class="textarea" style="float: left; margin: 20px; width: 190px;"><label class="baf add-on w90" for="" id="">
+              one
+            </label><textarea class="" id="" name="" onkeyup="" size="16" type="text"></textarea></div>
+            <div class="textarea" style="float: left; margin: 20px; width: 190px;"><label class="baf add-on w90" for="" id="">
+              two
+            </label><textarea class="" id="" name="" onkeyup="" size="16" type="text"></textarea></div>
+            <div class="textarea" style="float: left; margin: 20px; width: 190px;"><label class="baf add-on w90" for="" id="">
+              three
+            </label><textarea class="" id="" name="" onkeyup="" size="16" type="text"></textarea></div>
+            <div class="textarea"><label class="baf add-on w90" for="defaulttextarea" id="defaultt1">
+              default
+            </label><textarea class="" id="defaulttextarea" name="defaulttextarea" onkeyup="" size="16" type="text"></textarea></div><br/>
+            <div class="textarea"><label class="baf black add-on w90" for="blacktextarea" id="defaultt2">
+              black
+            </label><textarea class="" id="blacktextarea" name="blacktextarea" onkeyup="" size="16" type="text"/></textarea></div><br/>
+            <div class="textarea"><label class="baf blue add-on w90" for="bluetextarea" id="defaultt3">
+              blue
+            </label><textarea class="input-blue" id="bluetextarea" name="bluetextarea" onkeyup="" size="16" type="text"/></textarea></div><br/>
+            <div class="textarea"><label class="baf red add-on w90" for="redtextarea" id="defaultt4">
+              red
+            </label><textarea class="input-red" id="redtextarea" name="redtextarea" onkeyup="" size="16" type="text"/></textarea></div><br/>
           </div>
         </div>
       </div>
