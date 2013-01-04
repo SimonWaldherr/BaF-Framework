@@ -957,6 +957,8 @@ textarea {
 
 .input-prepend .add-on, .input-append .add-on {
   display: inline-block;
+  position: relative;
+  top: 0.7px;
   height: 18px;
   padding: 4px 5px;
   font-weight: normal;
@@ -965,7 +967,7 @@ textarea {
   vertical-align: middle;
   background-color: #CCC;
   border: 1px solid #AAA;
-  margin-top: -3px;
+  margin-top: -4px;
 }
 
 .input-prepend .add-on, .input-append .add-on, .input-prepend .btn, .input-append .btn {
@@ -1002,6 +1004,8 @@ input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditabl
 
 .baf-group > input, .baf-group > textarea, .baf-group > select, .baf-input > input, .baf-input > textarea, .baf-input > select, .uneditable-input {
   display: inline-block;
+  position: relative;
+  top: 0px;
   width: 210px;
   height: 18px;
   padding: 4px 4px 4px 4px;
