@@ -851,15 +851,15 @@ Search&lt;/a>
           <pre class="prettyprint"><code>
 &lt;div class="baf-group">
   &lt;a class="baf blue" 
-     onmousedown="keepCalling=true; baf_plusone('intinput', 400);" 
-     onmouseout="keepCalling=false;" 
-     onmouseup="keepCalling=false;">
+     onmousedown="baf_keepCalling=true; baf_plusone('intinput', 400);" 
+     onmouseout="baf_keepCalling=false;" 
+     onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
   &lt;a class="baf blue" 
-     onmousedown="keepCalling=true; baf_minusone('intinput', 400);" 
-     onmouseout="keepCalling=false;" 
-     onmouseup="keepCalling=false;">
+     onmousedown="baf_keepCalling=true; baf_minusone('intinput', 400);" 
+     onmouseout="baf_keepCalling=false;" 
+     onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
   &lt;/a>
   &lt;input id="intinput" max="100" min="0" name="quantity" 
@@ -881,10 +881,10 @@ Search&lt;/a>
           </code></pre>
           <div class="cente">
             <div class="baf-group">
-              <a class="baf blue" onmousedown="keepCalling=true; baf_plusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_plusone('intinput', 400, 60);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
               </a>
-              <a class="baf blue" onmousedown="keepCalling=true; baf_minusone('intinput', 400, 60);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_minusone('intinput', 400, 60);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
               </a>
               <input id="intinput" max="100" min="0" name="quantity" onkeydown="baf_changeValues(this);" type="number" value="42"/>
@@ -910,14 +910,14 @@ Search&lt;/a>
         <div class="example" style="position:relative;">
           <pre class="prettyprint"><code>
 &lt;div class="baf-group">
-  &lt;a class="baf blue" onmousedown="keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" 
-                      onmouseout="keepCalling=false;" 
-                      onmouseup="keepCalling=false;">
+  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" 
+                      onmouseout="baf_keepCalling=false;" 
+                      onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
-  &lt;a class="baf blue" onmousedown="keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" 
-                      onmouseout="keepCalling=false;" 
-                      onmouseup="keepCalling=false;">
+  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" 
+                      onmouseout="baf_keepCalling=false;" 
+                      onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
   &lt;/a>
   &lt;div class="bafslider baf blue">
@@ -945,14 +945,14 @@ Search&lt;/a>
 &lt;br />
 &lt;div class="cente">
 &lt;div class="baf-group">
-  &lt;a class="baf yellow" onmousedown="keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" 
-                        onmouseout="keepCalling=false;" 
-                        onmouseup="keepCalling=false;">
+  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" 
+                        onmouseout="baf_keepCalling=false;" 
+                        onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
   &lt;/a>
-  &lt;a class="baf yellow" onmousedown="keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" 
-                        onmouseout="keepCalling=false;" 
-                        onmouseup="keepCalling=false;">
+  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" 
+                        onmouseout="baf_keepCalling=false;" 
+                        onmouseup="baf_keepCalling=false;">
     &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
   &lt;/a>
   &lt;div class="bafslider baf yellow">
@@ -992,10 +992,10 @@ Search&lt;/a>
           </code></pre>
           <div class="cente">
             <div class="baf-group">
-              <a class="baf blue" onmousedown="keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
               </a>
-              <a class="baf blue" onmousedown="keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
                 <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
               </a>
               <div class="bafslider baf blue">
@@ -1017,10 +1017,10 @@ Search&lt;/a>
             <br />
             <div class="cente">
               <div class="baf-group">
-                <a class="baf yellow" onmousedown="keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                <a class="baf yellow" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
                   <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
                 </a>
-                <a class="baf yellow" onmousedown="keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" onmouseout="keepCalling=false;" onmouseup="keepCalling=false;">
+                <a class="baf yellow" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
                   <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
                 </a>
                 <div class="bafslider baf yellow">
@@ -1125,7 +1125,7 @@ Search&lt;/a>
       <div class="section">
         <h2>Icons for your Buttons and Forms</h2>
         <p>
-          <b>Buttons and Forms</b> is fully compatible with the Icons from <a href="http://icomoon.io/">IcoMoon</a>. You can test and configure Buttons with icons with the <a class="baf grey" href="../editor/buttons.html"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe041;"> &nbsp;</span>Buttons Editor</a> or Forms with the <a class="baf grey" href="../editor/buttons.html"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe041;"> &nbsp;</span>Forms Editor</a>.
+          <b>Buttons and Forms</b> is fully compatible with the Icons from <a href="http://icomoon.io/">IcoMoon</a>. You can test and configure Buttons with icons with the <a class="baf grey" href="../editor/buttons.html"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe041;"> &nbsp;</span>Buttons Editor</a> or Forms with the <a class="baf grey" href="../editor/forms.html"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe041;"> &nbsp;</span>Forms Editor</a>.
         </p>
       </div>
     </div>
@@ -1198,9 +1198,12 @@ Search&lt;/a>
         </p>
       </div>
     </div>
-    <a href="../editor/" class="baf grey bluehover" style="margin: 20px auto 60px auto; display: block; width: 340px;">
+    <a href="../editor/buttons.html" class="baf grey bluehover" style="margin: 20px auto 10px auto; display: block; width: 340px;">
       <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe041;"> &nbsp;
-      </span>open the Buttons and Forms Editor</a>
+      </span>open the Buttons Editor</a>
+    <a href="../editor/forms.html" class="baf grey bluehover" style="margin: 10px auto 60px auto; display: block; width: 340px;">
+      <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe041;"> &nbsp;
+      </span>open the Forms Editor</a>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33526676-1']);
