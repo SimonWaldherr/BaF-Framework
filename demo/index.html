@@ -7,7 +7,7 @@
  Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
  Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
  License: MIT
- Version: 1.8
+ Version: 2.0
 
 -->
 <html lang="en">
@@ -310,9 +310,9 @@
         </div>
       </div>
       <div class="section">
-        <h2>Radio Button Groups</h2>
+        <h2>Button Groups</h2>
         <p>
-          Sometimes your button group should act like a series of radio buttons, in which selecting one button deselects the others. Add the
+          Sometimes your button group should act like a series of buttons, in which selecting one button deselects the others. Add the
           <code>toggle-buttons</code>
           class to your
           <code>button-group</code>
@@ -332,11 +332,11 @@
           </code></pre>
           <div class="cente">
             <div class="baf-group toggle-buttons">
-              <a class="baf">Day</a>
-              <a class="baf">Week</a>
-              <a class="baf checked">Month</a>
-              <a class="baf">4 Days</a>
-              <a class="baf">Agenda</a>
+              <label class="baf" for="rbutton1"><input type="radio" name="rbutton1" value="Day" id="rbutton1" checked="checked" />Day</label>
+              <label class="baf" for="rbutton2"><input type="radio" name="rbutton2" value="Week" id="rbutton2">Week</label>
+              <label class="baf" for="rbutton3"><input type="radio" name="rbutton3" value="Month" id="rbutton3">Month</label>
+              <label class="baf" for="rbutton4"><input type="radio" name="rbutton4" value="4Days" id="rbutton4">4Days</label>
+              <label class="baf" for="rbutton5"><input type="radio" name="rbutton5" value="Agenda" id="rbutton5">Agenda</label>
             </div>
           </div>
         </div>
@@ -362,7 +362,40 @@
         </div>
       </div>
       <div class="section">
-        <h2>Radio Button Groups with Arrows</h2>
+        <h2>rbuttonbutton Groups</h2>
+        <p>
+          Sometimes your button group should act like a series of buttons, in which selecting one button deselects the others. Add the
+          <code>toggle-buttons</code>
+          class to your
+          <code>button-group</code>
+          div to accomplish this. To set the currently selected button, use the
+          <code>checked</code>
+          class.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group toggle-buttons">
+  &lt;a class="baf">Day&lt;/a>
+  &lt;a class="baf">Week&lt;/a>
+  &lt;a class="baf checked">Month&lt;/a>
+  &lt;a class="baf">4 Days&lt;/a>
+  &lt;a class="baf">Agenda&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group toggle-buttons">
+              <span class="baf w90">Radio</span>
+              <input class="w60" name="radio" type="radio" value="Day">
+              <input class="w60" name="radio" type="radio" value="Week">
+              <input class="w60" name="radio" type="radio" value="Month">
+              <input class="w60" name="radio" type="radio" value="Year">
+              <input class="w60" name="radio" type="radio" value="Decade">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Button Groups with Arrows</h2>
         <p>
           If you need to show progress steps, you can use the
           <code>arrow</code>
@@ -1096,34 +1129,14 @@ Search&lt;/a>
   &lt;br/>
 &lt;/div>
           </code></pre>
+          <div class="input-prepend baf-input cente"><label class="baf add-on w90" for="inputdefault" id="default">default</label><input class="" id="inputdefault" name="default" onkeyup="" size="16" type="text"/></div>
           <div class="input-prepend baf-input cente">
-            <label class="baf add-on w90" for="inputdefault" id="default">
-              default
-            </label><input class="" id="inputdefault" name="default" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf black add-on w90" for="inputdefault2" id="default2">
-              default2
-            </label><input class="" id="inputdefault2" name="default2" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf cyan add-on w90" for="inputfile" id="file">
-              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe081;">&nbsp;</span>
-              file
-            </label><input class="input-cyan" id="inputfile" name="file" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf blue add-on w90" for="inputemail" id="email">
-              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe02f;">&nbsp;</span>
-              email
-            </label><input class="" id="inputemail" name="email" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf green add-on w90" for="inputuser" id="user">
-              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe03f;">&nbsp;</span>
-              name
-            </label><input class="input-green" id="inputuser" name="user" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf yellow add-on w90" for="inputkey" id="key">
-              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe046;">&nbsp;</span>
-              key
-            </label><input class="input-yellow" id="inputkey" name="key" onkeyup="" size="16" type="text"/><br/>
-            <label class="baf red add-on w90" for="inputwrong" id="wrong">
-              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe08c;">&nbsp;</span>
-              wrong
-            </label><input class="input-red" id="inputwrong" name="wrong" onkeyup="" size="16" type="text"/><br/>
-          </div>
+            <label class="baf black add-on w90" for="inputdefault2" id="default2">default2</label><input class="" id="inputdefault2" name="default2" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf cyan add-on w90" for="inputfile" id="file"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe081;">&nbsp;</span>file</label><input class="input-cyan" id="inputfile" name="file" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf blue add-on w90" for="inputemail" id="email"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe02f;">&nbsp;</span>email</label><input class="" id="inputemail" name="email" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf green add-on w90" for="inputuser" id="user"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe03f;">&nbsp;</span>name</label><input class="input-green" id="inputuser" name="user" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf yellow add-on w90" for="inputkey" id="key"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe046;">&nbsp;</span>key</label><input class="input-yellow" id="inputkey" name="key" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf red add-on w90" for="inputwrong" id="wrong"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe08c;">&nbsp;</span>wrong</label><input class="input-red" id="inputwrong" name="wrong" onkeyup="" size="16" type="text"/></div>
         </div>
       </div>
       <div class="section">
@@ -1260,8 +1273,8 @@ Search&lt;/a>
       </div>
       <div class="section">
         <h3>Version</h3>
-        <p>baf v. 1.8<br/>
-          01.2013</p>
+        <p>baf v. 2.0<br/>
+          05.2013</p>
       </div>
       <div class="section">
         <h3>Acknowledgements</h3>
