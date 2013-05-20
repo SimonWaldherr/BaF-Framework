@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<!--
+
+ Buttons and Forms
+
+ Repo: https://github.com/SimonWaldherr/buttons-and-forms
+ Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
+ Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
+ License: MIT
+ Version: 2.0
+
+-->
+<html lang="en">
+  <head>
+    <title>CSS3 Buttons and Forms Demo</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="Using CSS3 to create beautiful UI elements" name="description"/>
+    <link href="../repos/fd-slider/css/fd-slider-tooltip.css" rel="stylesheet"/>
+    <link href="../repos/fd-slider/css/fd-slider.css" rel="stylesheet"/>
+    <link href="../css/style.css"   media="screen" rel="stylesheet" type="text/css"/>
+    <link href="../css/baf.css"     media="screen" rel="stylesheet" type="text/css"/>
+    <link href="../css/icomoon.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" rel="stylesheet"/>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
+    <script src="../repos/fd-slider/js/fd-slider.min.js"></script>
+    <script src="../js/baf.js"></script>
+  </head>
+  <body onload="prettyPrint(); baf_listenerInit();">
+    <div class="container">
+      <a class="ribbon" href="https://github.com/SimonWaldherr/buttons-and-forms" target="_blank"><img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"/></a>
+      <div class="header">
+        <h1 id="buttonsandforms"><a href="../">Buttons and Forms</a></h1>
+        <p>the
+          <a href="https://github.com/SimonWaldherr/buttons-and-forms">buttons and forms</a>
+          <strong>CSS3</strong>
+          styles collection is the easiest way, to make
+          <strong>buttons</strong>
+          and
+          <strong>forms</strong>
+          on webpages look great. It&#8217;s based on the wonderfull code from
+          <a href="http://timodonnell.com/">Tim O&#8217;Donnell</a>
+          and improved by
+          <a href="http://simon.waldherr.eu/">Simon Waldherr</a>. The complete code is licensed under the terms of the
+          <strong>MIT-License</strong>, which allows you to use and to change everything for
+          <strong>free</strong>.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <h2>Buttons</h2>
+        <p>
+          The "buttons" can be created by adding
+          <code>class="baf"</code>
+          to any appropriate
+          <code>&lt;a></code>,
+          <code>&lt;button></code>, or
+          <code>&lt;input></code>
+          element.
+        </p>
+        <div class="example">
+          <pre class="code prettyprint"><code>
+&lt;a class="baf">New Comment (link)&lt;/a>
+&lt;input class="baf" type="submit" value="New Comment (submit)" />
+&lt;button class="baf">New Comment (button)&lt;/button>
+          </code></pre>
+          <form class="cente">
+            <a class="baf">New Comment (link)</a>
+            <input class="baf" type="submit" value="New Comment (submit)"/>
+            <button class="baf">New Comment (button)</button>
+          </form>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Buttons with blue or red hover color</h2>
+        <p>
+          The blue or red hover color can be added by adding
+          <code>class="bluehover"</code> or <code>class="redhover"</code>
+          to any button with the <code>baf</code> class.
+        </p>
+        <div class="example">
+          <pre class="code prettyprint"><code>
+&lt;a class="baf bluehover">New Comment (link)&lt;/a>
+&lt;input class="baf bluehover" type="submit" value="New Comment (submit)"/>
+&lt;button class="baf bluehover">New Comment (button)&lt;/button>
+&lt;br />&lt;br />
+&lt;a class="baf redhover">New Comment (link)&lt;/a>
+&lt;input class="baf redhover" type="submit" value="New Comment (submit)"/>
+&lt;button class="baf redhover">New Comment (button)&lt;/button>
+          </code></pre>
+          <form class="cente">
+            <a class="baf bluehover">New Comment (link)</a>
+            <input class="baf bluehover" type="submit" value="New Comment (submit)"/>
+            <button class="baf bluehover">New Comment (button)</button>
+            <br /><br />
+            <a class="baf redhover">New Comment (link)</a>
+            <input class="baf redhover" type="submit" value="New Comment (submit)"/>
+            <button class="baf redhover">New Comment (button)</button>
+          </form>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Colored Buttons</h2>
+        <p>
+          Colored buttons can be created by adding the
+          <code>red</code>,
+          <code>blue</code>, or
+          <code>green</code>
+          class to your button.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;a class="baf" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Info&lt;/a>
+&lt;a class="baf blue" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Search&lt;/a>
+&lt;a class="baf cyan" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Send&lt;/a>
+&lt;a class="baf black" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Abort&lt;/a>
+&lt;br/>&lt;br/>
+&lt;a class="baf dark" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Open Menu&lt;/a>
+&lt;a class="baf green" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Success&lt;/a>
+&lt;a class="baf yellow" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Warning&lt;/a>
+&lt;a class="baf red" href="#button" 
+   onclick="if(baf_changeloadingmode(this)){
+              if(window.confirm('show class name')){alert(this.className);}
+              else{baf_changeloadingmode(this);}};">Error&lt;/a>
+          </code></pre>
+          <div class="cente">
+            <a class="baf" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Info</a>
+            <a class="baf blue" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Search</a>
+            <a class="baf cyan" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Send</a>
+            <a class="baf black" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Abort</a>
+            <br/><br/>
+            <a class="baf dark" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Open Menu</a>
+            <a class="baf green" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Success</a>
+            <a class="baf yellow" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Warning</a>
+            <a class="baf red" href="#button" onclick="if(baf_changeloadingmode(this)){if(window.confirm('show class name')){alert(this.className);}else{baf_changeloadingmode(this);}};">Error</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Disabled Buttons</h2>
+        <p>
+          Buttons can also be disabled. The traditional style used in Google Calendar displays the button with a white background and greyed out text. Add the
+          <code>disabled</code>
+          class for this style. If you'd rather keep the grey background but dim it, you can add the
+          <code>disabled2</code>
+          class.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;a href="#" class="baf disabled">Today&lt;/a>
+&lt;a href="#" class="baf disabled2">Today&lt;/a>
+          </code></pre>
+          <div class="cente">
+            <a class="baf disabled" href="#button">Today</a>
+            <a class="baf disabled2" href="#button">Today</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Disabled Buttons via Attribute</h2>
+        <p>
+          Buttons can also be disabled via
+          <code>disabled="true"</code>
+          attribute.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;a href="#" class="baf" disabled="true">Info&lt;/a>
+&lt;a href="#" class="baf blue" disabled="true">Search&lt;/a>
+&lt;a href="#" class="baf black" disabled="true">Abort&lt;/a>
+          </code></pre>
+          <div class="cente">
+            <a class="baf" disabled="true" href="#button">Info</a>
+            <a class="baf blue" disabled="true" href="#button">Search</a>
+            <a class="baf black" disabled="true" href="#button">Abort</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>3D Button Style</h2>
+        <p>
+          Give your buttons a 3d style
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="actions baf-container">
+  &lt;a class="baf dimension w120" href="#button">baf dimension&lt;/a>
+  &lt;a class="baf black dimension w120" href="#button">baf black dimension&lt;/a>&lt;br />&lt;br />
+  &lt;a class="baf blue dimension w120" href="#button">baf blue dimension&lt;/a>
+  &lt;a class="baf cyan dimension w120" href="#button">baf cyan dimension&lt;/a>&lt;br />&lt;br />
+  &lt;a class="baf yellow dimension w120" href="#button">baf yellow dimension&lt;/a>
+  &lt;a class="baf red dimension w120" href="#button">baf red dimension&lt;/a>&lt;br />&lt;br />
+  &lt;a class="baf green dimension w120" href="#button">baf green dimension&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="actions baf-container">
+              <a class="baf dimension w120" href="#button">baf dimension</a>
+              <a class="baf black dimension w120" href="#button">baf black dimension</a><br /><br />
+              <a class="baf blue dimension w120" href="#button">baf blue dimension</a>
+              <a class="baf cyan dimension w120" href="#button">baf cyan dimension</a><br /><br />
+              <a class="baf yellow dimension w120" href="#button">baf yellow dimension</a>
+              <a class="baf red dimension w120" href="#button">baf red dimension</a><br /><br />
+              <a class="baf green dimension w120" href="#button">baf green dimension</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Smaller Buttons</h2>
+        <p>
+          Default buttons too big? Shrink the text-size of the button with the
+          <code>sm</code>
+          class, or the size of the entire button with the
+          <code>mini</code>
+          class.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;a href="#" class="baf sm">Month&lt;/a>
+&lt;a href="#" class="baf mini">Month&lt;/a>
+          </code></pre>
+          <div class="cente">
+            <a class="baf sm" href="#button">Month</a>
+            <a class="baf mini" href="#button">Month</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Grouped buttons</h2>
+        <p>
+          Groups of buttons can be created by wrapping them in an element given a class of
+          <code>baf-group</code>.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a href="#" class="baf">Archive&lt;/a>
+  &lt;a href="#" class="baf">Spam&lt;/a>
+  &lt;a href="#" class="baf">Delete&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf" href="#button">Archive</a>
+              <a class="baf" href="#button">Spam</a>
+              <a class="baf" href="#button">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Mixed groups</h2>
+        <p>
+          Displaying a mixture of grouped and standalone buttons, as might be seen in a toolbar, can be done by adding another wrapping element with the class
+          <code>baf-container</code>.
+        </p>
+        <div class="example">
+          <pre class="prettyprint">
+            <code>
+&lt;div class="actions baf-container cente">
+  &lt;a class="baf" href="#button">Compose New&lt;/a>
+  &lt;div class="baf-group">
+    &lt;a class="baf" href="#button">Archive&lt;/a>
+    &lt;a class="baf" href="#button">Spam&lt;/a>
+    &lt;a class="baf" href="#button">Delete&lt;/a>
+  &lt;/div>
+  &lt;div class="baf-group minor-group">
+    &lt;a class="baf" href="#button">Move to&lt;/a>
+    &lt;a class="baf" href="#button">Labels&lt;/a>
+  &lt;/div>
+  &lt;a class="baf" href="#button">More&lt;/a>
+&lt;/div>
+            </code>
+          </pre>
+          <div class="actions baf-container cente">
+            <a class="baf" href="#button">Compose New</a>
+            <div class="baf-group">
+              <a class="baf" href="#button">Archive</a>
+              <a class="baf" href="#button">Spam</a>
+              <a class="baf" href="#button">Delete</a>
+            </div>
+            <div class="baf-group minor-group">
+              <a class="baf" href="#button">Move to</a>
+              <a class="baf" href="#button">Labels</a>
+            </div>
+            <a class="baf" href="#button">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Button Groups</h2>
+        <p>
+          Sometimes your button group should act like a series of buttons, in which selecting one button deselects the others. Add the
+          <code>toggle-buttons</code>
+          class to your
+          <code>button-group</code>
+          div to accomplish this. To set the currently selected button, use the
+          <code>checked</code>
+          class.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group toggle-buttons">
+  &lt;a class="baf">Day&lt;/a>
+  &lt;a class="baf">Week&lt;/a>
+  &lt;a class="baf checked">Month&lt;/a>
+  &lt;a class="baf">4 Days&lt;/a>
+  &lt;a class="baf">Agenda&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group toggle-buttons">
+              <label class="baf" for="rbutton1"><input type="radio" name="rbutton1" value="Day" id="rbutton1" checked="checked" />Day</label>
+              <label class="baf" for="rbutton2"><input type="radio" name="rbutton2" value="Week" id="rbutton2">Week</label>
+              <label class="baf" for="rbutton3"><input type="radio" name="rbutton3" value="Month" id="rbutton3">Month</label>
+              <label class="baf" for="rbutton4"><input type="radio" name="rbutton4" value="4Days" id="rbutton4">4Days</label>
+              <label class="baf" for="rbutton5"><input type="radio" name="rbutton5" value="Agenda" id="rbutton5">Agenda</label>
+            </div>
+          </div>
+        </div>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group toggle-buttons">
+  &lt;a class="baf mini">Day&lt;/a>
+  &lt;a class="baf mini">Week&lt;/a>
+  &lt;a class="baf mini checked">Month&lt;/a>
+  &lt;a class="baf mini">4 Days&lt;/a>
+  &lt;a class="baf mini">Agenda&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group toggle-buttons">
+              <a class="baf mini">Day</a>
+              <a class="baf mini">Week</a>
+              <a class="baf mini checked">Month</a>
+              <a class="baf mini">4 Days</a>
+              <a class="baf mini">Agenda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>rbuttonbutton Groups</h2>
+        <p>
+          Sometimes your button group should act like a series of buttons, in which selecting one button deselects the others. Add the
+          <code>toggle-buttons</code>
+          class to your
+          <code>button-group</code>
+          div to accomplish this. To set the currently selected button, use the
+          <code>checked</code>
+          class.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group toggle-buttons">
+  &lt;a class="baf">Day&lt;/a>
+  &lt;a class="baf">Week&lt;/a>
+  &lt;a class="baf checked">Month&lt;/a>
+  &lt;a class="baf">4 Days&lt;/a>
+  &lt;a class="baf">Agenda&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group toggle-buttons">
+              <span class="baf w90">Radio</span>
+              <input class="w60" name="radio" type="radio" value="Day">
+              <input class="w60" name="radio" type="radio" value="Week">
+              <input class="w60" name="radio" type="radio" value="Month">
+              <input class="w60" name="radio" type="radio" value="Year">
+              <input class="w60" name="radio" type="radio" value="Decade">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Button Groups with Arrows</h2>
+        <p>
+          If you need to show progress steps, you can use the
+          <code>arrow</code>
+          class.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group toggle-buttons arrow">
+  &lt;a class="baf" style="z-index:8">one&lt;/a>
+  &lt;a class="baf" style="z-index:7">two&lt;/a>
+  &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+  &lt;a class="baf" style="z-index:5">four&lt;/a>
+  &lt;a class="baf" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow smallarrow">
+  &lt;a class="baf" style="z-index:8">one&lt;/a>
+  &lt;a class="baf" style="z-index:7">two&lt;/a>
+  &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+  &lt;a class="baf" style="z-index:5">four&lt;/a>
+  &lt;a class="baf" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow">
+  &lt;a class="baf darkh" style="z-index:8">one&lt;/a>
+  &lt;a class="baf darkh" style="z-index:7">two&lt;/a>
+  &lt;a class="baf blueh" style="z-index:6">three&lt;/a>
+  &lt;a class="baf greyh" style="z-index:5">four&lt;/a>
+  &lt;a class="baf greyh" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow smallarrow">
+  &lt;a class="baf darkh" style="z-index:8">one&lt;/a>
+  &lt;a class="baf darkh" style="z-index:7">two&lt;/a>
+  &lt;a class="baf blueh" style="z-index:6">three&lt;/a>
+  &lt;a class="baf greyh" style="z-index:5">four&lt;/a>
+  &lt;a class="baf greyh" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow">
+  &lt;a class="baf black" style="z-index:8">one&lt;/a>
+  &lt;a class="baf black" style="z-index:7">two&lt;/a>
+  &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+  &lt;a class="baf" style="z-index:5">four&lt;/a>
+  &lt;a class="baf" style="z-index:4">five&lt;/a>
+&lt;/div>
+&lt;br>&lt;br>&lt;hr>&lt;br>
+&lt;div class="baf-group toggle-buttons arrow smallarrow">
+  &lt;a class="baf black" style="z-index:8">one&lt;/a>
+  &lt;a class="baf black" style="z-index:7">two&lt;/a>
+  &lt;a class="baf blue" style="z-index:6">three&lt;/a>
+  &lt;a class="baf" style="z-index:5">four&lt;/a>
+  &lt;a class="baf" style="z-index:4">five&lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group toggle-buttons arrow">
+              <a class="baf" style="z-index:8">one</a>
+              <a class="baf" style="z-index:7">two</a>
+              <a class="baf blue" style="z-index:6">three</a>
+              <a class="baf" style="z-index:5">four</a>
+              <a class="baf" style="z-index:4">five</a>
+            </div>
+            <br/><br/><hr/><br/>
+            <div class="baf-group toggle-buttons arrow smallarrow">
+              <a class="baf" style="z-index:8">one</a>
+              <a class="baf" style="z-index:7">two</a>
+              <a class="baf blue" style="z-index:6">three</a>
+              <a class="baf" style="z-index:5">four</a>
+              <a class="baf" style="z-index:4">five</a>
+            </div>
+            <br/><br/><hr/><br/>
+            <div class="baf-group toggle-buttons arrow">
+              <a class="baf darkh" style="z-index:8">one</a>
+              <a class="baf darkh" style="z-index:7">two</a>
+              <a class="baf blueh" style="z-index:6">three</a>
+              <a class="baf greyh" style="z-index:5">four</a>
+              <a class="baf greyh" style="z-index:4">five</a>
+            </div>
+            <br/><br/><hr/><br/>
+            <div class="baf-group toggle-buttons arrow smallarrow">
+              <a class="baf darkh" style="z-index:8">one</a>
+              <a class="baf darkh" style="z-index:7">two</a>
+              <a class="baf blueh" style="z-index:6">three</a>
+              <a class="baf greyh" style="z-index:5">four</a>
+              <a class="baf greyh" style="z-index:4">five</a>
+            </div>
+            <br/><br/><hr/><br/>
+            <div class="baf-group toggle-buttons arrow">
+              <a class="baf black" style="z-index:8">one</a>
+              <a class="baf black" style="z-index:7">two</a>
+              <a class="baf blue" style="z-index:6">three</a>
+              <a class="baf" style="z-index:5">four</a>
+              <a class="baf" style="z-index:4">five</a>
+            </div>
+            <br/><br/><hr/><br/>
+            <div class="baf-group toggle-buttons arrow smallarrow">
+              <a class="baf black" style="z-index:8">one</a>
+              <a class="baf black" style="z-index:7">two</a>
+              <a class="baf blue" style="z-index:6">three</a>
+              <a class="baf" style="z-index:5">four</a>
+              <a class="baf" style="z-index:4">five</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Buttons with icons only</h2>
+        <p>
+          Create a button with only an icon (no text) by adding the
+          <code>no-text</code>
+          class, along with one of the nested icon classes below.
+        </p>
+        <div class="example">
+          <pre class="prettyprint">
+            <code>
+&lt;a class="baf no-text">
+  &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe091;">&lt;/span>
+&lt;/a>
+&lt;a class="baf red no-text">
+  &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe05f;">&lt;/span>
+&lt;/a>
+            </code>
+          </pre>
+          <div class="cente">
+            <a class="baf no-text">
+              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe091;"></span>
+            </a>
+            <a class="baf red no-text">
+              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe05f;"></span>
+            </a>
+          </div>
+        </div>
+        <p>Or group them together, just like Gmail's paginator.</p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf no-text">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe0aa;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf no-text">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe0a6;">&lt;/span>
+  &lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf no-text">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0aa;"></span>
+              </a>
+              <a class="baf no-text">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0a6;"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <p>You can even mix and match with the disabled state.</p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf no-text disabled2">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe0aa;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf no-text">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe0a6;">&lt;/span>
+  &lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf no-text disabled2">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0aa;"></span>
+              </a>
+              <a class="baf no-text">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0a6;"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Mini paginator buttons</h2>
+        <p>
+          You can create tiny Buttons too by adding the
+          <code>xs pg bw</code>
+          and
+          <code>xs pg fw</code>
+          classes.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf xs-no-text">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe0a2;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf xs-no-text">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe0a0;">&lt;/span>
+  &lt;/a>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf xs-no-text">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0a2;"></span>
+              </a>
+              <a class="baf xs-no-text">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0a0;"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Buttons with text and icon</h2>
+        <p>
+          A range of icons can be added (only for links and buttons) by adding a code for
+          <code>data-icon</code>.
+          The full list is available in the editor.
+        </p>
+        <div class="example">
+          <pre class="prettyprint"><code>
+&lt;a class="baf">
+&lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe049;">&amp;nbsp;&lt;/span>
+Search&lt;/a>
+          </code></pre>
+          <div class="cente">
+            <a class="baf">
+              <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe049;">&nbsp;</span>
+              Search</a>
+          </div>
+        </div>
+        <div class="example">
+          <table class="cente">
+            <thead>
+              <tr>
+                <th>data-icon</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tr>
+              <td><code>&amp;#xe094;</code></td>
+              <td>
+                <a href="#button" class="baf">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;">&nbsp;</span>
+                  Add Item</a></td>
+            </tr>
+            <tr>
+              <td><code>&amp;#xe0aa;</code></td>
+              <td>
+                <a href="#button" class="baf">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0aa;">&nbsp;</span>
+                  Back</a></td>
+            </tr>
+            <tr>
+              <td><code>&amp;#xe0a6;</code></td>
+              <td><a href="#button" class="baf">Forward
+                  &nbsp;&nbsp;<span class="baf-icomoon" aria-hidden="true" data-icon="&#xe0a6;"></span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td><code>&amp;#xe098;</code></td>
+              <td>
+                <a href="#button" class="baf">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe098;">&nbsp;</span>
+                  Remove Item</a></td>
+            </tr>
+            <tr>
+              <td><code>&amp;#xe049;</code></td>
+              <td>
+                <a href="#button" class="baf">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe049;">&nbsp;</span>
+                  Search</a></td>
+            </tr>
+            <tr>
+              <td><code>&amp;#xe040;</code></td>
+              <td>
+                <a href="#button" class="baf">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe040;">&nbsp;</span>
+                  Settings</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Button dropdowns</h2>
+        <p>
+          Create buttons with dropdown menus, just like Google Docs, easily. We'll use Twitter Bootstrap's javascript to make it happen.
+        </p>
+        <div class="example" style="position:relative">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-container">
+  &lt;div class="baf-group">
+    &lt;a class="baf dropdown-toggle w160">
+      Dropdown Menu
+      &lt;span class="caret">&lt;/span>
+    &lt;/a>
+    &lt;ul class="dropdown-menu">
+      &lt;li>&lt;a href="#">Document&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Presentation&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Spreadsheet&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Form&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+&lt;hr/>
+&lt;div class="baf-container">
+  &lt;div class="baf-group">
+    &lt;a class="baf red dropdown-toggle w160">
+      Dropdown Menu red
+      &lt;span class="caret">&lt;/span>
+    &lt;/a>
+    &lt;ul class="dropdown-menu">
+      &lt;li>&lt;a href="#">Document&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Presentation&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Spreadsheet&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Form&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+&lt;hr/>
+&lt;div class="baf-container">
+  &lt;div class="baf-group">
+    &lt;a class="baf green dropdown-toggle w160">
+      Dropdown Menu green
+      &lt;span class="caret">&lt;/span>
+    &lt;/a>
+    &lt;ul class="dropdown-menu">
+      &lt;li>&lt;a href="#">Document&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Presentation&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Spreadsheet&lt;/a>&lt;/li>
+      &lt;li>
+        &lt;a href="#">Form&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+&lt;hr/>
+&lt;div class="baf-container">
+  &lt;div class="baf-group">
+    &lt;a class="baf blue dropdown-toggle w160">
+      Dropdown Menu blue
+      &lt;span class="caret">&lt;/span>
+    &lt;/a>
+    &lt;ul class="dropdown-menu">
+      &lt;li>&lt;a href="#">Document&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Presentation&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Spreadsheet&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#">Form&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf dropdown-toggle w160">
+                  Dropdown Menu
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Document</a></li>
+                  <li><a href="#">Presentation</a></li>
+                  <li><a href="#">Spreadsheet</a></li>
+                  <li><a href="#">Form</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr/>
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf red dropdown-toggle w160">
+                  Dropdown Menu red
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Document</a></li>
+                  <li><a href="#">Presentation</a></li>
+                  <li><a href="#">Spreadsheet</a></li>
+                  <li><a href="#">Form</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr/>
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf green dropdown-toggle w160">
+                  Dropdown Menu green
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Document</a></li>
+                  <li><a href="#">Presentation</a></li>
+                  <li><a href="#">Spreadsheet</a></li>
+                  <li>
+                    <a href="#">Form</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr/>
+            <div class="baf-container">
+              <div class="baf-group">
+                <a class="baf blue dropdown-toggle w160">
+                  Dropdown Menu blue
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Document</a></li>
+                  <li><a href="#">Presentation</a></li>
+                  <li><a href="#">Spreadsheet</a></li>
+                  <li><a href="#">Form</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <p>We can even create fancy split-button dropdowns in color with icons and dividers!</p>
+        <div class="example" style="position:relative">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf blue">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe03f;">&amp;nbsp;&lt;/span>
+    Add User&lt;/a>
+  &lt;a class="baf blue dropdown-toggle">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>
+      &lt;a href="#">
+        &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe096;">&lt;/span>
+        Action&lt;/a>&lt;/li>
+    &lt;li>
+      &lt;a href="#">
+        &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe097;">&lt;/span>
+        Another Action&lt;/a>&lt;/li>
+    &lt;li>
+      &lt;a href="#">
+        &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe088;">&lt;/span>
+        Something else here&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>
+      &lt;a href="#">
+        &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe07c;">&lt;/span>
+        Separated link&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf blue">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe03f;">&nbsp;</span>
+                Add User</a>
+              <a class="baf blue dropdown-toggle">
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">
+                    <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe096;"></span>
+                    Action</a></li>
+                <li>
+                  <a href="#">
+                    <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe097;"></span>
+                    Another Action</a></li>
+                <li>
+                  <a href="#">
+                    <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe088;"></span>
+                    Something else here</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe07c;"></span>
+                    Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Input fields</h2>
+        <p>With the same style, we can make cool number input forms
+          <br/>try the arrow keys, the plus and minus keys and buttons
+          <br/>and the mousewheel to increase/decrease the value</p>
+        <div class="example" style="position:relative">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf blue" 
+     onmousedown="baf_keepCalling=true; baf_plusone('intinput', 400);" 
+     onmouseout="baf_keepCalling=false;" 
+     onmouseup="baf_keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf blue" 
+     onmousedown="baf_keepCalling=true; baf_minusone('intinput', 400);" 
+     onmouseout="baf_keepCalling=false;" 
+     onmouseup="baf_keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
+  &lt;/a>
+  &lt;input id="intinput" max="100" min="0" name="quantity" 
+         onkeydown="baf_changeValues(this);" 
+         type="number" value="42"/>
+  &lt;a class="baf blue dropdown-toggle">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>&lt;a href="javascript:$id('intinput').value=0;">0&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('intinput').value=25;">25&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('intinput').value=50;">50&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('intinput').value=75;">75&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('intinput').value=100;">100&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_plusone('intinput', 400, 60);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
+              </a>
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_minusone('intinput', 400, 60);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
+              </a>
+              <input id="intinput" max="100" min="0" name="quantity" onkeydown="baf_changeValues(this);" type="number" value="42"/>
+              <a class="baf blue dropdown-toggle">
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:$id('intinput').value=0;">0</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:$id('intinput').value=25;">25</a></li>
+                <li><a href="javascript:$id('intinput').value=50;">50</a></li>
+                <li><a href="javascript:$id('intinput').value=75;">75</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:$id('intinput').value=100;">100</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Input Range fields</h2>
+        <p>you can even make range-style numeric textfields</p>
+        <div class="example" style="position:relative;">
+          <pre class="prettyprint"><code>
+&lt;div class="baf-group">
+  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; 
+                                      baf_plusone('rangeinput1', 400, 60, 1);" 
+                      onmouseout="baf_keepCalling=false;" 
+                      onmouseup="baf_keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf blue" onmousedown="baf_keepCalling=true; 
+                                      baf_minusone('rangeinput1', 400, 60, 1);" 
+                      onmouseout="baf_keepCalling=false;" 
+                      onmouseup="baf_keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
+  &lt;/a>
+  &lt;div class="bafslider baf blue">
+    &lt;input name="rangeinput1" id="rangeinput1" max="20" min="0" type="text" 
+           title="Range: 0 to 20 in steps of 1" value="10" maxlength="6" onchange="">
+  &lt;/div>
+  &lt;a class="baf blue dropdown-toggle">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=5; 
+                 fdSlider.updateSlider('rangeinput1');">5&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=7; 
+                 fdSlider.updateSlider('rangeinput1');">7&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=10; 
+                 fdSlider.updateSlider('rangeinput1');">10&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=13; 
+                 fdSlider.updateSlider('rangeinput1');">13&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput1').value=15; 
+                 fdSlider.updateSlider('rangeinput1');">15&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+&lt;br />
+&lt;div class="cente">
+&lt;div class="baf-group">
+  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; 
+                                        baf_plusone('rangeinput3', 160, 1, 1);" 
+                        onmouseout="baf_keepCalling=false;" 
+                        onmouseup="baf_keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe094;">&lt;/span>
+  &lt;/a>
+  &lt;a class="baf yellow" onmousedown="baf_keepCalling=true; 
+                                        baf_minusone('rangeinput3', 160, 1, 1);" 
+                        onmouseout="baf_keepCalling=false;" 
+                        onmouseup="baf_keepCalling=false;">
+    &lt;span class="baf-icomoon" aria-hidden="true" data-icon="&amp;#xe095;">&lt;/span>
+  &lt;/a>
+  &lt;div class="bafslider baf yellow">
+    &lt;input name="rangeinput3" id="rangeinput3" max="360" min="0" type="text" 
+           title="Range: 0 to 360 in steps of 1" value="180" maxlength="6" onchange="">
+  &lt;/div>
+&lt;/div>
+&lt;br />
+&lt;div class="baf-group">
+  &lt;span class="baf" onclick="$id('rangeinput2box').style.width='200px'; 
+                             window.setTimeout(fdSlider.updateSlider, 1000, 'rangeinput2');">
+    &lt;span class="baf-icomoon bigger" aria-hidden="true" data-icon="&amp;#xe041;">
+      &amp;nbsp;&lt;/span> Range Input
+  &lt;/span>
+  &lt;div class="bafslider baf" id="rangeinput2box" style="width:0px;">
+    &lt;input name="rangeinput2" id="rangeinput2" max="100" min="0" type="text" 
+           title="Range: 0 to 100 in steps of 1" value="50" maxlength="6">
+  &lt;/div>
+  &lt;a class="baf dropdown-toggle">
+    &lt;span class="caret">&lt;/span>
+  &lt;/a>
+  &lt;ul class="dropdown-menu">
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=0; 
+                 fdSlider.updateSlider('rangeinput2');">0&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=25; 
+                 fdSlider.updateSlider('rangeinput2');">25&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=50; 
+                 fdSlider.updateSlider('rangeinput2');">50&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=75; 
+                 fdSlider.updateSlider('rangeinput2');">75&lt;/a>&lt;/li>
+    &lt;li class="divider">&lt;/li>
+    &lt;li>&lt;a href="javascript:$id('rangeinput2').value=100; 
+                 fdSlider.updateSlider('rangeinput2');">100&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+          </code></pre>
+          <div class="cente">
+            <div class="baf-group">
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput1', 400, 60, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
+              </a>
+              <a class="baf blue" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput1', 400, 60, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
+                <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
+              </a>
+              <div class="bafslider baf blue">
+                <input name="rangeinput1" id="rangeinput1" max="20" min="0" type="text" title="Range: 0 to 20 in steps of 1" value="10" maxlength="6" onchange="">
+              </div>
+              <a class="baf blue dropdown-toggle">
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:$id('rangeinput1').value=5; fdSlider.updateSlider('rangeinput1');">5</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:$id('rangeinput1').value=7; fdSlider.updateSlider('rangeinput1');">7</a></li>
+                <li><a href="javascript:$id('rangeinput1').value=10; fdSlider.updateSlider('rangeinput1');">10</a></li>
+                <li><a href="javascript:$id('rangeinput1').value=13; fdSlider.updateSlider('rangeinput1');">13</a></li>
+                <li class="divider"></li>
+                <li><a href="javascript:$id('rangeinput1').value=15; fdSlider.updateSlider('rangeinput1');">15</a></li>
+              </ul>
+            </div>
+            <br />
+            <div class="cente">
+              <div class="baf-group">
+                <a class="baf yellow" onmousedown="baf_keepCalling=true; baf_plusone('rangeinput3', 160, 1, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe094;"></span>
+                </a>
+                <a class="baf yellow" onmousedown="baf_keepCalling=true; baf_minusone('rangeinput3', 160, 1, 1);" onmouseout="baf_keepCalling=false;" onmouseup="baf_keepCalling=false;">
+                  <span class="baf-icomoon" aria-hidden="true" data-icon="&#xe095;"></span>
+                </a>
+                <div class="bafslider baf yellow">
+                  <input name="rangeinput3" id="rangeinput3" max="360" min="0" type="text" title="Range: 0 to 360 in steps of 1" value="180" maxlength="6" onchange="">
+                </div>
+              </div>
+              <br />
+              <div class="baf-group">
+                <span class="baf" onclick="$id('rangeinput2box').style.width='200px'; window.setTimeout(fdSlider.updateSlider, 1000, 'rangeinput2');">
+                  <span class="baf-icomoon bigger" aria-hidden="true" data-icon="&#xe041;">&nbsp;</span> Range Input
+                </span>
+                <div class="bafslider baf" id="rangeinput2box" style="width:0px;">
+                  <input name="rangeinput2" id="rangeinput2" max="100" min="0" type="text" title="Range: 0 to 100 in steps of 1" value="50" maxlength="6">
+                </div>
+                <a class="baf dropdown-toggle">
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="javascript:$id('rangeinput2').value=0; fdSlider.updateSlider('rangeinput2');">0</a></li>
+                  <li class="divider"></li>
+                  <li><a href="javascript:$id('rangeinput2').value=25; fdSlider.updateSlider('rangeinput2');">25</a></li>
+                  <li><a href="javascript:$id('rangeinput2').value=50; fdSlider.updateSlider('rangeinput2');">50</a></li>
+                  <li><a href="javascript:$id('rangeinput2').value=75; fdSlider.updateSlider('rangeinput2');">75</a></li>
+                  <li class="divider"></li>
+                  <li><a href="javascript:$id('rangeinput2').value=100; fdSlider.updateSlider('rangeinput2');">100</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <p>
+          in a form you need more than buttons, you need textfields
+        </p>
+        <div class="example" style="position:relative">
+          <pre class="prettyprint"><code>
+&lt;div class="input-prepend baf-input cente">
+  &lt;label class="baf add-on w90" for="inputdefault" id="default">default&lt;/label>
+  &lt;input class="" id="inputdefault" name="default" size="16" type="text"/>
+  &lt;br/>
+  &lt;label class="baf black add-on w90" for="inputdefault2" id="default2">default2&lt;/label>
+  &lt;input class="" id="inputdefault2" name="default2" size="16" type="text"/>
+  &lt;br/>
+  &lt;label class="baf cyan add-on w90" for="inputfile" id="file">
+    &lt;span class="baf-icomoon" aria-hidden="true" 
+          data-icon="&amp;#xe081;">&amp;nbsp;&lt;/span>file&lt;/label>
+  &lt;input class="input-cyan" id="inputfile" name="file" size="16" type="text"/>
+  &lt;br/>
+  &lt;label class="baf blue add-on w90" for="inputemail" id="email">
+    &lt;span class="baf-icomoon" aria-hidden="true" 
+          data-icon="&amp;#xe02f;">&amp;nbsp;&lt;/span>email&lt;/label>
+  &lt;input class="" id="inputemail" name="email" size="16" type="text"/>
+  &lt;br/>
+  &lt;label class="baf green add-on w90" for="inputuser" id="user">
+    &lt;span class="baf-icomoon" aria-hidden="true" 
+          data-icon="&amp;#xe03f;">&amp;nbsp;&lt;/span>name&lt;/label>
+  &lt;input class="input-green" id="inputuser" name="user" size="16" type="text"/>
+  &lt;br/>
+  &lt;label class="baf yellow add-on w90" for="inputkey" id="key">
+    &lt;span class="baf-icomoon" aria-hidden="true" 
+          data-icon="&amp;#xe046;">&amp;nbsp;&lt;/span>key&lt;/label>
+  &lt;input class="input-yellow" id="inputkey" name="key" size="16" type="text"/>
+  &lt;br/>
+  &lt;label class="baf red add-on w90" for="inputwrong" id="wrong">
+    &lt;span class="baf-icomoon" aria-hidden="true" 
+          data-icon="&amp;#xe08c;">&amp;nbsp;&lt;/span>wrong&lt;/label>
+  &lt;input class="input-red" id="inputwrong" name="wrong" size="16" type="text"/>
+  &lt;br/>
+&lt;/div>
+          </code></pre>
+          <div class="input-prepend baf-input cente"><label class="baf add-on w90" for="inputdefault" id="default">default</label><input class="" id="inputdefault" name="default" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente">
+            <label class="baf black add-on w90" for="inputdefault2" id="default2">default2</label><input class="" id="inputdefault2" name="default2" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf cyan add-on w90" for="inputfile" id="file"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe081;">&nbsp;</span>file</label><input class="input-cyan" id="inputfile" name="file" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf blue add-on w90" for="inputemail" id="email"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe02f;">&nbsp;</span>email</label><input class="" id="inputemail" name="email" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf green add-on w90" for="inputuser" id="user"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe03f;">&nbsp;</span>name</label><input class="input-green" id="inputuser" name="user" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf yellow add-on w90" for="inputkey" id="key"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe046;">&nbsp;</span>key</label><input class="input-yellow" id="inputkey" name="key" onkeyup="" size="16" type="text"/></div>
+          <div class="input-prepend baf-input cente"><label class="baf red add-on w90" for="inputwrong" id="wrong"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe08c;">&nbsp;</span>wrong</label><input class="input-red" id="inputwrong" name="wrong" onkeyup="" size="16" type="text"/></div>
+        </div>
+      </div>
+      <div class="section">
+        <p>
+          and of course textareas
+        </p>
+        <div class="example" style="position:relative">
+          <pre class="prettyprint"><code>
+&lt;div class="textarea" style="float: left; margin: 20px; width: 190px;">
+  &lt;label class="baf add-on w90" for="" id="">one&lt;/label>
+  &lt;textarea class="" id="" name="" onkeyup="" size="16" type="text">&lt;/textarea>
+&lt;/div>
+
+&lt;div class="textarea" style="float: left; margin: 20px; width: 190px;">
+  &lt;label class="baf add-on w90" for="" id="">two&lt;/label>
+  &lt;textarea class="" id="" name="" onkeyup="" size="16" type="text">&lt;/textarea>
+&lt;/div>
+
+&lt;div class="textarea" style="float: left; margin: 20px; width: 190px;">
+  &lt;label class="baf add-on w90" for="" id="">three&lt;/label>
+  &lt;textarea class="" id="" name="" onkeyup="" size="16" type="text">&lt;/textarea>
+&lt;/div>
+
+&lt;div class="textarea">
+  &lt;label class="baf add-on w90" for="defaulttextarea" id="defaultt1">default&lt;/label>
+  &lt;textarea class="" id="defaulttextarea" name="defaulttextarea" onkeyup="" 
+            size="16" type="text">&lt;/textarea>
+&lt;/div>
+&lt;br/>
+
+&lt;div class="textarea">
+  &lt;label class="baf black add-on w90" for="blacktextarea" id="defaultt2">black&lt;/label>
+  &lt;textarea class="" id="blacktextarea" name="blacktextarea" onkeyup="" 
+            size="16" type="text"/>&lt;/textarea>
+&lt;/div>
+&lt;br/>
+
+&lt;div class="textarea">
+  &lt;label class="baf blue add-on w90" for="blacktextarea" id="defaultt3">blue&lt;/label>
+  &lt;textarea class="" id="bluetextarea" name="bluetextarea" onkeyup="" 
+            size="16" type="text"/>&lt;/textarea>
+&lt;/div>
+&lt;br/>
+
+&lt;div class="textarea">
+  &lt;label class="baf red add-on w90" for="redtextarea" id="defaultt4">red&lt;/label>
+  &lt;textarea class="" id="redtextarea" name="redtextarea" onkeyup="" 
+            size="16" type="text"/>&lt;/textarea>
+&lt;/div>
+&lt;br/>
+          </code></pre>
+          <div class="input-prepend baf-input cente">
+            <div class="textarea" style="float: left; margin: 20px; width: 190px;"><label class="baf add-on w90" for="" id="">
+              one
+            </label><textarea class="" id="" name="" onkeyup="" size="16" type="text"></textarea></div>
+            <div class="textarea" style="float: left; margin: 20px; width: 190px;"><label class="baf add-on w90" for="" id="">
+              two
+            </label><textarea class="" id="" name="" onkeyup="" size="16" type="text"></textarea></div>
+            <div class="textarea" style="float: left; margin: 20px; width: 190px;"><label class="baf add-on w90" for="" id="">
+              three
+            </label><textarea class="" id="" name="" onkeyup="" size="16" type="text"></textarea></div>
+            <div class="textarea"><label class="baf add-on w90" for="defaulttextarea" id="defaultt1">
+              default
+            </label><textarea class="" id="defaulttextarea" name="defaulttextarea" onkeyup="" size="16" type="text"></textarea></div><br/>
+            <div class="textarea"><label class="baf black add-on w90" for="blacktextarea" id="defaultt2">
+              black
+            </label><textarea class="" id="blacktextarea" name="blacktextarea" onkeyup="" size="16" type="text"/></textarea></div><br/>
+            <div class="textarea"><label class="baf blue add-on w90" for="bluetextarea" id="defaultt3">
+              blue
+            </label><textarea class="input-blue" id="bluetextarea" name="bluetextarea" onkeyup="" size="16" type="text"/></textarea></div><br/>
+            <div class="textarea"><label class="baf red add-on w90" for="redtextarea" id="defaultt4">
+              red
+            </label><textarea class="input-red" id="redtextarea" name="redtextarea" onkeyup="" size="16" type="text"/></textarea></div><br/>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Icons for your Buttons and Forms</h2>
+        <p>
+          <b>Buttons and Forms</b> is fully compatible with the Icons from <a href="http://icomoon.io/">IcoMoon</a>. You can test and configure Buttons with icons with the <a class="baf grey" href="../editor/buttons.html"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe041;"> &nbsp;</span>Buttons Editor</a> or Forms with the <a class="baf grey" href="../editor/forms.html"><span class="baf-icomoon" aria-hidden="true" data-icon="&#xe041;"> &nbsp;</span>Forms Editor</a>.
+        </p>
+      </div>
+    </div>
+    <a id="infobutton" onclick="$id('infobutton').style.display = 'none'; $id('infobox').style.display = 'block';" class="baf grey bluehover" style="margin: 60px auto 10px auto; display: block; width: 340px;">
+      <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe09b;"> &nbsp;
+      </span>show compatibility, license and version informations</a>
+    <div class="container" id="infobox">
+      <div class="section">
+        <h3>Browser compatibility</h3>
+        <p>This is being tested in the latest versions of
+          <strong>Chrome</strong>,
+          <strong>Safari</strong>,
+          <strong>Firefox</strong>
+          and
+          <strong>Opera</strong>.</p>
+      </div>
+      <div class="section">
+        <h3>License</h3>
+        <h4>Code (CSS, HTML)</h4>
+        <p><strong>The MIT License (MIT)</strong></p>
+        <p>Copyright &copy; 2013 <a href="https://github.com/todc/">Tim O'Donnell</a>,
+          <a href="https://github.com/SimonWaldherr">Simon Waldherr</a></p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        <h4>Images (Icons)</h4>
+        <h5>Glyphicons</h5>
+        <p>The following images are provided by glyphicons.com (@glyphicons) and licensed under the Creative Commons Attribution 3.0 Unported License. <a href="http://creativecommons.org/licenses/by/3.0/">creativecommons.org/licenses/by/3.0/</a>
+        </p>
+        <ul>
+          <li>glyphicons-halflings-white.png</li>
+          <li>glyphicons-halflings.png</li>
+        </ul>
+        <p>More information at:</p>
+        <ul>
+          <li><a href="http://twitter.com/glyphicons">twitter.com/glyphicons</a></li>
+          <li><a href="http://glyphicons.com/">glyphicons.com</a></li>
+        </ul>
+        <h5>Icomoon</h5>
+        <p>The following images are provided by icomoon.io (@Keyamoon) and licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. <a href="http://creativecommons.org/licenses/by-sa/3.0/">creativecommons.org/licenses/by-sa/3.0/</a>
+        </p>
+        <ul>
+          <li>icomoon-big-white.png</li>
+          <li>icomoon-big.png</li>
+          <li>icomoon-white.png</li>
+          <li>icomoon.png</li>
+        </ul>
+        <p>More information at:</p>
+        <ul>
+          <li><a href="http://twitter.com/keyamoon">twitter.com/keyamoon</a></li>
+          <li><a href="https://github.com/Keyamoon">github.com/Keyamoon</a></li>
+          <li><a href="http://icomoon.io/">icomoon.io</a></li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3>Version</h3>
+        <p>baf v. 2.0<br/>
+          05.2013</p>
+      </div>
+      <div class="section">
+        <h3>Acknowledgements</h3>
+        <p>This is a fork of
+          <a href="https://github.com/todc/">todc</a>s
+          <a href="https://github.com/todc/css3-google-buttons">css3-google-buttons</a>.<br/>
+          Inspired by Michael Henriksen&#8217;s
+          <a href="http://github.com/michenriksen/css3buttons">CSS3 Buttons</a>,
+          <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>, and of course, Google.<br/>
+          Icons from
+          <a href="http://glyphicons.com/">glyphicons.com</a> and <a href="http://icomoon.io/">icomoon.io</a><br/>
+        </p>
+      </div>
+    </div>
+    <a href="../editor/buttons.html" class="baf grey bluehover" style="margin: 20px auto 10px auto; display: block; width: 340px;">
+      <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe041;"> &nbsp;
+      </span>open the Buttons Editor</a>
+    <a href="../editor/forms.html" class="baf grey bluehover" style="margin: 10px auto 60px auto; display: block; width: 340px;">
+      <span class="baf-icomoon big" aria-hidden="true" data-icon="&#xe041;"> &nbsp;
+      </span>open the Forms Editor</a>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33526676-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

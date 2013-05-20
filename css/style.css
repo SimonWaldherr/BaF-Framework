@@ -1,0 +1,298 @@
+/*
+ *
+ * Buttons and Forms
+ *
+ * Repo: https://github.com/SimonWaldherr/buttons-and-forms
+ * Demo: http://simonwaldherr.github.com/buttons-and-forms/demo/
+ * Editor: http://simonwaldherr.github.com/buttons-and-forms/editor/
+ * License: MIT
+ * Version: 2.0
+ *
+ */
+
+html,
+body,
+div,
+form,
+p,
+code,
+pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-weight: bolder }
+h1 a { color: #09254e }
+h1 a:hover { color: #207dff }
+body {
+    font: 14px/18px sans-serif;
+    color: #444;
+    background: #DDD;
+}
+a {
+    color: #207dff;
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #1e77de;
+    text-decoration: underline;
+}
+h1 {
+    margin: 0 0 0.5em;
+    font-size: 36px;
+    font-weight: bold;
+}
+h2 {
+    margin: 0 0 0.75em;
+    font-size: 26px;
+    font-weight: bold;
+}
+h3 {
+    margin: 0 0 0.333em;
+    font-size: 20px;
+}
+h4 {
+    margin: 0 0 0.333em;
+    font-size: 16px;
+}
+h5 {
+    margin: 0 0 0.333em;
+    font-size: 14px;
+}
+p {
+    margin: 0 0 1.333em;
+    line-height: 18px;
+}
+em { font-style: italic }
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+th { font-weight: bold }
+th,
+td {
+    padding: 5px 20px 5px 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+pre,
+code {
+    font-family: monospace, sans-serif;
+    font-size: 1em;
+    color: #080;
+}
+.container {
+    position: relative;
+    overflow: visible;
+    width: 700px;
+    padding: 40px 60px;
+    border: 1px solid #AAA;
+    margin: 40px auto 20px;
+    background: #FCFCFC;
+    -webkit-box-shadow: 0 0 25px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 25px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 25px 5px rgba(0,0,0,0.1);
+    border-radius: 9px;
+}
+.container pre,
+.container .prettyprint {
+    padding: 0;
+    border: 0;
+    margin: 0 0 20px;
+    font-size: 13px;
+    background: #fff;
+}
+.ribbon {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    opacity: 0.9;
+}
+.ribbon:hover,
+.ribbon:focus,
+.ribbon:active { opacity: 1 }
+.ribbon img {
+    display: block;
+    border: 0;
+}
+.header { padding-right: 80px }
+.section { margin: 40px 0 20px }
+.example {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 10px -20px 20px;
+    border-radius: 8px;
+}
+.cente {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    margin: 20px 0 50px;
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+}
+.footer a { color: #666 }
+#table select,
+#table input,
+#table b,
+#tablesi select,
+#tablesi input,
+#tablesi b {
+    width: 90px;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px;
+    margin: 1px;
+    display: inline-table;
+    text-align: center;
+    border: 1px #ccc solid;
+}
+#listbox select,
+#listbox input,
+#listbox b,
+#listboxsi select,
+#listboxsi input,
+#listboxsi b {
+    width: 90px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 1px;
+    margin: 2px 6px;
+    display: inline-table;
+    text-align: center;
+    border: 1px #ccc solid;
+}
+#listbox b {
+    vertical-align: middle;
+    border: 0px;
+    font-size: 13pt;
+    line-height: 26px;
+    min-width: 95px;
+    text-align: right;
+    margin-right: 23px;
+    //margin-left: -50px;
+}
+thead td {
+    width: 90px;
+    text-align: center;
+}
+#code {
+    margin: 5px;
+    width: 680px;
+    max-width: 680px;
+    height: 175px;
+    max-height: 775px;
+    border-radius: 0px;
+}
+#demobox {
+    margin: 25px;
+    text-align: center;
+    height: 70px;
+    display: inline-table;
+    width: 640px;
+    border: 0;
+}
+#editor {
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+#infobox {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+}
+#tablediv { margin: 15px 0 15px 0 }
+input[type="checkbox"] {
+    left: 35px;
+    position: relative;
+}
+#list input[type="checkbox"] {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#iconselectcontainer {
+    display: none;
+    padding-bottom: 85px;
+}
+#displaymodebutton {
+    vertical-align: bottom;
+    margin: auto;
+    position: relative;
+    top: 22px;
+    left: 40%;
+}
+#selectbuttoncode { display: none }
+#tablebox,
+#listbox { overflow-x: scroll }
+#listbox li {
+    white-space: nowrap;
+    list-style: none;
+    text-align: left;
+}
+#precode { overflow-x: scroll }
+.fs1 { font-size: 2em }
+.select {
+    width: 200px;
+    position: relative;
+    left: 238px;
+    text-align: center;
+}
+[data-icon]::before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+#listbox .sort { width: 35px }
+.glyph {
+    float: left;
+    text-align: center;
+    background: #EEE;
+    padding: .75em;
+    margin: .75em 1.5em .75em 0;
+    width: 7em;
+    border-radius: .375em;
+    box-shadow: inset 0 0 0 1px white, 0 0 0 1px #CCC;
+}
+.baf.red.del {
+    padding: 6px 6px;
+    margin-left: -30px;
+}
+td .baf.red.del {
+    margin-left: 0px;
+}
+.hideme {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+}

@@ -1,0 +1,3 @@
+[submodule "repos/fd-slider"]
+	path = repos/fd-slider
+	url = git://github.com/freqdec/fd-slider.git
