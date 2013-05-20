@@ -107,7 +107,7 @@ function generateButton() {
     $id('demobox').innerHTML = output;
   } else {
     $id('democontainer').innerHTML = '<iframe id="demobox"></iframe>';
-    $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.7/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v1.7/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/></head><body>' + output + '</body></html>';
+    $id('demobox').srcdoc = '<html><head><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v2.0/baf.min.css" media="screen" rel="stylesheet" type="text/css"/><link href="http://simonwaldherr.github.com/buttons-and-forms/css/v2.0/icomoon.min.css" media="screen" rel="stylesheet" type="text/css"/><script src="http://simonwaldherr.github.com/buttons-and-forms/repos/fd-slider/js/fd-slider.min.js"></script><script src="http://simonwaldherr.github.com/buttons-and-forms/js/baf.js"></script></head><body>' + output + '</body></html>';
   }
 
   var reg = new Array(new RegExp('><div', "gi"),
