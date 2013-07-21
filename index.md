@@ -20,4 +20,4 @@ The complete code is licensed under the terms of the [MIT-License](https://githu
 
 ##Version
 
-This is Version 1.8 of [Buttons and Forms](https://github.com/SimonWaldherr/buttons-and-forms)
+This is Version 2.0.1 of [Buttons and Forms](https://github.com/SimonWaldherr/buttons-and-forms)

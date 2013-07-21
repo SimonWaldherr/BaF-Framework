@@ -1,0 +1,41 @@
+{
+  "name": "bafframework",
+  "title": "BaF-Framework",
+  "description": "HTML buttons and forms (since baf 2.0)",
+  "version": "2.0.1",
+  "homepage": "http://selfcss.org/baf/",
+  "author": {
+    "name": "Simon Waldherr",
+    "email": "contact@simonwaldherr.de",
+    "url": "http://simon.waldherr.eu/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonWaldherr/BaF-Framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SimonWaldherr/BaF-Framework/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://simon.waldherr.eu/license/mit/"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": ">= 0.4.1",
+    "grunt-contrib-concat": ">= 0.3.0",
+    "grunt-contrib-uglify": ">= 0.2.2",
+    "grunt-contrib-cssmin": ">= 0.6.0",
+    "gzip-js": ">= 0.3.1"
+  },
+  "keywords": [
+    "css",
+    "button",
+    "form",
+    "framework",
+    "css3",
+    "html5"
+  ]
+}
