@@ -1,6 +1,6 @@
 #Buttons and Forms
 
-the [buttons and forms](https://github.com/SimonWaldherr/buttons-and-forms) **CSS3** styles collection is the easiest way, to make **buttons** and **forms** on webpages look great. It's based on the wonderfull code from [Tim O'Donnell](http://timodonnell.com/) and improved by [Simon Waldherr](http://simon.waldherr.eu/). The complete code is licensed under the terms of the **MIT-License**, which allows you to use and to change everything for **free**.
+the [buttons and forms](https://github.com/SimonWaldherr/BaF-Framework/) **CSS3** styles collection is the easiest way, to make **buttons** and **forms** on webpages look great. It's based on the wonderfull code from [Tim O'Donnell](http://timodonnell.com/) and improved by [Simon Waldherr](http://simon.waldherr.eu/). The complete code is licensed under the terms of the **MIT-License**, which allows you to use and to change everything for **free**.
 
 ##Browser compatibility
 
@@ -9,7 +9,7 @@ This is being tested in the latest versions of **Chrome**, **Safari**, **Firefox
 
 ##Demo
 
-<http://simonwaldherr.github.com/buttons-and-forms/>
+<http://selfcss.org/baf/>
 
 
 ##License
