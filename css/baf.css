@@ -172,6 +172,8 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 13px;
 }
@@ -244,6 +246,8 @@ textarea {
   border: 1px solid #dcdcdc;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border-radius: 6px;
   background-color: #f3f3f3;
   background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
@@ -256,13 +260,16 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f1f1f1', GradientType=0);
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
+  -ms-background-clip: padding;
+  -o-background-clip: padding;
   background-clip: padding;
   
-  -webkit-user-select: none; 
-  -khtml-user-select: none; 
-  -moz-user-select: none; 
-  -o-user-select: none; 
-  user-select: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   /* IE hacks */
   zoom: 1;
   z-index: 1;
@@ -356,6 +363,8 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f1f1f1', GradientType=0);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 100;
   outline: none;
@@ -373,6 +382,8 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#f1f1f1', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -396,6 +407,8 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#e0e0e0', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -427,6 +440,8 @@ textarea {
   text-shadow: 0 1px rgba(55, 55, 55, 0.3);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #c9c9c9; /* Old browsers */
   background: -moz-linear-gradient(left, #c9c9c9 0%, #f9f9f9 60%, #ededed 100%); /* FF3.6+ */
@@ -441,6 +456,8 @@ textarea {
 .baf.greyh:active, .baf.greyh.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -475,6 +492,8 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#c53727', GradientType=0);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -490,6 +509,8 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#b0281a', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -515,6 +536,8 @@ textarea {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background-color: #4387f5;
   background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
@@ -530,6 +553,8 @@ textarea {
 .baf.blue:active, .baf.blue.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -554,6 +579,8 @@ textarea {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #499bea; /* Old browsers */
   background: -moz-linear-gradient(left, #499bea 0%, #499bea 51%, #207ce5 100%); /* FF3.6+ */
@@ -568,6 +595,8 @@ textarea {
 .baf.blueh:active, .baf.blueh.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -590,6 +619,8 @@ textarea {
   border: 1px solid #232323;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #45484d; /* Old browsers */
   background: -moz-linear-gradient(top, #45484d 0%, #191919 70%, #2b2b2b 100%); /* FF3.6+ */
@@ -604,6 +635,8 @@ textarea {
 .baf.dark:active, .baf.dark.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -626,6 +659,8 @@ textarea {
   border: 1px solid #232323;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: #45484d; /* Old browsers */
   background: -moz-linear-gradient(left, #45484d 0%, #232323 100%); /* FF3.6+ */
@@ -640,6 +675,8 @@ textarea {
 .baf.darkh:active, .baf.darkh.active {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -665,6 +702,8 @@ textarea {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background-color: #2ba142;
   background-image: -moz-linear-gradient(top, #35aa47, #1d943b);
@@ -689,6 +728,8 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#35aa47', endColorstr='#088728', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -904,6 +945,8 @@ textarea {
   padding: 4px 10px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border-radius: 6px;
 }
 
@@ -973,6 +1016,8 @@ textarea {
 .input-prepend .add-on, .input-append .add-on, .input-prepend .btn, .input-append .btn {
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
 }
 
@@ -991,6 +1036,8 @@ textarea {
   width: 100%;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
   padding: 5px;
   margin-left: -6px;
@@ -1000,6 +1047,7 @@ textarea {
 .baf-group .baf input[type="radio"] {
   -webkit-appearance: initial;
   -moz-appearance: initial;
+  -ms-appearance: initial;
   -o-appearance: initial;
 }
 
@@ -1039,10 +1087,15 @@ input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditabl
 .baf-group > input[type="checkbox"], .baf-group > input[type="radio"] {
   height: 28px;
   border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   vertical-align: text-top;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
   border: 1px solid #333;
   margin-left: -5px;
 }
@@ -1052,6 +1105,9 @@ input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditabl
   color: #FFFFFF;
   box-shadow: inset 0px 0px 25px 10px #000000;
   -webkit-box-shadow: inset 0px 0px 25px 10px #000000;
+  -moz-box-shadow: inset 0px 0px 25px 10px #000000;
+  -ms-box-shadow: inset 0px 0px 25px 10px #000000;
+  -o-box-shadow: inset 0px 0px 25px 10px #000000;
   padding-left: 10px;
 }
 
@@ -1079,6 +1135,7 @@ input:active, input:focus, textarea:active, textarea:focus{
   border-color: #4B8CF7;
   -webkit-box-shadow:  0px 0px 5px 1px #4B8CF7;
   -moz-box-shadow:  0px 0px 5px 1px #4B8CF7;
+  -ms-box-shadow:  0px 0px 5px 1px #4B8CF7;
   -o-box-shadow:  0px 0px 5px 1px #4B8CF7;
   box-shadow:  0px 0px 5px 1px #4B8CF7;
 }
@@ -1087,6 +1144,7 @@ input:active, input:focus, textarea:active, textarea:focus{
   border-color: #4B8CF7;
   -webkit-box-shadow:  0px 0px 5px 1px #4B8CF7;
   -moz-box-shadow:  0px 0px 5px 1px #4B8CF7;
+  -ms-box-shadow:  0px 0px 5px 1px #4B8CF7;
   -o-box-shadow:  0px 0px 5px 1px #4B8CF7;
   box-shadow:  0px 0px 5px 1px #4B8CF7;
   -webkit-transition: all 0.2s linear;
@@ -1101,6 +1159,7 @@ input:active, input:focus, textarea:active, textarea:focus{
   border-color: #46B8DA;
   -webkit-box-shadow:  0px 0px 5px 1px #46B8DA;
   -moz-box-shadow:  0px 0px 5px 1px #46B8DA;
+  -ms-box-shadow:  0px 0px 5px 1px #46B8DA;
   -o-box-shadow:  0px 0px 5px 1px #46B8DA;
   box-shadow:  0px 0px 5px 1px #46B8DA;
   -webkit-transition: all 0.2s linear;
@@ -1116,6 +1175,7 @@ input:active, input:focus, textarea:active, textarea:focus{
   border: 1px solid #359947;
   -webkit-box-shadow:  0px 0px 5px 1px #359947;
   -moz-box-shadow:  0px 0px 5px 1px #359947;
+  -ms-box-shadow:  0px 0px 5px 1px #359947;
   -o-box-shadow:  0px 0px 5px 1px #359947;
   box-shadow:  0px 0px 5px 1px #359947;
   -webkit-transition: all 0.2s linear;
@@ -1130,6 +1190,7 @@ input:active, input:focus, textarea:active, textarea:focus{
   border-color: #FAA328;
   -webkit-box-shadow:  0px 0px 5px 1px #FAA328;
   -moz-box-shadow:  0px 0px 5px 1px #FAA328;
+  -ms-box-shadow:  0px 0px 5px 1px #FAA328;
   -o-box-shadow:  0px 0px 5px 1px #FAA328;
   box-shadow:  0px 0px 5px 1px #FAA328;
   -webkit-transition: all 0.2s linear;
@@ -1144,6 +1205,7 @@ input:active, input:focus, textarea:active, textarea:focus{
   border-color: #ff3333;
   -webkit-box-shadow:  0px 0px 5px 1px #ff3333;
   -moz-box-shadow:  0px 0px 5px 1px #ff3333;
+  -ms-box-shadow:  0px 0px 5px 1px #ff3333;
   -o-box-shadow:  0px 0px 5px 1px #ff3333;
   box-shadow:  0px 0px 5px 1px #ff3333;
   -webkit-transition: all 0.2s linear;
@@ -1162,6 +1224,8 @@ input:active, input:focus, textarea:active, textarea:focus{
   margin-left: -6px;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
   border-color: grey;
 }
@@ -1182,6 +1246,8 @@ input:active, input:focus, textarea:active, textarea:focus{
   min-width: 5px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   border-radius: 6px;
 }
 
@@ -1209,6 +1275,8 @@ input:active, input:focus, textarea:active, textarea:focus{
   margin-left: -1px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
 }
 
