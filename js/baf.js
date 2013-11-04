@@ -454,12 +454,17 @@ function baf_eventddclose() {
   };
 }
 
-var baf_dropdown = function () {
+var baf_dropdown = function (e) {
   'use strict';
   baf_eventddclose();
-  window.setTimeout(function (ele) {
-    ele.offsetParent.className  +=  " open";
-    baf_dd_status = true;
+  e = e || window.event;
+  window.setTimeout(function () {
+    var target;
+    if(e !== undefined) {
+      target = e.target || e.srcElement;
+      target.offsetParent.className  +=  " open";
+      baf_dd_status = true;
+    }
   }, 10, this);
 };
 
@@ -474,7 +479,11 @@ function baf_listenerInit() {
     if ((typeof classn === 'string')) {
       if (classn.length > 3) {
         if (classn.search("dropdown-toggle") !== -1) {
-          bafele.dd[i].addEventListener("click", baf_dropdown, false);
+          if (bafele.dd[i].addEventListener){
+            bafele.dd[i].addEventListener("click", baf_dropdown, false);
+          } else if (el.attachEvent){
+            bafele.dd[i].attachEvent('onclick', baf_dropdown);
+          }
         }
         if ((classn.search("range-slider") !== -1) && (bafele.dd[i].tagName.toLowerCase() === 'input')) {
           rangeSlider[i] = bafele.dd[i].id;
