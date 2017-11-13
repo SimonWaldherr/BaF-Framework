@@ -1,18 +1,22 @@
-#Buttons and Forms
+# Buttons and Forms
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/bpWGS5JKXiHEB18kfHGr1x3q/SimonWaldherr/BaF-Framework'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/bpWGS5JKXiHEB18kfHGr1x3q/SimonWaldherr/BaF-Framework.svg' />
+</a>
 
 the [buttons and forms](https://github.com/SimonWaldherr/BaF-Framework/) **CSS3** styles collection is the easiest way, to make **buttons** and **forms** on webpages look great. It's based on the wonderfull code from [Tim O'Donnell](http://timodonnell.com/) and improved by [Simon Waldherr](http://simon.waldherr.eu/). The complete code is licensed under the terms of the **MIT-License**, which allows you to use and to change everything for **free**.
 
-##Browser compatibility
+## Browser compatibility
 
 This is being tested in the latest versions of **Chrome**, **Safari**, **Firefox** and **Opera**.
 
 
-##Demo
+## Demo
 
 <http://selfcss.org/baf/>
 
 
-##License
+## License
 
 **The MIT License (MIT)**  
 Copyright &copy; 2013 [Simon Waldherr](https://github.com/SimonWaldherr)  
@@ -24,13 +28,13 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-##Version
+## Version
 
 baf v. 2.0.2  
 11.2013
 
 
-##Acknowledgements
+## Acknowledgements
 
 Icons from [glyphicons.com](http://glyphicons.com/) and [icomoon.io](http://icomoon.io/).  
 HTML5 [Input Range Polyfill via fd-slider](https://github.com/freqdec/fd-slider) from [Brain McAllister](https://github.com/freqdec).
