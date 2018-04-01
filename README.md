@@ -1,8 +1,6 @@
 # Buttons and Forms
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/bpWGS5JKXiHEB18kfHGr1x3q/SimonWaldherr/BaF-Framework'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/bpWGS5JKXiHEB18kfHGr1x3q/SimonWaldherr/BaF-Framework.svg' />
-</a>
+
 
 the [buttons and forms](https://github.com/SimonWaldherr/BaF-Framework/) **CSS3** styles collection is the easiest way, to make **buttons** and **forms** on webpages look great. It's based on the wonderfull code from [Tim O'Donnell](http://timodonnell.com/) and improved by [Simon Waldherr](http://simon.waldherr.eu/). The complete code is licensed under the terms of the **MIT-License**, which allows you to use and to change everything for **free**.
 
